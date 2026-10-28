@@ -1,0 +1,2634 @@
+{
+  "schema_version": 1,
+  "note": "用于概念多名称对照、检索与工作解释；含数据集局部字段名称，不代表完整的现场点位或状态码映射。旧aliases还含相关检索提示词，严格简称以short_names为准。",
+  "terms": [
+    {
+      "term": "TOPCon",
+      "aliases": [
+        "隧穿氧化层钝化接触",
+        "Tunnel Oxide Passivated Contact"
+      ],
+      "meaning": "以超薄隧穿氧化层与掺杂硅层实现钝化接触的技术路线；具体沉积路线须区分。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/07_topcon_cells.md"
+      ],
+      "abbreviation": "TOPCon",
+      "english_full_name": "Tunnel Oxide Passivated Contact",
+      "chinese_full_name": "隧穿氧化钝化接触",
+      "category": "technology",
+      "usage": "识别TOPCon电池路线，区分SiOₓ/poly-Si层及LPCVD、PECVD等沉积方案。",
+      "notes": "属于电池技术/接触结构，不等于某一唯一配方或设备。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "TOPCon",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的隧穿氧化钝化接触语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/07_topcon_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PERC",
+      "aliases": [
+        "钝化发射极和背面电池"
+      ],
+      "meaning": "背面钝化与局部接触路线，不与TOPCon的工艺参数混用。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/06_perc_cells.md"
+      ],
+      "abbreviation": "PERC",
+      "english_full_name": "Passivated Emitter and Rear Cell",
+      "chinese_full_name": "钝化发射极背面电池",
+      "category": "technology",
+      "usage": "解释P型电池背面钝化、激光局部开口与局部铝接触工序。",
+      "notes": "背面接触结构与TOPCon不同，工艺参数不可直接套用。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "PERC",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的钝化发射极背面电池语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/06_perc_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "HJT",
+      "aliases": [
+        "异质结",
+        "HIT",
+        "SHJ"
+      ],
+      "meaning": "晶硅与非晶硅薄层异质结路线，热预算及金属化不同于高温扩散路线。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "HJT",
+      "english_full_name": "Heterojunction Technology",
+      "chinese_full_name": "异质结技术",
+      "category": "technology",
+      "usage": "识别硅异质结低温路线，以及a-Si:H、TCO和低温金属化的配套关系。",
+      "notes": "本条全称为整理采用的行业展开。08第1节将HJT写为Heterojunction with Intrinsic Thin-Layer，且同节把该展开用于HIT；保留原文并在此区分。旧HIT、SHJ别名仅为检索兼容，不表示字母全称相同。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "HJT",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的异质结技术语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Al-BSF",
+      "aliases": [
+        "铝背场",
+        "丝网印刷电池"
+      ],
+      "meaning": "传统铝背场电池路线。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/05_screen_printed_cells.md"
+      ],
+      "abbreviation": "Al-BSF",
+      "english_full_name": "Aluminum Back Surface Field",
+      "chinese_full_name": "铝背表面场",
+      "category": "technology",
+      "usage": "解释传统丝网印刷电池全面积铝背场，并与PERC的局部接触比较。",
+      "notes": "原文给出铝背场中文与Al-BSF，英文全称为整理展开；Al为铝元素符号。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "Al-BSF",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的铝背表面场语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/05_screen_printed_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "IBC",
+      "aliases": [
+        "交指背接触",
+        "背接触"
+      ],
+      "meaning": "背面交指电极结构，需结合具体钝化路线理解。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/09_high_efficiency_cells.md"
+      ],
+      "abbreviation": "IBC",
+      "english_full_name": "Interdigitated Back Contact",
+      "chinese_full_name": "交指式背接触",
+      "category": "technology",
+      "usage": "识别正背面电极布局，解释IBC与HJT等技术结合时的结构。",
+      "notes": "描述接触布局，不应与HJT、TOPCon一律作为互斥路线。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "IBC",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的交指式背接触语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/09_high_efficiency_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "LPCVD",
+      "aliases": [
+        "低压化学气相沉积",
+        "低压沉积"
+      ],
+      "meaning": "以热反应进行低压沉积；氧化、沉积、后续掺杂步骤参数应分别读取。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "LPCVD",
+      "english_full_name": "Low-Pressure Chemical Vapor Deposition",
+      "chinese_full_name": "低压化学气相沉积",
+      "category": "process",
+      "usage": "定位TOPCon硅膜沉积、集成氧化及原位/非原位掺杂相关步骤。",
+      "notes": "工艺名也常用于设备简称；氧化与沉积步骤的温压条件分别记录。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "LPCVD",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的低压化学气相沉积语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PECVD",
+      "aliases": [
+        "等离子体增强化学气相沉积",
+        "等离子增强沉积",
+        "PE"
+      ],
+      "meaning": "等离子增强沉积；管式、板式及不同用途的条件不能直接互换。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md",
+        "evidence/user-aliases.json"
+      ],
+      "abbreviation": "PECVD",
+      "english_full_name": "Plasma-Enhanced Chemical Vapor Deposition",
+      "chinese_full_name": "等离子体增强化学气相沉积",
+      "category": "process",
+      "usage": "识别SiNₓ:H、a-Si:H及TOPCon三合一等不同膜层和沉积用途。",
+      "notes": "15原文展开为Plasma-Enhanced CVD；本条补全CVD。管式、板式及HJT用途不能套用同一温度。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "PECVD",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的等离子体增强化学气相沉积语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "PE",
+          "kind": "english_short",
+          "status": "user_confirmed",
+          "scope": "KD本次用户明确的工作语境；不自动推广为全部工厂或历史数据定义",
+          "sources": [
+            "evidence/user-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "硼扩散",
+      "aliases": [
+        "boron diffusion",
+        "硼扩",
+        "BCl3",
+        "BBr3",
+        "BCl₃",
+        "BBr₃",
+        "BK",
+        "bk"
+      ],
+      "meaning": "TOPCon发射极相关工序；气源、温度和步骤应以适用路线/正式配方为准。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md",
+        "evidence/user-aliases.json",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "short_names": [
+        {
+          "name": "硼扩",
+          "kind": "chinese_short",
+          "status": "user_confirmed",
+          "scope": "KD本次用户明确的工作语境；不自动推广为全部工厂或历史数据定义",
+          "sources": [
+            "evidence/user-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "BK",
+          "kind": "dataset_code",
+          "status": "user_confirmed",
+          "scope": "KD本次用户明确的工作语境；不自动推广为全部工厂或历史数据定义",
+          "sources": [
+            "evidence/user-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "BK",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "bk",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Peip_Trace的bk_*字段前缀",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ],
+      "notes": "RB01在该资料中是源设备目录，不能作为全行业硼扩散的通用同义词。中文简称“硼扩”和BK的当前工作约定另有用户直接定义，本文件仅记录dataset证据。",
+      "category": "process",
+      "usage": "解释硼扩、BK与硼扩散的同概念多名称及来源范围。"
+    },
+    {
+      "term": "干氧氧化",
+      "aliases": [
+        "dry oxidation",
+        "氧化炉",
+        "隧穿氧化层"
+      ],
+      "meaning": "氧化层形成相关工序；独立高温与集成低温工艺需要区分。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "term": "炉管",
+      "aliases": [
+        "tube",
+        "反应管",
+        "管式炉"
+      ],
+      "meaning": "管式设备的反应腔体；数据建模时与整机层级分别识别。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "term": "舟",
+      "aliases": [
+        "boat",
+        "石英舟",
+        "石墨舟"
+      ],
+      "meaning": "硅片承载部件；材质、编号和使用次数需结合设备及现场字典。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "term": "BSG",
+      "aliases": [
+        "硼硅玻璃",
+        "Borosilicate Glass"
+      ],
+      "meaning": "硼扩散涉及的含硼玻璃层；用途和去除时点按适用工艺读取。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "BSG",
+      "english_full_name": "Borosilicate Glass",
+      "chinese_full_name": "硼硅玻璃",
+      "category": "materials",
+      "usage": "解释硼扩散中的硼源、后续保护层和去除时点。",
+      "notes": "与PSG不同；保护作用和去除条件取决于实际工艺路线。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "BSG",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的硼硅玻璃语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PSG",
+      "aliases": [
+        "磷硅玻璃",
+        "Phosphosilicate Glass"
+      ],
+      "meaning": "磷相关工艺的玻璃层，与BSG区分。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "PSG",
+      "english_full_name": "Phosphosilicate Glass",
+      "chinese_full_name": "磷硅玻璃",
+      "category": "materials",
+      "usage": "解释磷扩散后玻璃层、去绕镀保护及清洗记录。",
+      "notes": "原文明确中文名称，英文全称为整理展开；不与BSG合并。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "PSG",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的磷硅玻璃语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "绕镀",
+      "aliases": [
+        "wrap-around",
+        "wrap around",
+        "去绕镀"
+      ],
+      "meaning": "沉积层覆盖非目标表面的问题，可能影响后续刻蚀与接触。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "term": "SE",
+      "aliases": [
+        "选择性发射极",
+        "Selective Emitter"
+      ],
+      "meaning": "不同区域具有不同掺杂/接触要求，不用一个方阻参考值替代全部区域。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "SE",
+      "english_full_name": "Selective Emitter",
+      "chinese_full_name": "选择性发射极",
+      "category": "process",
+      "usage": "区分金属接触区重掺与非接触区轻掺，解释区域方块电阻。",
+      "notes": "英文全称为整理展开；不能把不同区域方阻合成为单一验收阈值。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "SE",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的选择性发射极语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "ARC",
+      "aliases": [
+        "减反射层",
+        "抗反射膜"
+      ],
+      "meaning": "减反射相关薄膜，须区分光学与钝化功能。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/04_cell_processing_basics.md"
+      ],
+      "abbreviation": "ARC",
+      "english_full_name": "Anti-Reflection Coating",
+      "chinese_full_name": "减反射涂层",
+      "category": "materials",
+      "usage": "解释减反射膜的厚度、折射率及与钝化功能的关系。",
+      "notes": "是功能性膜层称谓，不限定材料，也不能据此推定实际膜种。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "ARC",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的减反射涂层语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/04_cell_processing_basics.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "SiNx",
+      "aliases": [
+        "SiNₓ",
+        "SiNₓ:H",
+        "氮化硅"
+      ],
+      "meaning": "减反射/钝化相关膜层，折射率、厚度、氢含量需结合工艺。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "term": "STC",
+      "aliases": [
+        "标准测试条件",
+        "Standard Test Conditions"
+      ],
+      "meaning": "比较光伏性能时需要记录的测试条件，不能只依赖指标名称推定满足STC。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "STC",
+      "english_full_name": "Standard Test Conditions",
+      "chinese_full_name": "标准测试条件",
+      "category": "testing",
+      "usage": "比较电池或组件I-V性能时核对辐照度、光谱和器件温度。",
+      "notes": "指标列名不能证明实际测试已满足STC；STC温度是电池温度。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "STC",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的标准测试条件语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "I-V",
+      "aliases": [
+        "IV",
+        "I–V",
+        "伏安曲线",
+        "闪光测试"
+      ],
+      "meaning": "电流电压测量及相关性能指标；电池片、组件和暗态测试需区分。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "I-V",
+      "english_full_name": "Current-Voltage",
+      "chinese_full_name": "电流-电压",
+      "category": "testing",
+      "usage": "读取电池片或组件的光照、暗态电流电压曲线与派生指标。",
+      "notes": "IV为兼容写法；光照/暗态和电池/组件分别标注，英文展开为整理补充。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "I-V",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的电流-电压语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "EL",
+      "aliases": [
+        "电致发光",
+        "Electroluminescence"
+      ],
+      "meaning": "电注入激发的成像检测；缺陷解释须结合图像和测试上下文。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "EL",
+      "english_full_name": "Electroluminescence",
+      "chinese_full_name": "电致发光",
+      "category": "testing",
+      "usage": "解读电流注入激发的电池或组件成像，比较串焊后、层压后和终检结果。",
+      "notes": "原文在成像章节写Electroluminescence Imaging；EL本身指电致发光，图像特征不是独立判废规则。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "EL",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的电致发光语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PL",
+      "aliases": [
+        "光致发光",
+        "Photoluminescence"
+      ],
+      "meaning": "光激发的成像/表征方法，与EL的激励条件不同。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "PL",
+      "english_full_name": "Photoluminescence",
+      "chinese_full_name": "光致发光",
+      "category": "testing",
+      "usage": "解读硅片或中间工序的光激发成像、寿命与复合分布。",
+      "notes": "原文在成像章节写Photoluminescence Imaging；PL与EL激励方式不同，亮度不能直接合并。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "PL",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的光致发光语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "EQE",
+      "aliases": [
+        "外量子效率",
+        "External Quantum Efficiency"
+      ],
+      "meaning": "随波长变化的光电响应指标，不能与整体转换效率直接互换。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "EQE",
+      "english_full_name": "External Quantum Efficiency",
+      "chinese_full_name": "外量子效率",
+      "category": "testing",
+      "usage": "分析不同波长入射光子的收集效率及前后表面响应。",
+      "notes": "随波长变化的量子效率不等于电池整体转换效率。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "EQE",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的外量子效率语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Voc",
+      "aliases": [
+        "V_oc",
+        "开路电压",
+        "VOC",
+        "voc"
+      ],
+      "meaning": "I=0条件下的电压；V与mV以及器件层级需要明确。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "abbreviation": "Voc",
+      "english_full_name": "Open-Circuit Voltage",
+      "chinese_full_name": "开路电压",
+      "category": "metrics",
+      "usage": "读取I-V曲线开路电压，并比较同类器件的复合抑制表现。",
+      "notes": "英文全称为整理展开；V与mV、单片与组件分别标注。\n与知识库Voc属于相同指标的大小写变体；具体电压单位须读原始数据字典。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "Voc",
+          "kind": "symbol",
+          "status": "curated",
+          "scope": "KD光伏知识库的开路电压语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "VOC",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "voc",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Isc",
+      "aliases": [
+        "I_sc",
+        "短路电流",
+        "ISC",
+        "isc"
+      ],
+      "meaning": "V=0条件下的电流；不能与电流密度Jsc混用。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "abbreviation": "Isc",
+      "english_full_name": "Short-Circuit Current",
+      "chinese_full_name": "短路电流",
+      "category": "metrics",
+      "usage": "读取零电压条件的电流并参与FF等指标计算。",
+      "notes": "英文全称为整理展开；不可与电流密度Jsc混用。\nISC与Jsc不同；字段单位和电池面积不可由代号自动推定。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "Isc",
+          "kind": "symbol",
+          "status": "curated",
+          "scope": "KD光伏知识库的短路电流语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "ISC",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "isc",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Jsc",
+      "aliases": [
+        "J_sc",
+        "短路电流密度",
+        "jsc"
+      ],
+      "meaning": "电流密度指标；与Isc转换需要明确受测面积及单位。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "abbreviation": "Jsc",
+      "english_full_name": "Short-Circuit Current Density",
+      "chinese_full_name": "短路电流密度",
+      "category": "metrics",
+      "usage": "按明确有效面积比较短路电流密度及光吸收、收集表现。",
+      "notes": "英文全称为整理展开；与Isc换算须明确面积及A、mA单位。\n电流指标表按顺序给出jsc=短路电流密度；不能与isc混用。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "Jsc",
+          "kind": "symbol",
+          "status": "curated",
+          "scope": "KD光伏知识库的短路电流密度语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "jsc",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Pmax",
+      "aliases": [
+        "P_max",
+        "最大功率",
+        "Pmp",
+        "pmpp"
+      ],
+      "meaning": "最大功率点相关指标，注意单位及电池片/组件层级。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "abbreviation": "Pmax",
+      "english_full_name": "Maximum Power",
+      "chinese_full_name": "最大功率",
+      "category": "metrics",
+      "usage": "读取或计算I-V最大功率点输出，供电池/组件分档和效率计算。",
+      "notes": "英文全称为整理展开；Pmax=Imp×Vmp，不能以Voc×Isc替代。\npmpp为本数据集最大输出功率字段，对应知识库Pmax语境；与MPP工作点不同。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "Pmax",
+          "kind": "symbol",
+          "status": "curated",
+          "scope": "KD光伏知识库的最大功率语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "pmpp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "FF",
+      "aliases": [
+        "填充因子",
+        "Fill Factor",
+        "ff"
+      ],
+      "meaning": "由最大功率、开路电压和短路电流关联的指标；小数与百分数须明确。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "abbreviation": "FF",
+      "english_full_name": "Fill Factor",
+      "chinese_full_name": "填充因子",
+      "category": "metrics",
+      "usage": "用最大功率与Voc×Isc的比例解释曲线方形度及电阻相关损失。",
+      "notes": "英文全称为整理展开；0.83与83%必须明确表达形式。\n本分析资料明确eta/ff为百分数，不推广到别的文件或系统。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "FF",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的填充因子语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "FF",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "ff",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "转换效率",
+      "aliases": [
+        "η",
+        "光伏转换效率",
+        "电池效率",
+        "组件效率",
+        "ETA",
+        "eta"
+      ],
+      "meaning": "光伏功率转换指标；必须明确面积、入射条件和器件层级，与设备OEE不同。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md",
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "short_names": [
+        {
+          "name": "ETA",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "eta",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "η",
+          "kind": "symbol",
+          "status": "knowledge_explicit",
+          "scope": "原始电池测试资料的I-V指标语境；实际单位及器件层级另行核对",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ],
+      "notes": "ETA为效率字段/显示代号，不是另行创造的英文首字母展开；同资料说明eta/ff使用百分数，见model第63行。不能从本数据集推定所有外部效率字段均为百分数。",
+      "category": "metrics",
+      "usage": "解释转换效率、η与数据集ETA字段，区分电池/组件及测试条件。"
+    },
+    {
+      "term": "少子寿命",
+      "aliases": [
+        "minority carrier lifetime",
+        "寿命测试"
+      ],
+      "meaning": "载流子复合相关表征；不是设备运行寿命。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ]
+    },
+    {
+      "term": "J0",
+      "aliases": [
+        "J₀",
+        "J_0",
+        "复合电流密度"
+      ],
+      "meaning": "钝化接触评价指标之一，与接触电阻率配合解释。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "J0",
+      "english_full_name": "Recombination Current Density",
+      "chinese_full_name": "复合电流密度",
+      "category": "metrics",
+      "usage": "按15第3.10节语境评估钝化接触复合，并与接触电阻率共同解释。",
+      "notes": "J₀是物理量符号，非首字母缩写；本条英文为语境译名。不同文献也以J₀描述饱和电流密度，应核对模型，且不等于总电流I₀。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "J0",
+          "kind": "symbol",
+          "status": "curated",
+          "scope": "KD光伏知识库的复合电流密度语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "OEE",
+      "aliases": [
+        "设备综合效率",
+        "设备综合效能"
+      ],
+      "meaning": "本工作区关注的设备统计概念；原始资料没有给出现场状态、分母与聚合定义，正式计算前须确认。",
+      "status": "proposed_working_concept",
+      "sources": [
+        "workflows/data-analysis.md"
+      ],
+      "abbreviation": "OEE",
+      "english_full_name": "Overall Equipment Effectiveness",
+      "chinese_full_name": "设备综合效率",
+      "category": "metrics",
+      "usage": "定位设备统计任务所需的可用率、性能和质量相关口径及数据缺口。",
+      "notes": "行业常用概念与英文展开，不是已确认的本厂公式。现场状态映射、计划时间、理想节拍、质量计数及聚合规则仍须确认；不等于光伏转换效率。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "OEE",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的设备综合效率语境；非现场点位或状态码映射",
+          "sources": [
+            "workflows/data-analysis.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "批次",
+      "aliases": [
+        "batch",
+        "批次号"
+      ],
+      "meaning": "建议显式识别的分析/建模对象；唯一键、跨管关系与重工规则需由现场确认。",
+      "status": "proposed_working_concept",
+      "sources": [
+        "workflows/data-analysis.md"
+      ]
+    },
+    {
+      "term": "配方",
+      "aliases": [
+        "recipe",
+        "配方版本"
+      ],
+      "meaning": "建议保留版本与步骤上下文；原文典型值不能自动成为现场正式配方。",
+      "status": "proposed_working_concept",
+      "sources": [
+        "workflows/software-development.md"
+      ]
+    },
+    {
+      "term": "设备状态",
+      "aliases": [
+        "状态码",
+        "停机",
+        "宕机",
+        "downtime"
+      ],
+      "meaning": "现场状态映射尚未提供；报警和停机不可直接等同，未知区间单独保留。",
+      "status": "proposed_working_concept",
+      "sources": [
+        "workflows/data-analysis.md"
+      ]
+    },
+    {
+      "term": "ALD",
+      "aliases": [
+        "原子层沉积"
+      ],
+      "meaning": "采用逐层反应制备薄膜的沉积方法，原文用于AlOₓ等钝化层。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/06_perc_cells.md"
+      ],
+      "abbreviation": "ALD",
+      "english_full_name": "Atomic Layer Deposition",
+      "chinese_full_name": "原子层沉积",
+      "category": "process",
+      "usage": "解释PERC/TOPCon的AlOₓ膜沉积及与PECVD方法的差异。",
+      "notes": "英文全称为整理展开；不能仅由ALD缩写推定前驱体、温度或膜厚。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "ALD",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的原子层沉积语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/06_perc_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PVD",
+      "aliases": [
+        "物理气相沉积",
+        "磁控溅射"
+      ],
+      "meaning": "原文讨论的磁控溅射路线，可用于HJT的ITO及其他薄膜。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "PVD",
+      "english_full_name": "Physical Vapor Deposition",
+      "chinese_full_name": "物理气相沉积",
+      "category": "process",
+      "usage": "识别HJT透明导电层沉积与TOPCon不同沉积路线。",
+      "notes": "英文全称为整理展开；磁控溅射是PVD方法之一，不是所有PVD的同义工艺。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "PVD",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的物理气相沉积语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "TCO",
+      "aliases": [
+        "透明导电氧化物"
+      ],
+      "meaning": "兼具透明与导电功能的氧化物材料类别，HJT中承担横向导电等功能。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "TCO",
+      "english_full_name": "Transparent Conductive Oxide",
+      "chinese_full_name": "透明导电氧化物",
+      "category": "materials",
+      "usage": "解释HJT层结构、透光与导电之间的取舍。",
+      "notes": "英文全称为整理展开；ITO是TCO的一种，TCO不等于ITO。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "TCO",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的透明导电氧化物语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "ITO",
+      "aliases": [
+        "氧化铟锡",
+        "In₂O₃:Sn"
+      ],
+      "meaning": "HJT常用透明导电氧化物，原文以In₂O₃:Sn表示其组分。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "ITO",
+      "english_full_name": "Indium Tin Oxide",
+      "chinese_full_name": "氧化铟锡",
+      "category": "materials",
+      "usage": "识别前后侧透明导电层、膜厚、透光与电导记录。",
+      "notes": "英文全称为整理展开；不能将ITO膜厚套用于全部TCO材料。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "ITO",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的氧化铟锡语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "RF",
+      "aliases": [
+        "射频",
+        "射频功率"
+      ],
+      "meaning": "原文用于PECVD电源/等离子激发及射频光电导测量。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/15_tube_furnace_equipment.md"
+      ],
+      "abbreviation": "RF",
+      "english_full_name": "Radio Frequency",
+      "chinese_full_name": "射频",
+      "category": "equipment",
+      "usage": "识别设备电源频率、功率信号及其在具体工步中的含义。",
+      "notes": "英文全称为整理展开；RF不是功率单位，也不等于所有设备均固定13.56 MHz。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "RF",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的射频语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/15_tube_furnace_equipment.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "LECO",
+      "aliases": [
+        "激光增强接触优化"
+      ],
+      "meaning": "烧结后利用激光与电偏置改善电池金属接触的可选工序。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/07_topcon_cells.md"
+      ],
+      "abbreviation": "LECO",
+      "english_full_name": "Laser Enhanced Contact Optimization",
+      "chinese_full_name": "激光增强接触优化",
+      "category": "process",
+      "usage": "解释TOPCon烧结后接触优化及相关电阻、FF变化。",
+      "notes": "与SE激光掺杂及PERC的LCO激光开口不是同一工序。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "LECO",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的激光增强接触优化语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/07_topcon_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "AOI",
+      "aliases": [
+        "自动光学检测",
+        "在线外观检测"
+      ],
+      "meaning": "用于外观、印刷等光学检测的常用类别；原文列举产线在线检测项目。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "AOI",
+      "english_full_name": "Automated Optical Inspection",
+      "chinese_full_name": "自动光学检测",
+      "category": "testing",
+      "usage": "读取外观缺陷、印刷对准或断线的相机检测结果与算法标签。",
+      "notes": "英文与标准中文为整理补充。13第10节标题将AOI用于较广的在线检测列表，其中四探针、I-V等不能一律归为光学检测。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "AOI",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的自动光学检测语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "SHJ",
+      "aliases": [
+        "硅异质结",
+        "硅异质结电池"
+      ],
+      "meaning": "以晶硅/薄层异质结为基础的电池技术称谓。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "SHJ",
+      "english_full_name": "Silicon Heterojunction",
+      "chinese_full_name": "硅异质结",
+      "category": "technology",
+      "usage": "解读HJT相关科研文献、叠层底电池及器件结构。",
+      "notes": "英文全称为整理展开；与HJT属于相关技术语境，但SHJ、HJT、HIT各自字母展开不同。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "SHJ",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的硅异质结语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "HIT",
+      "aliases": [
+        "HIT®",
+        "本征薄层异质结"
+      ],
+      "meaning": "原文介绍Sanyo开发的HIT®电池名称，包含本征薄层特征。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/08_hjt_cells.md"
+      ],
+      "abbreviation": "HIT",
+      "english_full_name": "Heterojunction with Intrinsic Thin-layer",
+      "chinese_full_name": "本征薄层异质结",
+      "category": "technology",
+      "usage": "解释历史器件名称与本征薄层钝化结构，区分HJT和SHJ的全称。",
+      "notes": "英文为08第1节明确展开，中文为对应译名；原文带商标标记。不是把所有HJT产品认定为同一品牌。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "HIT",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的本征薄层异质结语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/08_hjt_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "PV",
+      "aliases": [
+        "光伏",
+        "Photovoltaics"
+      ],
+      "meaning": "光伏领域的常用称谓，原文将PV Module用于光伏组件。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/11_module_manufacturing.md"
+      ],
+      "abbreviation": "PV",
+      "english_full_name": "Photovoltaic",
+      "chinese_full_name": "光伏",
+      "category": "technology",
+      "usage": "标明任务属于电池、组件及其制造/测试场景。",
+      "notes": "英文全称为整理展开；属于行业概念，不代表本厂产品或组织定义。控制系统语境中的PV也可能指过程值，须由数据字典确认。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "PV",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的光伏语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/11_module_manufacturing.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "CVD",
+      "aliases": [
+        "化学气相沉积"
+      ],
+      "meaning": "通过气相反应成膜的方法类别，LPCVD和PECVD属于不同实现。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/04_cell_processing_basics.md"
+      ],
+      "abbreviation": "CVD",
+      "english_full_name": "Chemical Vapor Deposition",
+      "chinese_full_name": "化学气相沉积",
+      "category": "process",
+      "usage": "解读沉积路线、前驱体和设备用途时确定方法层级。",
+      "notes": "英文全称为整理展开；不能由CVD推定低压、等离子体或某一具体膜种。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "CVD",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的化学气相沉积语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/04_cell_processing_basics.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "IQE",
+      "aliases": [
+        "内量子效率"
+      ],
+      "meaning": "原文用EQE/(1-R)表达去除反射损失后的内部收集效率。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "IQE",
+      "english_full_name": "Internal Quantum Efficiency",
+      "chinese_full_name": "内量子效率",
+      "category": "testing",
+      "usage": "比较光谱响应中反射损失与器件内部收集损失。",
+      "notes": "英文全称为整理展开；使用原文简式时需确认其适用条件与反射率定义。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "IQE",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的内量子效率语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "MPP",
+      "aliases": [
+        "最大功率点"
+      ],
+      "meaning": "I-V曲线中电压与电流乘积最大的工作点。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "abbreviation": "MPP",
+      "english_full_name": "Maximum Power Point",
+      "chinese_full_name": "最大功率点",
+      "category": "metrics",
+      "usage": "确定Vmp、Imp和Pmax的对应关系。",
+      "notes": "英文全称为整理展开；MPP为工作点，Pmax为该点的功率值，不能混为同一物理量。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "MPP",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的最大功率点语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "MBB",
+      "aliases": [
+        "多主栅"
+      ],
+      "meaning": "通过多根主栅及配套互联降低传输距离等损失的技术。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/11_module_manufacturing.md"
+      ],
+      "abbreviation": "MBB",
+      "english_full_name": "Multi Busbar",
+      "chinese_full_name": "多主栅",
+      "category": "process",
+      "usage": "解释电池金属化、焊带互联与银耗分析中的栅线结构。",
+      "notes": "不由MBB缩写推定主栅数量；主栅与细栅、焊带分别识别。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "MBB",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的多主栅语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/11_module_manufacturing.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "LCO",
+      "aliases": [
+        "激光局部开口",
+        "激光接触开口"
+      ],
+      "meaning": "PERC背面介质钝化层的局部激光开口，为局部接触提供窗口。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/06_perc_cells.md"
+      ],
+      "abbreviation": "LCO",
+      "english_full_name": "Laser Contact Opening",
+      "chinese_full_name": "激光局部开口",
+      "category": "process",
+      "usage": "定位PERC背面开口工序和局部接触相关数据。",
+      "notes": "与SE、LECO分别编码；文献开口率不是本厂默认规格。",
+      "full_name_status": "source_explicit",
+      "short_names": [
+        {
+          "name": "LCO",
+          "kind": "english_short",
+          "status": "knowledge_explicit",
+          "scope": "KD光伏知识库的激光局部开口语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/06_perc_cells.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "EVA",
+      "aliases": [
+        "乙烯-醋酸乙烯酯",
+        "EVA胶膜"
+      ],
+      "meaning": "用于组件封装胶膜的聚合物材料。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/14_key_materials.md"
+      ],
+      "abbreviation": "EVA",
+      "english_full_name": "Ethylene-Vinyl Acetate",
+      "chinese_full_name": "乙烯-醋酸乙烯酯共聚物",
+      "category": "materials",
+      "usage": "解释组件叠层、层压及胶膜材料差异。",
+      "notes": "英文全称及共聚物表述为整理展开；具体胶膜牌号和层压窗口须有实际材料规范。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "EVA",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的乙烯-醋酸乙烯酯共聚物语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/14_key_materials.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "POE",
+      "aliases": [
+        "聚烯烃弹性体",
+        "POE胶膜"
+      ],
+      "meaning": "组件封装胶膜材料类别，原文比较其阻水、PID抗性与工艺性。",
+      "status": "reference_summary",
+      "sources": [
+        "references/kd/14_key_materials.md"
+      ],
+      "abbreviation": "POE",
+      "english_full_name": "Polyolefin Elastomer",
+      "chinese_full_name": "聚烯烃弹性体",
+      "category": "materials",
+      "usage": "解释EVA、POE、复合胶膜的材料与层压分析差异。",
+      "notes": "英文全称为整理展开；材料类别不代表具体牌号、配方或验收标准。",
+      "full_name_status": "curated_translation",
+      "short_names": [
+        {
+          "name": "POE",
+          "kind": "english_short",
+          "status": "curated",
+          "scope": "KD光伏知识库的聚烯烃弹性体语境；非现场点位或状态码映射",
+          "sources": [
+            "references/kd/14_key_materials.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "磷扩散",
+      "aliases": [
+        "PK",
+        "磷扩"
+      ],
+      "meaning": "磷掺杂相关扩散工序；具体衬底、发射极或poly-Si掺杂用途须结合实际路线。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/user-aliases.json",
+        "references/kd/04_cell_processing_basics.md"
+      ],
+      "category": "process",
+      "usage": "解释磷扩、PK的工作命名，并按实际产品确认工艺用途。",
+      "notes": "当前用户明确PK指磷扩散。800G旧方案曾写pk为退火，历史标签另列且禁止自动展开；不得用旧资料否定本次已确认的工作命名。",
+      "short_names": [
+        {
+          "name": "PK",
+          "kind": "dataset_code",
+          "status": "user_confirmed",
+          "scope": "KD本次用户明确的工作语境；不自动推广为全部工厂或历史数据定义",
+          "sources": [
+            "evidence/user-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "磷扩",
+          "kind": "chinese_short",
+          "status": "curated",
+          "scope": "KD当前磷扩散工序的中文简称；整理补充，不代表所有外部数据集命名",
+          "sources": [
+            "evidence/user-aliases.json",
+            "references/kd/04_cell_processing_basics.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "氧化",
+      "aliases": [
+        "YH",
+        "yh"
+      ],
+      "meaning": "氧化相关工序的上位概念；800G方案以YH标识氧化，不限定唯一氧化方法。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别YH工序及氧化质量相关数据；与已有干氧氧化概念分别定位。",
+      "notes": "OX-01是该数据源目录/设备标识。资料直接支持YH与氧化有关，不据此推定该站一定采用干氧、湿氧或某一固定配方。",
+      "short_names": [
+        {
+          "name": "YH",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "yh",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Peip_Trace的yh_*字段前缀",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "LP工序（数据集标识）",
+      "aliases": [
+        "LP",
+        "lp"
+      ],
+      "meaning": "800G中的LP工序与lp_*字段族；资料尚未直接展开其完整工艺名称。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别LP/LP-01数据来源，避免直接替换为LPCVD。",
+      "notes": "该组资料明确工序标识和LP-01来源，但未直接展开LP=LPCVD。方案L520把LP异常关联到poly-Si厚度/掺杂，只能作为工艺背景佐证，不能单凭该机理认定同义。",
+      "short_names": [
+        {
+          "name": "LP",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "lp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Peip_Trace的lp_*字段前缀",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "BP工序（数据集标识）",
+      "aliases": [
+        "BP",
+        "bp"
+      ],
+      "meaning": "800G中的BP镀膜工序及bp_*字段族；正背面和具体镀膜方法尚未明确。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "process",
+      "usage": "定位BP镀膜运行记录，保持与ZP工序区分。",
+      "notes": "仅确认BP属于资料所述镀膜设备记录；未找到BP=背镀/背钝的直接说明，不能按字母猜正背面。BP与ZP是不同工序代码，不能当作彼此可替换的同义词。",
+      "short_names": [
+        {
+          "name": "BP",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "bp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Peip_Trace的bp_*字段前缀",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "ZP工序（数据集标识）",
+      "aliases": [
+        "ZP",
+        "zp"
+      ],
+      "meaning": "800G中的ZP镀膜工序及zp_*字段族；正背面和具体镀膜方法尚未明确。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "process",
+      "usage": "定位ZP镀膜运行记录，保持与BP工序区分。",
+      "notes": "仅确认ZP属于资料所述镀膜设备记录；未找到ZP=正镀/正钝的直接说明。不能因其文件名包含Coating就认定特定PECVD材料或正背面。",
+      "short_names": [
+        {
+          "name": "ZP",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "zp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Peip_Trace的zp_*字段前缀",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "退火（800G旧文档标签）",
+      "aliases": [],
+      "meaning": "800G旧FDC方案曾把pk标为退火；只保留该文档的历史标签，不作为默认名称展开。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "process",
+      "usage": "查询历史资料标签冲突；当前用户已确认PK指磷扩散。",
+      "notes": "用户本次明确“磷扩散=PK”，“磷扩”为整理补充；此条只保留历史文档的冲突证据，不应将PK合并为通用“退火”别名，也不能用旧文档覆盖用户当前工作定义。需以后续工艺/数据字典确认实际站点语义。\n已确认的当前用户命名PK=磷扩散优先；旧文档的pk=退火仍作为历史证据保留，auto_expand=false，不能据此自动替换当前PK。",
+      "short_names": [
+        {
+          "name": "pk",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "仅限2026-08-18 FDC方案18.1的原文命名",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": false
+        }
+      ]
+    },
+    {
+      "term": "测试",
+      "aliases": [
+        "cs"
+      ],
+      "meaning": "800G方案中的测试工序或测试机语境，使用cs字段前缀。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "定位成品测试追溯和测试机变化；不推定具体测量条件。",
+      "notes": "cs为该方案中的测试工序/测试机语境；不自行扩展为特定测试设备品牌。",
+      "short_names": [
+        {
+          "name": "cs",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "故障检测与分类",
+      "aliases": [
+        "FDC",
+        "故障检测与诊断"
+      ],
+      "meaning": "800G方案中的FDC任务，包括过程偏离检测、故障分类及影响验证。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "解释FDC应用与成品质量闭环，区分分类名称和诊断工作称谓。",
+      "notes": "英文明确展开为Fault Detection and Classification，标题中文采用故障检测与诊断，属于同一项目的工作称谓，不表示Classification与Diagnosis字面同义。",
+      "short_names": [
+        {
+          "name": "FDC",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G FDC应用方案的项目定义",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "故障检测与诊断",
+          "kind": "chinese_short",
+          "status": "dataset_explicit",
+          "scope": "该方案标题采用的中文工作称谓",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "膜厚检测数据",
+      "aliases": [],
+      "meaning": "800G LP后中间质检所述的OD数据，涉及膜厚、折射率及消光系数等。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "按800G范围理解OD用途，不将其全局展开成方阻或某一猜测英文全称。",
+      "notes": "这里确认OD数据的用途，未找到OD字母的英文全称，不猜Optical Density、Optical Detection或其他展开；OD也不是膜厚数值本身。\nOD在本知识库中同时出现方阻检测与膜厚检测语境，本条仅在所述数据源适用，不自动做全局同义展开；查询时应并列显示多个语境。",
+      "short_names": [
+        {
+          "name": "OD",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G LP后中间质检数据",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": false
+        }
+      ]
+    },
+    {
+      "term": "Rsh",
+      "aliases": [
+        "RSHUNT",
+        "rshunt"
+      ],
+      "meaning": "并联电阻相关量；RSHUNT/rshunt是800G电性能字段和标签写法。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json",
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "category": "metrics",
+      "usage": "解释并联漏电相关指标，核实Ω或面积归一电阻的单位。",
+      "notes": "与知识库Rsh为同一类电阻量，但Ω或Ω·cm²及归一方式须确认。",
+      "short_names": [
+        {
+          "name": "RSHUNT",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "rshunt",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Rsh",
+          "kind": "symbol",
+          "status": "knowledge_explicit",
+          "scope": "原始电池测试资料的I-V指标语境；实际单位及器件层级另行核对",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "最大功率点电流",
+      "aliases": [
+        "impp",
+        "Imp"
+      ],
+      "meaning": "I-V最大功率工作点处的电流；原文符号Imp，800G字段impp。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json",
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "category": "metrics",
+      "usage": "识别Imp/impp，并与Isc及最大功率点电压配套解释。",
+      "notes": "由字段表的有序列举对应；与知识库Imp为同一指标语境，实际单位待确认。",
+      "short_names": [
+        {
+          "name": "impp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Imp",
+          "kind": "symbol",
+          "status": "knowledge_explicit",
+          "scope": "原始电池测试资料的I-V指标语境；实际单位及器件层级另行核对",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "最大功率点电压",
+      "aliases": [
+        "umpp",
+        "Vmp"
+      ],
+      "meaning": "I-V最大功率工作点处的电压；原文符号Vmp，800G字段umpp。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json",
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "category": "metrics",
+      "usage": "识别Vmp/umpp，并与Voc及最大功率点电流区分。",
+      "notes": "U与V均可作电压符号；umpp是本数据集字段，不能仅按字符相似度与其他系统字段合并。",
+      "short_names": [
+        {
+          "name": "umpp",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Vmp",
+          "kind": "symbol",
+          "status": "knowledge_explicit",
+          "scope": "原始电池测试资料的I-V指标语境；实际单位及器件层级另行核对",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "Rs",
+      "aliases": [
+        "rser"
+      ],
+      "meaning": "串联电阻相关量；rser是800G电性能字段写法。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json",
+        "references/kd/13_cell_testing_characterization.md"
+      ],
+      "category": "metrics",
+      "usage": "解释串联电阻及电性能损失，核实单位与面积归一方式。",
+      "notes": "rser为本数据集字段，知识库常用符号Rs；电阻与面积归一电阻不可直接互换。",
+      "short_names": [
+        {
+          "name": "rser",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Rs",
+          "kind": "symbol",
+          "status": "knowledge_explicit",
+          "scope": "原始电池测试资料的I-V指标语境；实际单位及器件层级另行核对",
+          "sources": [
+            "references/kd/13_cell_testing_characterization.md"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "反向电流测量1（数据集字段）",
+      "aliases": [
+        "irev1"
+      ],
+      "meaning": "800G中的irev1反向电流测量字段；测量电压和条件尚未明确。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "保留反向电流测量1的独立身份，不与irev2数值互换。",
+      "notes": "两项均属反向电流指标，但1/2的测量电压、条件和差异未在该表说明，不能互为同一测量值。",
+      "short_names": [
+        {
+          "name": "irev1",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "反向电流测量2（数据集字段）",
+      "aliases": [
+        "irev2"
+      ],
+      "meaning": "800G中的irev2反向电流测量字段；测量电压和条件尚未明确。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-800g-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "保留反向电流测量2的独立身份，不与irev1数值互换。",
+      "notes": "两项均属反向电流指标，但1/2的测量电压、条件和差异未在该表说明，不能互为同一测量值。",
+      "short_names": [
+        {
+          "name": "irev2",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "sources": [
+            "evidence/dataset-800g-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "方阻检测数据",
+      "aliases": [
+        "方阻检测"
+      ],
+      "meaning": "Longji原始与清洗数据资料中称为OD的方阻检测数据。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "按Longji范围理解OD，与800G LP膜厚检测的OD同名含义分别检索。",
+      "notes": "OD在本知识库中同时出现方阻检测与膜厚检测语境，本条仅在所述数据源适用，不自动做全局同义展开；查询时应并列显示多个语境。",
+      "short_names": [
+        {
+          "name": "OD",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "仅限Longji原始/清洗数据及810相应检测目录；不据此推断英文全称或其他OD含义",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": false
+        },
+        {
+          "name": "方阻检测",
+          "kind": "chinese_short",
+          "status": "dataset_explicit",
+          "scope": "Longji扩散炉检测数据中的中文称呼",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "工艺运行记录",
+      "aliases": [
+        "PR",
+        "report_*"
+      ],
+      "meaning": "用于描述一次工艺执行过程的时序记录；具体记录格式依数据源而定。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "process",
+      "usage": "解释PR或report_*记录的业务用途，保持与检测结果分开。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "PR",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "仅限Longji工艺时序记录；不擅自补写Process Record等英文展开",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "report_*",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "仅限Shangrao每个Run的工艺时序表名前缀，不是通用PR文件格式",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "一次工艺执行",
+      "aliases": [
+        "Run"
+      ],
+      "meaning": "设备或工序的一次实际Run；不等同载具编号或全局唯一批次号。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别Run粒度及实际生产时间，建立与舟、批次和产品的关联。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "Run",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810工艺执行文件及Longji过程数据中的运行序号/一次执行；不等同舟编号或全局唯一批次号",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "炉管编号",
+      "aliases": [
+        "TubeID",
+        "tube_id"
+      ],
+      "meaning": "用于标识炉管的编号属性，与炉管物理对象和整机编号有区别。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "识别TubeID/tube_id，核对物理管与MES管号的映射范围。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "TubeID",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji OD原始表的炉管编号1–6；不自动跨MES/物理管号体系转换",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "tube_id",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji文件名解析得到的炉管编号，解析自Tube{tube_id}",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "舟编号",
+      "aliases": [
+        "BoatID",
+        "boat_id",
+        "舟号"
+      ],
+      "meaning": "可复用载具舟的标识属性；不是批次号。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "识别BoatID/boat_id/舟号，保留大小写、业务前缀及前导零。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "BoatID",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji OD表的舟编号；是可复用载具编号，不是批次号",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "boat_id",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji文件名解析字段，来源为文件名BoatID部分",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "舟号",
+          "kind": "chinese_short",
+          "status": "dataset_explicit",
+          "scope": "810过程表的载具编号；不删除业务前缀或前导零",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "硅片检测位置编号",
+      "aliases": [
+        "ZoneID"
+      ],
+      "meaning": "Longji OD中的1–11号硅片检测位置标识。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "解释ZoneID，避免与六个炉管加热温区等值替换。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "ZoneID",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji OD中1–11号检测位置；不是炉管6个加热温区编号",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "炉管温区编号",
+      "aliases": [
+        "wenqu"
+      ],
+      "meaning": "Longji清洗建模结果中六个温区的编号，部分标签由OD检测位置映射生成。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "解释wenqu，保留温区与检测位置的不同粒度。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "wenqu",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji清洗建模结果的6个温区编号；由11个OD检测位置加权映射，不与ZoneID等值",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "五个测点的方阻值",
+      "aliases": [
+        "P1~P5"
+      ],
+      "meaning": "Longji OD同一检测记录中的五个方阻测量值集合。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "testing",
+      "usage": "理解P1~P5集合表达；不将P1至P5当成同一个测点值。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "P1~P5",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji OD中5个测量点方阻值；不能因810也有P/Vd就把所有同名列物理定义视为已确认",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "检测均匀性",
+      "aliases": [
+        "Homogen",
+        "Homogeneity"
+      ],
+      "meaning": "检测结果的均匀性量，公式和比例/百分数表示取决于数据源。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "对齐Homogen与Homogeneity的语境及换算，避免原值直接混算。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "Homogen",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji OD为(Max-Min)/Average；810 PK为原始比例，需保留数据源口径",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Homogeneity",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810 BK均匀性字段为百分数字符串；当前分析除以100，同概念不同表示不能原值直接合并",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "配方名称",
+      "aliases": [
+        "RecipeName",
+        "Recipe"
+      ],
+      "meaning": "配方的名称属性，不代表完整步骤、参数及版本。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别RecipeName或文件名Recipe部分，并另保留配方版本或指纹。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "RecipeName",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "仅限810 ZP/BP配方记录表的名称列；名称不等于完整配方版本",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        },
+        {
+          "name": "Recipe",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji过程文件名中的配方名称部分",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "配方执行开始时间",
+      "aliases": [
+        "BeginTime"
+      ],
+      "meaning": "某条配方执行记录的开始时刻，不等于文件生成时刻。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别BeginTime并确认时区与执行区间。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "BeginTime",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810 ZP/BP RecipeRecord1–6的执行开始时间；不与文件名结束时间混用",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "配方执行结束时间",
+      "aliases": [
+        "EndTime"
+      ],
+      "meaning": "某条配方执行记录的结束时刻，不等于配方刷新生效时刻。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "process",
+      "usage": "识别EndTime并区分运行结束与刷新事件。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "EndTime",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810 ZP/BP RecipeRecord1–6的执行结束时间",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "左舟编号",
+      "aliases": [
+        "LBoatId"
+      ],
+      "meaning": "同一配方执行记录中的左舟载具标识。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "识别LBoatId；不把左右舟记录当成两台独立设备。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "LBoatId",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810 ZP/BP配方执行记录的左舟，不是另一台独立设备",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "右舟编号",
+      "aliases": [
+        "RBoatId"
+      ],
+      "meaning": "同一配方执行记录中的右舟载具标识。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "识别RBoatId；不把左右舟记录当成两个独立工艺实验。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "RBoatId",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "810 ZP/BP配方执行记录的右舟，不是另一台独立设备",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "温度设定值",
+      "aliases": [
+        "SV"
+      ],
+      "meaning": "Longji特征说明中的温度设定值及其阶段统计，不能推定所有SV列语义相同。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "equipment",
+      "usage": "读取SV时保留阶段、温区、统计方法和单位。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "SV",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "Longji特征说明中恒温/氧化/扩散沉积子阶段的温度设定值；不推断所有SV列相同",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "温度跟踪积分误差特征",
+      "aliases": [
+        "IAE"
+      ],
+      "meaning": "Longji恒温特征中用于描述设定值跟踪积分误差的特征。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "解释IAE及前中后段误差，公式、时间基准和单位须查实际实现。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "IAE",
+          "kind": "english_short",
+          "status": "dataset_explicit",
+          "scope": "Longji恒温特征中的积分误差；英文全称和时间积分实现需另外看实际公式，不能只按简称赋单位",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "方阻中位数",
+      "aliases": [
+        "rs_median"
+      ],
+      "meaning": "Longji每条OD检测记录P1–P5的中位数派生值。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "识别rs_median，避免误用原Average或误当串联电阻。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "rs_median",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji每条OD记录P1–P5的中位数，不是原Average字段",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    },
+    {
+      "term": "温区级加权方阻",
+      "aliases": [
+        "rs_wenqu"
+      ],
+      "meaning": "Longji/Shangrao清洗结果中的温区级加权方阻标签。",
+      "status": "reference_summary",
+      "sources": [
+        "evidence/dataset-other-aliases.json"
+      ],
+      "category": "metrics",
+      "usage": "识别rs_wenqu，区别原始检测值、温区传感器值及模型标签。",
+      "notes": "",
+      "short_names": [
+        {
+          "name": "rs_wenqu",
+          "kind": "dataset_code",
+          "status": "dataset_explicit",
+          "scope": "Longji/Shangrao清洗结果的温区级加权标签，非原始温区传感器测量",
+          "sources": [
+            "evidence/dataset-other-aliases.json"
+          ],
+          "auto_expand": true
+        }
+      ]
+    }
+  ]
+}

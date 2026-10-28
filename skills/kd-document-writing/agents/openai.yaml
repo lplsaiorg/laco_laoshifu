@@ -1,0 +1,6 @@
+interface:
+  display_name: "KD 技术文档编写"
+  short_description: "依据本地光伏知识撰写技术与需求文档，统一术语、参数性质和来源"
+  default_prompt: "使用 $kd-document-writing 根据本地知识库编写这份技术文档，并标明待确认事项。"
+policy:
+  allow_implicit_invocation: true

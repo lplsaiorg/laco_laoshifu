@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="660" viewBox="0 0 1280 660" role="img" aria-labelledby="title desc">
+<title id="title">简称与上下文消歧：使用与未使用项目 skill 的对比示意</title>
+<desc id="desc">同一任务：输入：Longji OD 的 ZoneID 是否是温区？。未使用：OD 含义无法唯一确定；ZoneID 可能是温区或取样位置；需数据说明和字段对应关系。使用：OD＝方阻检测数据（Longji 语境）；ZoneID＝1–11号检测位置；11个检测位置映射到6个温区。本地数据说明让回答从多种可能收敛到有依据的解释。这是工作方式示意，没有量化评测结论。</desc>
+<rect width="1280" height="660" rx="24" fill="#f3f6fb"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<text x="48" y="54" font-size="28" fill="#142b43" font-weight="700">02  简称与上下文消歧</text>
+<text x="48" y="88" font-size="17" fill="#526b81" font-weight="400">Agent 概念精度</text>
+<rect x="1062" y="30" width="170" height="35" rx="17" fill="#e5edf7"/>
+<text x="1085" y="53" font-size="17" fill="#526b81" font-weight="400">具体任务示例</text>
+<rect x="48" y="112" width="1184" height="59" rx="12" fill="#fff" stroke="#d6e0eb"/>
+<text x="68" y="148" font-size="18" fill="#526b81" font-weight="700">同一个任务</text>
+<text x="186" y="148" font-size="19" fill="#1f354b" font-weight="400">输入：Longji OD 的 ZoneID 是否是温区？</text>
+<rect x="48" y="198" width="568" height="330" rx="18" fill="#fff" stroke="#64748b" stroke-opacity="0.3"/>
+<path d="M66 198H598" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+<text x="76" y="241" font-size="23" fill="#64748b" font-weight="700">未使用本项目 skill</text>
+<text x="76" y="272" font-size="16" fill="#64748b" font-weight="400">未读取项目 skill 的实际回答摘要</text>
+<line x1="76" y1="291" x2="588" y2="291" stroke="#e3eaf2"/>
+<rect x="74" y="306" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="329" font-size="17" fill="#64748b" font-weight="700">1</text>
+<text x="124" y="330" font-size="21" fill="#243d54" font-weight="400">OD 含义无法唯一确定</text>
+<rect x="74" y="373" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="396" font-size="17" fill="#64748b" font-weight="700">2</text>
+<text x="124" y="397" font-size="21" fill="#243d54" font-weight="400">ZoneID 可能是温区或取样位置</text>
+<rect x="74" y="440" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="463" font-size="17" fill="#64748b" font-weight="700">3</text>
+<text x="124" y="464" font-size="21" fill="#243d54" font-weight="400">需数据说明和字段对应关系</text>
+<rect x="664" y="198" width="568" height="330" rx="18" fill="#fff" stroke="#0f766e" stroke-opacity="0.3"/>
+<path d="M682 198H1214" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+<text x="692" y="241" font-size="23" fill="#0f766e" font-weight="700">使用对应 skill</text>
+<text x="692" y="272" font-size="16" fill="#64748b" font-weight="400">按项目 skill 查证后的实际回答摘要</text>
+<line x1="692" y1="291" x2="1204" y2="291" stroke="#e3eaf2"/>
+<rect x="690" y="306" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="329" font-size="17" fill="#0f766e" font-weight="700">1</text>
+<text x="740" y="330" font-size="21" fill="#243d54" font-weight="400">OD＝方阻检测数据（Longji 语境）</text>
+<rect x="690" y="373" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="396" font-size="17" fill="#0f766e" font-weight="700">2</text>
+<text x="740" y="397" font-size="21" fill="#243d54" font-weight="400">ZoneID＝1–11号检测位置</text>
+<rect x="690" y="440" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="463" font-size="17" fill="#0f766e" font-weight="700">3</text>
+<text x="740" y="464" font-size="21" fill="#243d54" font-weight="400">11个检测位置映射到6个温区</text>
+<rect x="48" y="552" width="1184" height="61" rx="14" fill="#142b43"/>
+<text x="72" y="589" font-size="18" fill="#c6d7e7" font-weight="700">本例可见</text>
+<text x="184" y="590" font-size="21" fill="#fff" font-weight="600">本地数据说明让回答从多种可能收敛到有依据的解释</text>
+<text x="48" y="642" font-size="15" fill="#64748b" font-weight="400">同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。</text>
+</g>
+</svg>

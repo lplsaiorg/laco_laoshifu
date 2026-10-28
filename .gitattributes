@@ -1,0 +1,7 @@
+# Preserve the exact bytes used by source/catalog.json and source/manifest.json.
+# Automatic newline conversion would otherwise invalidate provenance hashes.
+source/** -text
+# Treat preserved CRLF line endings as line endings during whitespace review.
+* whitespace=cr-at-eol
+# Archived references are retained verbatim, including original whitespace.
+source/references/kd/** -whitespace

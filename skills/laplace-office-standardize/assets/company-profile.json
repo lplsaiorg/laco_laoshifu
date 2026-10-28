@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "name": "拉普拉斯文档样式草案",
+  "version": "0.1",
+  "approval_status": "draft",
+  "company_name": "拉普拉斯",
+  "logo": "company-logo.png",
+  "font": "Microsoft YaHei",
+  "text_color": "222222",
+  "accent_color": "C3D83F",
+  "light_color": "F4F7E6",
+  "logo_width_pt": 32,
+  "word": {
+    "template": "templates/word.dotx",
+    "body_size_pt": 11,
+    "title_size_pt": 22,
+    "heading_sizes_pt": [
+      16,
+      14,
+      12
+    ],
+    "margin_mm": 25.4,
+    "paragraph_after_pt": 6,
+    "line_spacing_multiple": 1.2
+  },
+  "excel": {
+    "template": "templates/excel.xltx",
+    "body_size_pt": 11,
+    "header_row": 1,
+    "max_column_width": 42,
+    "autofit_max_cells": 100000,
+    "sheet_logo": true,
+    "print_logo": true
+  },
+  "powerpoint": {
+    "template": "templates/powerpoint.potx",
+    "title_size_pt": 30,
+    "body_size_pt": 18,
+    "logo_margin_pt": 12,
+    "template_width_pt": 960,
+    "template_height_pt": 540,
+    "minimum_text_pt": 14
+  }
+}

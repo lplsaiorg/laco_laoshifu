@@ -1,0 +1,625 @@
+{
+  "schema_version": 1,
+  "source_label": "External reference collection",
+  "research_scope": "只读800G说明文档及Python标签/常量；未执行数据集程序、未连接数据库、未读取database.md或凭据文件；未拷贝原始产品数据。",
+  "records": [
+    {
+      "concept": "硼扩散",
+      "names": [
+        {
+          "name": "BK",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L522",
+              "excerpt": "BK 硼扩散异常"
+            }
+          ]
+        },
+        {
+          "name": "bk",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Peip_Trace的bk_*字段前缀",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L92",
+              "excerpt": "| `RB01` | Excel、DAT，文件名常以 BK 标识 | `bk_*` | BK 配方与过程数据 |"
+            }
+          ]
+        }
+      ],
+      "notes": "RB01在该资料中是源设备目录，不能作为全行业硼扩散的通用同义词。中文简称“硼扩”和BK的当前工作约定另有用户直接定义，本文件仅记录dataset证据。"
+    },
+    {
+      "concept": "氧化",
+      "names": [
+        {
+          "name": "YH",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L521",
+              "excerpt": "YH 氧化异常"
+            }
+          ]
+        },
+        {
+          "name": "yh",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Peip_Trace的yh_*字段前缀",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L91",
+              "excerpt": "| `OX-01` | Excel Run 文件，文件名常以 YH 标识 | `yh_*` | 氧化/钝化类配方与过程数据 |"
+            }
+          ]
+        }
+      ],
+      "notes": "OX-01是该数据源目录/设备标识。资料直接支持YH与氧化有关，不据此推定该站一定采用干氧、湿氧或某一固定配方。"
+    },
+    {
+      "concept": "LP工序",
+      "names": [
+        {
+          "name": "LP",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L90",
+              "excerpt": "| `LP-01` | Excel Run 文件、OD CSV | `lp_*` | LP 配方、Run 时间、温度/压力/流量曲线 |"
+            }
+          ]
+        },
+        {
+          "name": "lp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Peip_Trace的lp_*字段前缀",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L90",
+              "excerpt": "`lp_*`"
+            }
+          ]
+        }
+      ],
+      "notes": "该组资料明确工序标识和LP-01来源，但未直接展开LP=LPCVD。方案L520把LP异常关联到poly-Si厚度/掺杂，只能作为工艺背景佐证，不能单凭该机理认定同义。"
+    },
+    {
+      "concept": "BP镀膜工序",
+      "names": [
+        {
+          "name": "BP",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L93",
+              "excerpt": "| `BP` | `Coating.db` | `bp_*` | 镀膜设备运行记录 |"
+            }
+          ]
+        },
+        {
+          "name": "bp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Peip_Trace的bp_*字段前缀",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L93",
+              "excerpt": "`bp_*`"
+            }
+          ]
+        }
+      ],
+      "notes": "仅确认BP属于资料所述镀膜设备记录；未找到BP=背镀/背钝的直接说明，不能按字母猜正背面。BP与ZP是不同工序代码，不能当作彼此可替换的同义词。"
+    },
+    {
+      "concept": "ZP镀膜工序",
+      "names": [
+        {
+          "name": "ZP",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L94",
+              "excerpt": "| `ZP` | `Coating.db`、压缩包 | `zp_*` | 镀膜设备运行记录 |"
+            }
+          ]
+        },
+        {
+          "name": "zp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Peip_Trace的zp_*字段前缀",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_data0810_数据集合并清洗方案.md",
+              "locator": "L94",
+              "excerpt": "`zp_*`"
+            }
+          ]
+        }
+      ],
+      "notes": "仅确认ZP属于资料所述镀膜设备记录；未找到ZP=正镀/正钝的直接说明。不能因其文件名包含Coating就认定特定PECVD材料或正背面。"
+    },
+    {
+      "concept": "退火（800G方案旧称，存在冲突）",
+      "names": [
+        {
+          "name": "pk",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "仅限2026-08-18 FDC方案18.1的原文命名",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L489",
+              "excerpt": "pk（退火）"
+            }
+          ]
+        }
+      ],
+      "notes": "用户本次明确“磷扩散=磷扩/PK”；此条只保留历史文档的冲突证据，不应将PK合并为通用“退火”别名，也不能用旧文档覆盖用户当前工作定义。需以后续工艺/数据字典确认实际站点语义。"
+    },
+    {
+      "concept": "测试",
+      "names": [
+        {
+          "name": "cs",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G本地分析资料与Peip_Trace工序字段族；不推广到其他产线",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L489",
+              "excerpt": "cs（测试）"
+            },
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L525",
+              "excerpt": "测试机漂移（cs）"
+            }
+          ]
+        }
+      ],
+      "notes": "cs为该方案中的测试工序/测试机语境；不自行扩展为特定测试设备品牌。"
+    },
+    {
+      "concept": "故障检测与分类",
+      "names": [
+        {
+          "name": "FDC",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G FDC应用方案的项目定义",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L10",
+              "excerpt": "FDC（Fault Detection and Classification）"
+            }
+          ]
+        },
+        {
+          "name": "故障检测与诊断",
+          "kind": "chinese_short",
+          "confidence": "explicit",
+          "scope": "该方案标题采用的中文工作称谓",
+          "evidence": [
+            {
+              "source_id": "800G::清洗后数据集_FDC故障检测与诊断应用方案.md",
+              "locator": "L1",
+              "excerpt": "FDC（故障检测与诊断）"
+            }
+          ]
+        }
+      ],
+      "notes": "英文明确展开为Fault Detection and Classification，标题中文采用故障检测与诊断，属于同一项目的工作称谓，不表示Classification与Diagnosis字面同义。"
+    },
+    {
+      "concept": "膜厚检测数据",
+      "names": [
+        {
+          "name": "OD",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G LP后中间质检数据",
+          "evidence": [
+            {
+              "source_id": "800G::docs::数据清洗与建模总体方案.md",
+              "locator": "L131",
+              "excerpt": "OD 膜厚（Th/n/k/拟合偏差）作为 LP 后的中间质检哨兵。"
+            }
+          ]
+        }
+      ],
+      "notes": "这里确认OD数据的用途，未找到OD字母的英文全称，不猜Optical Density、Optical Detection或其他展开；OD也不是膜厚数值本身。"
+    },
+    {
+      "concept": "转换效率",
+      "names": [
+        {
+          "name": "ETA",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L46",
+              "excerpt": "\"eta\": \"效率ETA\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L109",
+              "excerpt": "最大输出功率、填充因子及转换效率"
+            },
+            {
+              "source_id": "800G::docs::数据清洗与建模总体方案.md",
+              "locator": "L63",
+              "excerpt": "eta/ff 为百分数"
+            }
+          ]
+        },
+        {
+          "name": "eta",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L46",
+              "excerpt": "\"eta\": \"效率ETA\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L109",
+              "excerpt": "最大输出功率、填充因子及转换效率"
+            },
+            {
+              "source_id": "800G::docs::数据清洗与建模总体方案.md",
+              "locator": "L63",
+              "excerpt": "eta/ff 为百分数"
+            }
+          ]
+        }
+      ],
+      "notes": "ETA为效率字段/显示代号，不是另行创造的英文首字母展开；同资料说明eta/ff使用百分数，见model第63行。不能从本数据集推定所有外部效率字段均为百分数。"
+    },
+    {
+      "concept": "开路电压",
+      "names": [
+        {
+          "name": "VOC",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L47",
+              "excerpt": "\"voc\": \"开路电压VOC\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L108",
+              "excerpt": "开路电压及最大功率点电压"
+            }
+          ]
+        },
+        {
+          "name": "voc",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L47",
+              "excerpt": "\"voc\": \"开路电压VOC\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L108",
+              "excerpt": "开路电压及最大功率点电压"
+            }
+          ]
+        }
+      ],
+      "notes": "与知识库Voc属于相同指标的大小写变体；具体电压单位须读原始数据字典。"
+    },
+    {
+      "concept": "短路电流",
+      "names": [
+        {
+          "name": "ISC",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L48",
+              "excerpt": "\"isc\": \"短路电流ISC\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "短路电流、短路电流密度、最大功率点电流及反向电流"
+            }
+          ]
+        },
+        {
+          "name": "isc",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L48",
+              "excerpt": "\"isc\": \"短路电流ISC\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "短路电流、短路电流密度、最大功率点电流及反向电流"
+            }
+          ]
+        }
+      ],
+      "notes": "ISC与Jsc不同；字段单位和电池面积不可由代号自动推定。"
+    },
+    {
+      "concept": "填充因子",
+      "names": [
+        {
+          "name": "FF",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L49",
+              "excerpt": "\"ff\": \"填充因子FF\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L109",
+              "excerpt": "最大输出功率、填充因子及转换效率"
+            },
+            {
+              "source_id": "800G::docs::数据清洗与建模总体方案.md",
+              "locator": "L63",
+              "excerpt": "eta/ff 为百分数"
+            }
+          ]
+        },
+        {
+          "name": "ff",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L49",
+              "excerpt": "\"ff\": \"填充因子FF\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L109",
+              "excerpt": "最大输出功率、填充因子及转换效率"
+            },
+            {
+              "source_id": "800G::docs::数据清洗与建模总体方案.md",
+              "locator": "L63",
+              "excerpt": "eta/ff 为百分数"
+            }
+          ]
+        }
+      ],
+      "notes": "本分析资料明确eta/ff为百分数，不推广到别的文件或系统。"
+    },
+    {
+      "concept": "并联电阻",
+      "names": [
+        {
+          "name": "RSHUNT",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L50",
+              "excerpt": "\"rshunt\": \"并联电阻RSHUNT\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L110",
+              "excerpt": "串联电阻及并联电阻"
+            }
+          ]
+        },
+        {
+          "name": "rshunt",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace成品电性能字段/显示标签",
+          "evidence": [
+            {
+              "source_id": "800G::src::fdc800g::sample_export.py",
+              "locator": "L50",
+              "excerpt": "\"rshunt\": \"并联电阻RSHUNT\""
+            },
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L110",
+              "excerpt": "串联电阻及并联电阻"
+            }
+          ]
+        }
+      ],
+      "notes": "与知识库Rsh为同一类电阻量，但Ω或Ω·cm²及归一方式须确认。"
+    },
+    {
+      "concept": "短路电流密度",
+      "names": [
+        {
+          "name": "jsc",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "`isc`、`jsc`、`impp`、`irev1`、`irev2`"
+            }
+          ]
+        }
+      ],
+      "notes": "电流指标表按顺序给出jsc=短路电流密度；不能与isc混用。"
+    },
+    {
+      "concept": "最大功率点电流",
+      "names": [
+        {
+          "name": "impp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "最大功率点电流及反向电流"
+            }
+          ]
+        }
+      ],
+      "notes": "由字段表的有序列举对应；与知识库Imp为同一指标语境，实际单位待确认。"
+    },
+    {
+      "concept": "最大功率点电压",
+      "names": [
+        {
+          "name": "umpp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L108",
+              "excerpt": "| 电性能 | 电压指标 | `voc`、`umpp` | `float` | 开路电压及最大功率点电压 |"
+            }
+          ]
+        }
+      ],
+      "notes": "U与V均可作电压符号；umpp是本数据集字段，不能仅按字符相似度与其他系统字段合并。"
+    },
+    {
+      "concept": "最大功率",
+      "names": [
+        {
+          "name": "pmpp",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L109",
+              "excerpt": "| 电性能 | 功率与效率 | `pmpp`、`ff`、`eta` | `float` | 最大输出功率、填充因子及转换效率 |"
+            }
+          ]
+        }
+      ],
+      "notes": "pmpp为本数据集最大输出功率字段，对应知识库Pmax语境；与MPP工作点不同。"
+    },
+    {
+      "concept": "串联电阻",
+      "names": [
+        {
+          "name": "rser",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L110",
+              "excerpt": "| 电性能 | 电阻指标 | `rser`、`rshunt` | `float` | 串联电阻及并联电阻 |"
+            }
+          ]
+        }
+      ],
+      "notes": "rser为本数据集字段，知识库常用符号Rs；电阻与面积归一电阻不可直接互换。"
+    },
+    {
+      "concept": "反向电流",
+      "names": [
+        {
+          "name": "irev1",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "`irev1`、`irev2`"
+            }
+          ]
+        },
+        {
+          "name": "irev2",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "800G Peip_Trace产品电性能字段",
+          "evidence": [
+            {
+              "source_id": "800G::Peip_Trace_数据库盘点报告.md",
+              "locator": "L107",
+              "excerpt": "`irev1`、`irev2`"
+            }
+          ]
+        }
+      ],
+      "notes": "两项均属反向电流指标，但1/2的测量电压、条件和差异未在该表说明，不能互为同一测量值。"
+    }
+  ],
+  "notes": [
+    "证据path相对于dataset_root，locator为读取时的一基行号。explicit表示原文明确关联，并不代表已获现场工艺批准。",
+    "研究范围内未找到TX的直接映射；未确认LP=LPCVD，未确认BP/ZP对应正背面，也未确认PE=PECVD的800G原文证据。",
+    "PK在800G旧方案称退火，与用户当前明确的磷扩散/PK工作定义冲突；请保留出处与适用范围，不自动合并。",
+    "文件名、工序顺序和参数共现仅作佐证，不据此认定同义。所有设备编号、阈值和关联规则仅限原资料语境。",
+    "20个概念记录含过程标识和常用电性能代号；没有为凑数量复制温区、船号、数据库连接等机械字段。"
+  ]
+}

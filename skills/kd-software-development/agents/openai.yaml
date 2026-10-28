@@ -1,0 +1,6 @@
+interface:
+  display_name: "KD 业务程序开发"
+  short_description: "让产线数据与工艺分析程序遵循已确认的实体关系、单位和指标契约"
+  default_prompt: "使用 $kd-software-development 实现这个程序需求，并用知识库核对业务规则与数据契约。"
+policy:
+  allow_implicit_invocation: true

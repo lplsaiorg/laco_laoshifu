@@ -1,0 +1,203 @@
+{
+  "schema_version": 2,
+  "notice": "图示采用六项相同输入的真实回答与三份真实Office文件的处理结果。回答由不同Agent在指定资料条件下完成，仅展示单次任务；不是严格A/B性能评测，没有准确率提升的统计结论。",
+  "boundaries": [
+    "知识库侧关注Agent业务理解与判断精度；文档规范侧关注表达、格式、品牌和交付一致性。",
+    "不用项目skill的回答也可能正确；图示如实保留两侧相同的结论。",
+    "Office示例是专门制作的合成材料；模板为草案，原文件保留。",
+    "程序内容保真检查和实际视觉复核分开记录，不把保存成功当作全部验收。"
+  ],
+  "scenarios": [
+    {
+      "id": "professional-knowledge",
+      "title": "专业知识支持",
+      "dimension": "Agent 业务精度",
+      "scenario": "输入：在光伏管式工艺中区分 BK 与 PE",
+      "before": [
+        "BK 通常指硼扩，PE 通常指 PECVD",
+        "依据行业习惯和工序机理",
+        "项目命名仍需原文或字段确认"
+      ],
+      "after": [
+        "本项目确认：BK＝硼扩；PE＝PECVD",
+        "给出用户约定与设备资料章节",
+        "设备、膜种和工步仍需核对"
+      ],
+      "outcome": "本例两边均识别工序；skill 侧补充可查证的项目依据",
+      "example_id": "knowledge",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    },
+    {
+      "id": "name-disambiguation",
+      "title": "简称与上下文消歧",
+      "dimension": "Agent 概念精度",
+      "scenario": "输入：Longji OD 的 ZoneID 是否是温区？",
+      "before": [
+        "OD 含义无法唯一确定",
+        "ZoneID 可能是温区或取样位置",
+        "需数据说明和字段对应关系"
+      ],
+      "after": [
+        "OD＝方阻检测数据（Longji 语境）",
+        "ZoneID＝1–11号检测位置",
+        "11个检测位置映射到6个温区"
+      ],
+      "outcome": "本地数据说明让回答从多种可能收敛到有依据的解释",
+      "example_id": "names",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    },
+    {
+      "id": "data-analysis",
+      "title": "数据口径核对",
+      "dimension": "Agent 分析精度",
+      "scenario": "输入：08:00 / 08:30 两条日志，count 从 0 增至 500",
+      "before": [
+        "间隔30分钟；计数增加500",
+        "累计且未复位时，可算产出速率",
+        "缺状态、节拍与质量口径，OEE不可算"
+      ],
+      "after": [
+        "记录间隔不等于整批周期",
+        "逐项列出状态、计划时间等缺口",
+        "缺温度单位与配方限，不判超温"
+      ],
+      "outcome": "本例两边都不臆算 OEE；skill 侧补充批量设备的口径边界",
+      "example_id": "data",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    },
+    {
+      "id": "document-writing",
+      "title": "文档编写与修订",
+      "dimension": "内容表达规范性",
+      "scenario": "输入：B01 温度原值 1020 / 1030，没有单位与配方限",
+      "before": [
+        "两值相差10；不足以认定超温",
+        "需补齐单位、时序、测点和配方",
+        "结论为资料核查阶段意见"
+      ],
+      "after": [
+        "分清数据观察、结论边界与待核项",
+        "不建立温度与质量异常的因果",
+        "标草稿；典型温度不作为合格线"
+      ],
+      "outcome": "两边都保留不确定性；skill 侧让依据与待确认写法更统一",
+      "example_id": "document",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    },
+    {
+      "id": "office-style",
+      "title": "Office 模板与样式",
+      "dimension": "文档格式规范性",
+      "scenario": "真实 Word 原稿 → 按本项目草案模板处理后的副本",
+      "before": [
+        "原稿使用宋体13 pt",
+        "标题、正文沿用原稿格式",
+        "原稿没有页眉 Logo"
+      ],
+      "after": [
+        "标题22 pt，正文11 pt",
+        "统一为配置中的微软雅黑",
+        "页眉加入原比例公司 Logo"
+      ],
+      "outcome": "可见标题层级、字体和页眉的变化；主正文内容保留",
+      "preview_before": "examples/office/previews/word-before-1.png",
+      "preview_after": "examples/office/previews/word-after-1.png",
+      "preview_crop_fraction": 0.44,
+      "before_caption": "真实原稿，尚未规范化",
+      "after_caption": "实际执行项目 skill 的输出",
+      "example_note": "真实 Word 原稿与处理后 PDF 截图；模板为草案。展示格式变化，不是专业结论正确性评测。"
+    },
+    {
+      "id": "brand-logo",
+      "title": "公司 Logo 应用",
+      "dimension": "品牌呈现规范性",
+      "scenario": "真实 PPT 原稿 → 同一页添加公司 Logo 并应用样式",
+      "before": [
+        "原稿共1页，没有公司 Logo",
+        "标题使用宋体",
+        "右下角没有品牌对象"
+      ],
+      "after": [
+        "页面数量与原有文字保留",
+        "应用草案中的字体和标题样式",
+        "右下角按比例嵌入公司 Logo"
+      ],
+      "outcome": "同一页面的品牌位置与字体更一致；没有重写专业内容",
+      "preview_before": "examples/office/previews/ppt-before-1.png",
+      "preview_after": "examples/office/previews/ppt-after-1.png",
+      "before_caption": "真实原稿，尚未规范化",
+      "after_caption": "实际执行项目 skill 的输出",
+      "example_note": "真实 PPT 原稿与处理后 PDF 截图；公司样式为草案，Logo 使用已有原图。"
+    },
+    {
+      "id": "batch-review",
+      "title": "批量处理与复核",
+      "dimension": "交付流程规范性",
+      "scenario": "真实处理：一个文件夹中的 Word、Excel、PPT 共3份文件",
+      "before": [
+        "technical-note.docx",
+        "measurement-record.xlsx",
+        "equipment-overview.pptx"
+      ],
+      "after": [
+        "3/3 文件完成原生处理",
+        "content_unchanged = true",
+        "processed_needs_visual_review"
+      ],
+      "outcome": "三份副本具备逐文件保真记录与 PDF；报告状态不等于视觉验收",
+      "before_caption": "本次实际输入文件夹",
+      "after_caption": "本次真实处理报告摘要",
+      "example_note": "实际执行结果来自 standardization-report.json；所有输入保留，未用虚构成功率代替报告。"
+    },
+    {
+      "id": "software-development",
+      "title": "程序业务规则实现",
+      "dimension": "Agent 实现精度",
+      "scenario": "输入：设计 pressure 转 Pa 规则，样例值为 110 Torr",
+      "before": [
+        "110 Torr → 14665.46 Pa",
+        "保留原值原单位与压力基准",
+        "未知单位返回 null 及原因"
+      ],
+      "after": [
+        "110 Torr → 14665.46 Pa",
+        "同样保留原值与绝压/表压标记",
+        "未知单位：status=unknown_unit"
+      ],
+      "outcome": "本例换算结果一致；skill 侧将失败状态落到项目契约",
+      "example_id": "software",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    },
+    {
+      "id": "knowledge-maintenance",
+      "title": "知识与规范维护",
+      "dimension": "知识持续可靠性",
+      "scenario": "输入：当前 PK＝磷扩散，800G 历史文档写 pk＝退火",
+      "before": [
+        "两种解释分别保留数据源与版本",
+        "不按大小写认定为两个概念",
+        "不做全局替换，冲突时确认"
+      ],
+      "after": [
+        "在主表记录 status / scope / sources",
+        "历史义设置 auto_expand=false",
+        "主表 → 对照表 → 索引校验"
+      ],
+      "outcome": "两边都保留范围；skill 侧给出项目字段和可执行维护步骤",
+      "example_id": "maintenance",
+      "before_caption": "未读取项目 skill 的实际回答摘要",
+      "after_caption": "按项目 skill 查证后的实际回答摘要",
+      "example_note": "同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。"
+    }
+  ]
+}

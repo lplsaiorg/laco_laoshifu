@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-28T07:58:24.689141+00:00",
+  "profile": "skills\\laplace-office-standardize\\assets\\company-profile.json",
+  "profile_version": "0.1",
+  "approval_status": "draft",
+  "dry_run": false,
+  "files": [
+    {
+      "input": "docs\\examples\\office\\before\\equipment-overview.pptx",
+      "output": "docs\\examples\\office\\after\\equipment-overview.pptx",
+      "format": "powerpoint",
+      "status": "processed_needs_visual_review",
+      "notes": [],
+      "content_unchanged": true,
+      "error": null,
+      "success": true,
+      "sha256": "5e52cd99f7c54dc675602f995b8e5f7f3bf362f6dd2a1ac5fdd26ac695c0fbfe",
+      "source_sha256": "a6546dda9685eaec1974eed85bd13cc145f548f927e92a2bfdef1c05e66b3834",
+      "preview_pdf": "docs\\examples\\office\\after\\equipment-overview.review.pdf"
+    },
+    {
+      "input": "docs\\examples\\office\\before\\measurement-record.xlsx",
+      "output": "docs\\examples\\office\\after\\measurement-record.xlsx",
+      "format": "excel",
+      "status": "processed_needs_visual_review",
+      "success": true,
+      "error": null,
+      "content_unchanged": true,
+      "notes": [
+        "Excel: values, formulas, number formats and worksheet structure retained; template contributes body/header styles. Screen logo is outside the used cell range; print logo is in the right header."
+      ],
+      "sha256": "d84b42445a6a1053e250a94b4bb705b00a60eef06eba31295dc887aa0f7f5884",
+      "source_sha256": "98a87b40b6fa5ba7230ea2c5bfd10d9bf71061acd949e62ffa816054b74c2ab1",
+      "preview_pdf": "docs\\examples\\office\\after\\measurement-record.review.pdf"
+    },
+    {
+      "input": "docs\\examples\\office\\before\\technical-note.docx",
+      "output": "docs\\examples\\office\\after\\technical-note.docx",
+      "format": "word",
+      "status": "processed_needs_visual_review",
+      "notes": [],
+      "content_unchanged": true,
+      "success": true,
+      "error": null,
+      "sha256": "acf2c47bf97319b7a50a24e4f1de6ed4be1e56edba0a39918c7a3fc9be0c66d3",
+      "source_sha256": "088f7cdaf894a33bba4a6bbdd4314d0552afbd8f1e1c3c3cd75b188c49c7b7f8",
+      "preview_pdf": "docs\\examples\\office\\after\\technical-note.review.pdf"
+    }
+  ]
+}

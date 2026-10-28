@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.agents/skills/
+~$*
+.DS_Store
+Thumbs.db

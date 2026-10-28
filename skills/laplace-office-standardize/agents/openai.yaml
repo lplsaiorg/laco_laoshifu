@@ -1,0 +1,6 @@
+interface:
+  display_name: "拉普拉斯文档规范化"
+  short_description: "按模板统一 Word、Excel 和 PPT 样式并应用公司 Logo"
+  default_prompt: "使用 $laplace-office-standardize 将这些文档对齐选定模板、应用公司 Logo，并检查内容保真和版式。"
+policy:
+  allow_implicit_invocation: true

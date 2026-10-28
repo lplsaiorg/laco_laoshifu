@@ -1,0 +1,2288 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "README.md",
+      "path": "README.md",
+      "category": "knowledge",
+      "title": "KD 工作知识库",
+      "sha256": "722a4b10dfe9007cdd6c7a39d0d121006db51c49f20e0ec599d23e9b8b57b32b",
+      "bytes": 11720,
+      "line_count": 123,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "KD 工作知识库"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "先读什么"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "title": "资料层次与可信范围"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "检索与校验"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "常用简称、缩写与数据集代号"
+        },
+        {
+          "line": 96,
+          "level": 2,
+          "title": "使用 skills"
+        },
+        {
+          "line": 111,
+          "level": 2,
+          "title": "更新资料"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "evidence/dataset-800g-aliases.json",
+      "path": "evidence/dataset-800g-aliases.json",
+      "category": "evidence",
+      "title": "dataset-800g-aliases",
+      "sha256": "6110439a31def2b496fb0bc6e48984e512416776303ea6bc81a5f51e64bfc3bf",
+      "bytes": 22801,
+      "line_count": 625,
+      "sections": [],
+      "evidence": "dataset_evidence",
+      "source_status": null
+    },
+    {
+      "id": "evidence/dataset-other-aliases.json",
+      "path": "evidence/dataset-other-aliases.json",
+      "category": "evidence",
+      "title": "dataset-other-aliases",
+      "sha256": "e9f506c6cb92b49e5cbaf5f46c0118539098f1bdb0916cc53f98471eb114e422",
+      "bytes": 21299,
+      "line_count": 520,
+      "sections": [],
+      "evidence": "dataset_evidence",
+      "source_status": null
+    },
+    {
+      "id": "evidence/user-aliases.json",
+      "path": "evidence/user-aliases.json",
+      "category": "evidence",
+      "title": "user-aliases",
+      "sha256": "15f3ee4174c3cee95b9c34c40fdbdef456519514828bddd3d13906661bb9c91c",
+      "bytes": 968,
+      "line_count": 25,
+      "sections": [],
+      "evidence": "dataset_evidence",
+      "source_status": null
+    },
+    {
+      "id": "glossary.json",
+      "path": "glossary.json",
+      "category": "knowledge",
+      "title": "glossary",
+      "sha256": "321948f55543ed68da62c22adce14f22e6f2c6496884080bf876c9cb5c3f586a",
+      "bytes": 93481,
+      "line_count": 2634,
+      "sections": [],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "knowledge/equipment.md",
+      "path": "knowledge/equipment.md",
+      "category": "knowledge",
+      "title": "管式设备、信号与解释边界",
+      "sha256": "4719833bde39d177a4ff7349dcbd3f11a0c068a0c70a9e6ce648251e7677bf65",
+      "bytes": 6790,
+      "line_count": 71,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "管式设备、信号与解释边界"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 同为管式，过程不能混用"
+        },
+        {
+          "line": 16,
+          "level": 2,
+          "title": "2. 信号必须带上下文"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "3. 分析批次与阶段"
+        },
+        {
+          "line": 44,
+          "level": 2,
+          "title": "4. 故障或质量问题的候选解释"
+        },
+        {
+          "line": 57,
+          "level": 2,
+          "title": "5. 已知冲突及不能自动合并的参数"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "title": "6. 原资料尚未提供的现场约束"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "knowledge/gaps-and-conflicts.md",
+      "path": "knowledge/gaps-and-conflicts.md",
+      "category": "knowledge",
+      "title": "知识缺口与原文冲突",
+      "sha256": "5a4a6d6c0e921cf71e80b384d7df394f5b5a845d418b2e29dc6dc71f2e115a46",
+      "bytes": 7365,
+      "line_count": 46,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "知识缺口与原文冲突"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "已发现的差异与歧义"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "缺少的现场知识"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "title": "时效与证据边界"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "knowledge/name-crosswalk.md",
+      "path": "knowledge/name-crosswalk.md",
+      "category": "knowledge",
+      "title": "常用简称与缩写对照表",
+      "sha256": "79abf8349fa57abc0f9bb1bff1ce60853bfdaf88c72a65032f37b6a7ac6f3f9d",
+      "bytes": 30079,
+      "line_count": 126,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "常用简称与缩写对照表"
+        },
+        {
+          "line": 12,
+          "level": 2,
+          "title": "电池技术"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "title": "设备"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "title": "工艺"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "测试表征"
+        },
+        {
+          "line": 81,
+          "level": 2,
+          "title": "材料"
+        },
+        {
+          "line": 93,
+          "level": 2,
+          "title": "指标"
+        },
+        {
+          "line": 117,
+          "level": 2,
+          "title": "查证方式"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "knowledge/process-map.md",
+      "path": "knowledge/process-map.md",
+      "category": "knowledge",
+      "title": "光伏制造工艺与技术路线",
+      "sha256": "ae860600c4ec010098530556d0ce2f8f05e34b4536b4b13094df072b526dd588",
+      "bytes": 7266,
+      "line_count": 76,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "光伏制造工艺与技术路线"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 产业链与对象边界"
+        },
+        {
+          "line": 17,
+          "level": 2,
+          "title": "2. 电池路线决定工序含义"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "title": "3. TOPCon的工序检索图"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "title": "4. 组件流程与检测位置"
+        },
+        {
+          "line": 59,
+          "level": 2,
+          "title": "5. 原文冲突与适用性限制"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "title": "6. 任务开始时的最小业务上下文"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "knowledge/quality-and-materials.md",
+      "path": "knowledge/quality-and-materials.md",
+      "category": "knowledge",
+      "title": "测试质量、关键材料与指标解释",
+      "sha256": "1cdd3db34ac61eb9a59675ec6efa2598a91dba93063d8a7b37e5931f9a386b34",
+      "bytes": 7478,
+      "line_count": 74,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "测试质量、关键材料与指标解释"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 电性能指标与单位"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "2. 检测方式决定证据能力"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "3. 质量数据关联方式"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "title": "4. 材料与工艺适配"
+        },
+        {
+          "line": 61,
+          "level": 2,
+          "title": "5. 需要保留的原文问题"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "title": "6. 现场知识补充入口"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "references/kd/00_index.md",
+      "path": "references/kd/00_index.md",
+      "category": "references",
+      "title": "光伏电池工艺知识库",
+      "sha256": "8ad6929912d5c8fe28269f00e5d7873133e65d41ff89dc0b840c91fddb54b166",
+      "bytes": 4885,
+      "line_count": 84,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "光伏电池工艺知识库"
+        },
+        {
+          "line": 3,
+          "level": 2,
+          "title": "概述"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "知识库目录"
+        },
+        {
+          "line": 9,
+          "level": 3,
+          "title": "硅材料与基础工艺"
+        },
+        {
+          "line": 18,
+          "level": 3,
+          "title": "晶硅电池技术"
+        },
+        {
+          "line": 28,
+          "level": 3,
+          "title": "新兴技术与系统"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "电池工艺演进路径"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "title": "关键效率指标（2025年）"
+        },
+        {
+          "line": 67,
+          "level": 2,
+          "title": "知识库统计"
+        },
+        {
+          "line": 76,
+          "level": 2,
+          "title": "参考来源"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/01_silicon_purification.md",
+      "path": "references/kd/01_silicon_purification.md",
+      "category": "references",
+      "title": "01 硅原料提纯",
+      "sha256": "2f8945ade861f039007f61e674406b7ee3306d7a214f82e466004389964744e4",
+      "bytes": 2469,
+      "line_count": 75,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "01 硅原料提纯"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 原料概述"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "2. 冶金级硅（Metallurgical Grade Silicon, MG-Si）"
+        },
+        {
+          "line": 13,
+          "level": 3,
+          "title": "原料"
+        },
+        {
+          "line": 16,
+          "level": 3,
+          "title": "工艺"
+        },
+        {
+          "line": 23,
+          "level": 3,
+          "title": "特性"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "3. 电子级硅（Electronic Grade Silicon）"
+        },
+        {
+          "line": 36,
+          "level": 3,
+          "title": "西门子法（Siemens Process）"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "4. 太阳能级硅（Solar Grade Silicon）"
+        },
+        {
+          "line": 69,
+          "level": 2,
+          "title": "5. 三类硅纯度对比"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/02_crystal_growth.md",
+      "path": "references/kd/02_crystal_growth.md",
+      "category": "references",
+      "title": "02 晶体生长",
+      "sha256": "ebf565958a1c26cb9a234569fd2e43231f05dd4c78c16383058ae43d13e61865",
+      "bytes": 2930,
+      "line_count": 83,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "02 晶体生长"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 单晶硅——直拉法（Czochralski, CZ）"
+        },
+        {
+          "line": 7,
+          "level": 3,
+          "title": "工艺原理"
+        },
+        {
+          "line": 10,
+          "level": 3,
+          "title": "工艺参数"
+        },
+        {
+          "line": 18,
+          "level": 3,
+          "title": "氧与光致衰减（LID）"
+        },
+        {
+          "line": 23,
+          "level": 3,
+          "title": "优缺点"
+        },
+        {
+          "line": 30,
+          "level": 2,
+          "title": "2. 单晶硅——区熔法（Float Zone, FZ）"
+        },
+        {
+          "line": 38,
+          "level": 2,
+          "title": "3. 多晶硅——铸锭法（Multicrystalline / Casting）"
+        },
+        {
+          "line": 40,
+          "level": 3,
+          "title": "工艺原理"
+        },
+        {
+          "line": 43,
+          "level": 3,
+          "title": "特性"
+        },
+        {
+          "line": 51,
+          "level": 3,
+          "title": "铸锭切砖"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "4. 单晶与多晶对比"
+        },
+        {
+          "line": 76,
+          "level": 2,
+          "title": "5. 大尺寸化趋势"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/03_wafer_preparation.md",
+      "path": "references/kd/03_wafer_preparation.md",
+      "category": "references",
+      "title": "03 硅片制备",
+      "sha256": "46440415553390d452f43d43325f8ab95d1a726006c623c29cb198bcb2498314",
+      "bytes": 3133,
+      "line_count": 86,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "03 硅片制备"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 切片（Wafer Slicing）"
+        },
+        {
+          "line": 7,
+          "level": 3,
+          "title": "多线切割（Wire Saw）"
+        },
+        {
+          "line": 13,
+          "level": 3,
+          "title": "切割参数"
+        },
+        {
+          "line": 21,
+          "level": 3,
+          "title": "切割流程（多晶）"
+        },
+        {
+          "line": 28,
+          "level": 2,
+          "title": "2. 损伤去除（Saw Damage Removal）"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "3. 制绒（Surface Texturing）"
+        },
+        {
+          "line": 43,
+          "level": 3,
+          "title": "单晶硅制绒——碱液各向异性腐蚀"
+        },
+        {
+          "line": 50,
+          "level": 3,
+          "title": "多晶硅制绒——多种方案"
+        },
+        {
+          "line": 61,
+          "level": 2,
+          "title": "4. 清洗（Cleaning）"
+        },
+        {
+          "line": 65,
+          "level": 3,
+          "title": "标准清洗流程（RCA Clean）"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "title": "5. 硅片规格演化"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/04_cell_processing_basics.md",
+      "path": "references/kd/04_cell_processing_basics.md",
+      "category": "references",
+      "title": "04 电池基础工艺",
+      "sha256": "7da03ec3afa556df381e33547a51dc50aed3c21b392e046b7ce73c4b23fd46b6",
+      "bytes": 4774,
+      "line_count": 137,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "04 电池基础工艺"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 扩散掺杂（Emitter Diffusion）"
+        },
+        {
+          "line": 9,
+          "level": 3,
+          "title": "磷扩散（N型发射极，用于P型衬底）"
+        },
+        {
+          "line": 31,
+          "level": 3,
+          "title": "硼扩散（P型发射极，用于N型衬底）"
+        },
+        {
+          "line": 37,
+          "level": 3,
+          "title": "磷硼共扩散（Co-Diffusion）"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "title": "2. 边缘隔离（Edge Isolation）"
+        },
+        {
+          "line": 56,
+          "level": 2,
+          "title": "3. 减反射涂层（Anti-Reflection Coating, ARC）"
+        },
+        {
+          "line": 60,
+          "level": 3,
+          "title": "氮化硅（SiNₓ:H）——工业主流"
+        },
+        {
+          "line": 81,
+          "level": 3,
+          "title": "二氧化钛（TiO₂）——早期方案"
+        },
+        {
+          "line": 85,
+          "level": 3,
+          "title": "叠层减反射膜（双层 DARC）"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "title": "4. 金属化（Metallization）"
+        },
+        {
+          "line": 95,
+          "level": 3,
+          "title": "丝网印刷（Screen Printing）——工业标准"
+        },
+        {
+          "line": 98,
+          "level": 3,
+          "title": "关键电极参数"
+        },
+        {
+          "line": 108,
+          "level": 2,
+          "title": "5. 烧结（Co-firing / Firing）"
+        },
+        {
+          "line": 128,
+          "level": 2,
+          "title": "6. 测试与分选（Testing & Sorting）"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/05_screen_printed_cells.md",
+      "path": "references/kd/05_screen_printed_cells.md",
+      "category": "references",
+      "title": "05 丝网印刷电池（Al-BSF）",
+      "sha256": "66c60ba3fcd52905b0b84debac55860579f9d488bcac14354156e633bf2ee8ee",
+      "bytes": 4314,
+      "line_count": 98,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "05 丝网印刷电池（Al-BSF）"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 概述"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "title": "2. 完整工艺流程"
+        },
+        {
+          "line": 26,
+          "level": 2,
+          "title": "3. 丝网印刷工艺详解"
+        },
+        {
+          "line": 28,
+          "level": 3,
+          "title": "丝网结构"
+        },
+        {
+          "line": 33,
+          "level": 3,
+          "title": "印刷过程"
+        },
+        {
+          "line": 39,
+          "level": 3,
+          "title": "印刷顺序"
+        },
+        {
+          "line": 46,
+          "level": 2,
+          "title": "4. 铝背场（Aluminum Back Surface Field, Al-BSF）"
+        },
+        {
+          "line": 54,
+          "level": 2,
+          "title": "5. 电池结构与关键参数"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "title": "6. 制绒对比（单晶 vs 多晶）"
+        },
+        {
+          "line": 79,
+          "level": 3,
+          "title": "单晶制绒（适合 CZ 硅片）"
+        },
+        {
+          "line": 84,
+          "level": 3,
+          "title": "多晶制绒方案"
+        },
+        {
+          "line": 91,
+          "level": 2,
+          "title": "7. 工艺优化方向"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/06_perc_cells.md",
+      "path": "references/kd/06_perc_cells.md",
+      "category": "references",
+      "title": "06 PERC 钝化发射极背面电池",
+      "sha256": "87bc6d6f083a37f842a9abb046ef8f6c534c0551c20c33c618af4cd0378cc592",
+      "bytes": 3939,
+      "line_count": 101,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "06 PERC 钝化发射极背面电池"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 概述"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "title": "2. 与 Al-BSF 的核心区别"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "3. 完整工艺流程"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "title": "4. 背面钝化叠层（AlOₓ/SiNₓ）"
+        },
+        {
+          "line": 51,
+          "level": 3,
+          "title": "氧化铝（Al₂O₃ / AlOₓ）"
+        },
+        {
+          "line": 61,
+          "level": 3,
+          "title": "覆盖 SiNₓ 层"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "title": "5. 激光局部开口（Laser Contact Opening, LCO）"
+        },
+        {
+          "line": 74,
+          "level": 2,
+          "title": "6. 光致衰减（LID）问题与解决"
+        },
+        {
+          "line": 85,
+          "level": 2,
+          "title": "7. 效率与参数"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "title": "8. PERC 到 PERC+ / Bifacial PERC"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/07_topcon_cells.md",
+      "path": "references/kd/07_topcon_cells.md",
+      "category": "references",
+      "title": "07 TOPCon 隧穿氧化钝化接触电池",
+      "sha256": "df9c0615c9dcd5cb13d0cbed85de76d95d8acc30390ebc52fd3d663c6d82f4c6",
+      "bytes": 17121,
+      "line_count": 360,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "07 TOPCon 隧穿氧化钝化接触电池"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "1. 概念起源与发展历程"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "title": "2. 工作原理"
+        },
+        {
+          "line": 27,
+          "level": 3,
+          "title": "2.1 核心结构"
+        },
+        {
+          "line": 49,
+          "level": 3,
+          "title": "2.2 载流子选择性机制"
+        },
+        {
+          "line": 59,
+          "level": 3,
+          "title": "2.3 与 PERC 的根本差异"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "title": "3. 完整工艺流程（主流 LPCVD 方案）"
+        },
+        {
+          "line": 133,
+          "level": 2,
+          "title": "4. SiOₓ 超薄氧化层生长方法"
+        },
+        {
+          "line": 149,
+          "level": 2,
+          "title": "5. poly-Si 沉积技术路线对比"
+        },
+        {
+          "line": 151,
+          "level": 3,
+          "title": "5.1 四大路线综合对比"
+        },
+        {
+          "line": 165,
+          "level": 3,
+          "title": "5.2 各路线特点详述"
+        },
+        {
+          "line": 190,
+          "level": 2,
+          "title": "6. 绕镀（Wrap-Around）去除工艺"
+        },
+        {
+          "line": 194,
+          "level": 3,
+          "title": "去除方案对比"
+        },
+        {
+          "line": 206,
+          "level": 2,
+          "title": "7. 金属化工艺进展"
+        },
+        {
+          "line": 208,
+          "level": 3,
+          "title": "7.1 传统丝网印刷 + 共烧结"
+        },
+        {
+          "line": 215,
+          "level": 3,
+          "title": "7.2 LECO（激光增强接触优化）"
+        },
+        {
+          "line": 235,
+          "level": 3,
+          "title": "7.3 铜电镀替代银浆（降本核心路线）"
+        },
+        {
+          "line": 249,
+          "level": 3,
+          "title": "7.4 银铜合金电极"
+        },
+        {
+          "line": 258,
+          "level": 2,
+          "title": "8. 主要工艺挑战与解决路径"
+        },
+        {
+          "line": 271,
+          "level": 2,
+          "title": "9. 效率提升路径与展望"
+        },
+        {
+          "line": 273,
+          "level": 3,
+          "title": "近期提升路径（~2025~2026）"
+        },
+        {
+          "line": 283,
+          "level": 3,
+          "title": "中长期效率提升方向"
+        },
+        {
+          "line": 296,
+          "level": 2,
+          "title": "10. 性能参数（2025年）"
+        },
+        {
+          "line": 313,
+          "level": 2,
+          "title": "11. TOPCon vs PERC 综合对比"
+        },
+        {
+          "line": 333,
+          "level": 2,
+          "title": "12. 产业化现状与降本路径（2025年）"
+        },
+        {
+          "line": 335,
+          "level": 3,
+          "title": "头部厂商产能与效率"
+        },
+        {
+          "line": 344,
+          "level": 3,
+          "title": "非硅成本优化路径"
+        },
+        {
+          "line": 355,
+          "level": 2,
+          "title": "13. TOPCon + 叠层：下一代技术"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/08_hjt_cells.md",
+      "path": "references/kd/08_hjt_cells.md",
+      "category": "references",
+      "title": "08 HJT 硅异质结电池",
+      "sha256": "14398334f4d81580da82cf133138490d7f94eb9c514e64a7cb1a7ffffc2ce14c",
+      "bytes": 6173,
+      "line_count": 140,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "08 HJT 硅异质结电池"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 概述"
+        },
+        {
+          "line": 14,
+          "level": 2,
+          "title": "2. 电池结构"
+        },
+        {
+          "line": 41,
+          "level": 2,
+          "title": "3. 关键材料"
+        },
+        {
+          "line": 43,
+          "level": 3,
+          "title": "氢化非晶硅（a-Si:H）"
+        },
+        {
+          "line": 49,
+          "level": 3,
+          "title": "透明导电氧化物（TCO）"
+        },
+        {
+          "line": 59,
+          "level": 3,
+          "title": "低温银导电浆料"
+        },
+        {
+          "line": 64,
+          "level": 2,
+          "title": "4. 完整工艺流程（仅 4~6 步）"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "title": "5. HJT 核心优势"
+        },
+        {
+          "line": 86,
+          "level": 3,
+          "title": "极低温度系数"
+        },
+        {
+          "line": 96,
+          "level": 3,
+          "title": "极高开路电压"
+        },
+        {
+          "line": 100,
+          "level": 3,
+          "title": "低衰减"
+        },
+        {
+          "line": 104,
+          "level": 3,
+          "title": "对称结构，天然双面"
+        },
+        {
+          "line": 108,
+          "level": 3,
+          "title": "低温工艺，兼容柔性衬底"
+        },
+        {
+          "line": 112,
+          "level": 2,
+          "title": "6. HJT 挑战与成本"
+        },
+        {
+          "line": 121,
+          "level": 2,
+          "title": "7. 性能参数（2025 年）"
+        },
+        {
+          "line": 135,
+          "level": 2,
+          "title": "8. 下一代：钙钛矿/HJT 叠层（Perovskite/SHJ Tandem）"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/09_high_efficiency_cells.md",
+      "path": "references/kd/09_high_efficiency_cells.md",
+      "category": "references",
+      "title": "09 高效电池结构",
+      "sha256": "073b7cb680e6336645c263bb4a962aae597a83aef740f98e34d55f6e758cea15",
+      "bytes": 6273,
+      "line_count": 135,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "09 高效电池结构"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. PERL 电池（Passivated Emitter with Rear Locally Diffused）"
+        },
+        {
+          "line": 7,
+          "level": 3,
+          "title": "背景"
+        },
+        {
+          "line": 10,
+          "level": 3,
+          "title": "结构特点"
+        },
+        {
+          "line": 24,
+          "level": 3,
+          "title": "关键技术特征"
+        },
+        {
+          "line": 36,
+          "level": 3,
+          "title": "历史效率记录"
+        },
+        {
+          "line": 41,
+          "level": 3,
+          "title": "实际应用参数（1990 年代太阳能赛车用）"
+        },
+        {
+          "line": 53,
+          "level": 2,
+          "title": "2. 埋栅接触电池（Laser Grooved Buried Contact, LGBC）"
+        },
+        {
+          "line": 55,
+          "level": 3,
+          "title": "概述"
+        },
+        {
+          "line": 58,
+          "level": 3,
+          "title": "核心创新：激光刻槽埋栅"
+        },
+        {
+          "line": 73,
+          "level": 3,
+          "title": "关键优势分析"
+        },
+        {
+          "line": 92,
+          "level": 3,
+          "title": "LGBC 工艺流程"
+        },
+        {
+          "line": 110,
+          "level": 2,
+          "title": "3. 高效电池设计原则总结"
+        },
+        {
+          "line": 127,
+          "level": 2,
+          "title": "4. IBC 电池（Interdigitated Back Contact）"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/10_technology_comparison.md",
+      "path": "references/kd/10_technology_comparison.md",
+      "category": "references",
+      "title": "10 技术对比与市场现状（2025年）",
+      "sha256": "d354dd84268afbb27974cdca21d166df49af312380ad98fc07bbd35f16735398",
+      "bytes": 5360,
+      "line_count": 131,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "10 技术对比与市场现状（2025年）"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "1. 主流技术全面对比"
+        },
+        {
+          "line": 22,
+          "level": 2,
+          "title": "2. 性能参数对比（2025年量产水平）"
+        },
+        {
+          "line": 39,
+          "level": 2,
+          "title": "3. 工艺流程步骤对比"
+        },
+        {
+          "line": 41,
+          "level": 3,
+          "title": "Al-BSF（传统，~10步）"
+        },
+        {
+          "line": 47,
+          "level": 3,
+          "title": "PERC（~12步）"
+        },
+        {
+          "line": 54,
+          "level": 3,
+          "title": "TOPCon（~15~18步）"
+        },
+        {
+          "line": 62,
+          "level": 3,
+          "title": "HJT（~4~6步）"
+        },
+        {
+          "line": 70,
+          "level": 2,
+          "title": "4. 成本结构对比（相对值，PERC = 100%）"
+        },
+        {
+          "line": 86,
+          "level": 2,
+          "title": "5. 市场份额演变"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "title": "6. 技术路线选择矩阵"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "title": "7. 未来技术路线图"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/11_module_manufacturing.md",
+      "path": "references/kd/11_module_manufacturing.md",
+      "category": "references",
+      "title": "11 光伏组件封装制造工艺",
+      "sha256": "31272bff26e50536e5fe5ef3b3be7f31a07b177e0ffd717317d47f714d07c20e",
+      "bytes": 10104,
+      "line_count": 240,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "11 光伏组件封装制造工艺"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "1. 概述"
+        },
+        {
+          "line": 33,
+          "level": 2,
+          "title": "2. 完整工艺流程"
+        },
+        {
+          "line": 77,
+          "level": 2,
+          "title": "3. 焊接工艺（Tabbing & Stringing）"
+        },
+        {
+          "line": 79,
+          "level": 3,
+          "title": "3.1 焊带（Ribbon/Tab）"
+        },
+        {
+          "line": 88,
+          "level": 3,
+          "title": "3.2 串焊流程"
+        },
+        {
+          "line": 99,
+          "level": 3,
+          "title": "3.3 新型互联技术"
+        },
+        {
+          "line": 108,
+          "level": 3,
+          "title": "3.4 半片（Half-cut）与叠瓦（Shingled）"
+        },
+        {
+          "line": 118,
+          "level": 2,
+          "title": "4. 层压工艺（Lamination）"
+        },
+        {
+          "line": 122,
+          "level": 3,
+          "title": "4.1 传统层压工艺"
+        },
+        {
+          "line": 138,
+          "level": 3,
+          "title": "4.2 双面加热层压（新工艺）"
+        },
+        {
+          "line": 145,
+          "level": 3,
+          "title": "4.3 层压参数对比（EVA vs POE）"
+        },
+        {
+          "line": 158,
+          "level": 2,
+          "title": "5. 封装材料详解"
+        },
+        {
+          "line": 160,
+          "level": 3,
+          "title": "5.1 封装胶膜（Encapsulant）"
+        },
+        {
+          "line": 169,
+          "level": 3,
+          "title": "5.2 背板（Backsheet）"
+        },
+        {
+          "line": 182,
+          "level": 3,
+          "title": "5.3 前盖玻璃"
+        },
+        {
+          "line": 194,
+          "level": 2,
+          "title": "6. 接线盒与旁路二极管"
+        },
+        {
+          "line": 205,
+          "level": 2,
+          "title": "7. 组件关键测试项目"
+        },
+        {
+          "line": 218,
+          "level": 2,
+          "title": "8. 组件产品认证标准"
+        },
+        {
+          "line": 231,
+          "level": 2,
+          "title": "9. 2025 年组件技术趋势"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/12_perovskite_cells.md",
+      "path": "references/kd/12_perovskite_cells.md",
+      "category": "references",
+      "title": "12 钙钛矿太阳能电池",
+      "sha256": "6ab82a5bd97bce9e36da3122483b881b767579843148aa8d004c38c33b1782c8",
+      "bytes": 10177,
+      "line_count": 247,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "12 钙钛矿太阳能电池"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "1. 概述与发展历程"
+        },
+        {
+          "line": 23,
+          "level": 2,
+          "title": "2. 钙钛矿材料"
+        },
+        {
+          "line": 25,
+          "level": 3,
+          "title": "2.1 晶体结构（ABX₃）"
+        },
+        {
+          "line": 40,
+          "level": 3,
+          "title": "2.2 代表性钙钛矿组合"
+        },
+        {
+          "line": 51,
+          "level": 3,
+          "title": "2.3 带隙可调性（叠层优势）"
+        },
+        {
+          "line": 63,
+          "level": 2,
+          "title": "3. 电池结构"
+        },
+        {
+          "line": 65,
+          "level": 3,
+          "title": "3.1 n-i-p（正式结构，Regular Structure）"
+        },
+        {
+          "line": 83,
+          "level": 3,
+          "title": "3.2 p-i-n（倒置结构，Inverted Structure）—— 2025 年主流"
+        },
+        {
+          "line": 105,
+          "level": 2,
+          "title": "4. 制造工艺"
+        },
+        {
+          "line": 107,
+          "level": 3,
+          "title": "4.1 实验室/小面积工艺"
+        },
+        {
+          "line": 116,
+          "level": 3,
+          "title": "4.2 可扩展大面积工艺（工业化方向）"
+        },
+        {
+          "line": 127,
+          "level": 3,
+          "title": "4.3 关键制备挑战"
+        },
+        {
+          "line": 140,
+          "level": 2,
+          "title": "5. 各功能层材料"
+        },
+        {
+          "line": 150,
+          "level": 3,
+          "title": "HTL 重要进展（2025年）"
+        },
+        {
+          "line": 160,
+          "level": 2,
+          "title": "6. 稳定性挑战"
+        },
+        {
+          "line": 184,
+          "level": 2,
+          "title": "7. 叠层电池（Tandem）"
+        },
+        {
+          "line": 186,
+          "level": 3,
+          "title": "7.1 钙钛矿/硅叠层"
+        },
+        {
+          "line": 210,
+          "level": 3,
+          "title": "7.2 叠层商业化挑战"
+        },
+        {
+          "line": 222,
+          "level": 2,
+          "title": "8. 商业化进展（2025年）"
+        },
+        {
+          "line": 237,
+          "level": 2,
+          "title": "9. 与晶硅技术的比较"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/13_cell_testing_characterization.md",
+      "path": "references/kd/13_cell_testing_characterization.md",
+      "category": "references",
+      "title": "13 电池测试与表征",
+      "sha256": "8e4691f021d5457bfb3c8cced8bd1171498998d63e9fc2a72ab4794c309bbc8a",
+      "bytes": 9171,
+      "line_count": 273,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "13 电池测试与表征"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "1. 标准测试条件（STC）"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "title": "2. I-V 曲线测量（核心表征）"
+        },
+        {
+          "line": 23,
+          "level": 3,
+          "title": "2.1 I-V 曲线及关键参数"
+        },
+        {
+          "line": 57,
+          "level": 3,
+          "title": "2.2 测量设备——闪光仪（Flash Tester / Solar Simulator）"
+        },
+        {
+          "line": 72,
+          "level": 2,
+          "title": "3. 外量子效率（EQE）与光谱响应（SR）"
+        },
+        {
+          "line": 74,
+          "level": 3,
+          "title": "3.1 外量子效率（External Quantum Efficiency, EQE）"
+        },
+        {
+          "line": 86,
+          "level": 3,
+          "title": "3.2 内量子效率（IQE）"
+        },
+        {
+          "line": 93,
+          "level": 3,
+          "title": "3.3 光谱响应（Spectral Response, SR）"
+        },
+        {
+          "line": 105,
+          "level": 3,
+          "title": "3.4 测量设备"
+        },
+        {
+          "line": 113,
+          "level": 2,
+          "title": "4. 电致发光成像（EL, Electroluminescence Imaging）"
+        },
+        {
+          "line": 115,
+          "level": 3,
+          "title": "4.1 原理"
+        },
+        {
+          "line": 125,
+          "level": 3,
+          "title": "4.2 可检测缺陷"
+        },
+        {
+          "line": 137,
+          "level": 3,
+          "title": "4.3 测试时机（生产线）"
+        },
+        {
+          "line": 146,
+          "level": 3,
+          "title": "4.4 现场检测进展（2025年）"
+        },
+        {
+          "line": 154,
+          "level": 2,
+          "title": "5. 光致发光成像（PL, Photoluminescence Imaging）"
+        },
+        {
+          "line": 156,
+          "level": 3,
+          "title": "5.1 原理"
+        },
+        {
+          "line": 166,
+          "level": 3,
+          "title": "5.2 PL vs EL"
+        },
+        {
+          "line": 176,
+          "level": 3,
+          "title": "5.3 PL 在硅片/电池制造中的应用"
+        },
+        {
+          "line": 188,
+          "level": 2,
+          "title": "6. 暗 I-V 测量（Dark IV）"
+        },
+        {
+          "line": 206,
+          "level": 2,
+          "title": "7. Suns-Voc 测量"
+        },
+        {
+          "line": 216,
+          "level": 2,
+          "title": "8. 少子寿命测量（Minority Carrier Lifetime）"
+        },
+        {
+          "line": 235,
+          "level": 2,
+          "title": "9. 红外热成像（IR Thermography）"
+        },
+        {
+          "line": 248,
+          "level": 2,
+          "title": "10. 大规模产线在线检测（AOI）"
+        },
+        {
+          "line": 262,
+          "level": 2,
+          "title": "11. 关键表征指标速查"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/14_key_materials.md",
+      "path": "references/kd/14_key_materials.md",
+      "category": "references",
+      "title": "14 光伏制造关键材料",
+      "sha256": "d61d03065f22eb6bbe5fd62ed98816941c5cf06326b9825b9fc2958a8f3b5614",
+      "bytes": 10272,
+      "line_count": 266,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "14 光伏制造关键材料"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "1. 光伏产业链材料全景"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "title": "2. 银浆（Silver Paste）"
+        },
+        {
+          "line": 29,
+          "level": 3,
+          "title": "2.1 成分组成"
+        },
+        {
+          "line": 37,
+          "level": 3,
+          "title": "2.2 银粉特性"
+        },
+        {
+          "line": 45,
+          "level": 3,
+          "title": "2.3 玻璃料（Glass Frit）——关键组分"
+        },
+        {
+          "line": 60,
+          "level": 3,
+          "title": "2.4 高温银浆 vs 低温银浆"
+        },
+        {
+          "line": 70,
+          "level": 3,
+          "title": "2.5 银浆消耗量趋势（降本驱动）"
+        },
+        {
+          "line": 84,
+          "level": 2,
+          "title": "3. 铝浆（Aluminum Paste）"
+        },
+        {
+          "line": 97,
+          "level": 2,
+          "title": "4. 封装胶膜（Encapsulant Film）"
+        },
+        {
+          "line": 99,
+          "level": 3,
+          "title": "4.1 EVA（乙烯-醋酸乙烯酯）"
+        },
+        {
+          "line": 122,
+          "level": 3,
+          "title": "4.2 POE（聚烯烃弹性体）"
+        },
+        {
+          "line": 135,
+          "level": 3,
+          "title": "4.3 EPE（EVA/POE/EVA 三层复合）"
+        },
+        {
+          "line": 144,
+          "level": 2,
+          "title": "5. 背板（Backsheet）"
+        },
+        {
+          "line": 146,
+          "level": 3,
+          "title": "5.1 常见结构"
+        },
+        {
+          "line": 157,
+          "level": 3,
+          "title": "5.2 关键性能"
+        },
+        {
+          "line": 169,
+          "level": 2,
+          "title": "6. 焊带（Ribbon）与互联材料"
+        },
+        {
+          "line": 171,
+          "level": 3,
+          "title": "6.1 常规焊带"
+        },
+        {
+          "line": 181,
+          "level": 3,
+          "title": "6.2 圆焊带（Round Ribbon）"
+        },
+        {
+          "line": 188,
+          "level": 3,
+          "title": "6.3 导电胶（Electrically Conductive Adhesive, ECA）"
+        },
+        {
+          "line": 198,
+          "level": 2,
+          "title": "7. 扩散源材料"
+        },
+        {
+          "line": 211,
+          "level": 2,
+          "title": "8. 清洗化学品"
+        },
+        {
+          "line": 225,
+          "level": 2,
+          "title": "9. CVD/ALD 工艺气体"
+        },
+        {
+          "line": 239,
+          "level": 2,
+          "title": "10. 关键材料成本占比（TOPCon 组件，2025 年）"
+        },
+        {
+          "line": 257,
+          "level": 2,
+          "title": "11. 材料可持续性与供应链风险"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "references/kd/15_tube_furnace_equipment.md",
+      "path": "references/kd/15_tube_furnace_equipment.md",
+      "category": "references",
+      "title": "15 管式热处理与沉积设备",
+      "sha256": "dd50b3c9d34205b4a4a3b5ee1943ac85e6493a41774e6ab51c6fa1e33d3e7c10",
+      "bytes": 43502,
+      "line_count": 829,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "15 管式热处理与沉积设备"
+        },
+        {
+          "line": 7,
+          "level": 2,
+          "title": "概述：四类管式设备在光伏工艺中的位置"
+        },
+        {
+          "line": 40,
+          "level": 2,
+          "title": "一、管式硼扩散炉"
+        },
+        {
+          "line": 42,
+          "level": 3,
+          "title": "1.1 工艺背景"
+        },
+        {
+          "line": 46,
+          "level": 3,
+          "title": "1.2 设备结构"
+        },
+        {
+          "line": 75,
+          "level": 3,
+          "title": "1.3 扩散气体源：BCl₃ vs BBr₃"
+        },
+        {
+          "line": 86,
+          "level": 3,
+          "title": "1.4 工艺流程与参数"
+        },
+        {
+          "line": 117,
+          "level": 3,
+          "title": "1.5 工艺特殊挑战"
+        },
+        {
+          "line": 124,
+          "level": 3,
+          "title": "1.6 完整工艺温度-时间曲线"
+        },
+        {
+          "line": 140,
+          "level": 3,
+          "title": "1.7 BSG 深层作用机制"
+        },
+        {
+          "line": 157,
+          "level": 3,
+          "title": "1.8 选择性发射极（SE）激光掺杂工艺"
+        },
+        {
+          "line": 180,
+          "level": 2,
+          "title": "二、管式干氧氧化炉"
+        },
+        {
+          "line": 182,
+          "level": 3,
+          "title": "2.1 工艺背景"
+        },
+        {
+          "line": 186,
+          "level": 3,
+          "title": "2.2 设备结构"
+        },
+        {
+          "line": 193,
+          "level": 3,
+          "title": "2.3 干氧 vs 湿氧 vs 湿化学氧化"
+        },
+        {
+          "line": 204,
+          "level": 3,
+          "title": "2.4 工艺参数"
+        },
+        {
+          "line": 232,
+          "level": 3,
+          "title": "2.5 隧穿层厚度控制的重要性"
+        },
+        {
+          "line": 240,
+          "level": 3,
+          "title": "2.6 Deal-Grove 氧化动力学模型"
+        },
+        {
+          "line": 273,
+          "level": 3,
+          "title": "2.7 氯氧化工艺（Cl-Oxidation）"
+        },
+        {
+          "line": 292,
+          "level": 2,
+          "title": "三、管式 LPCVD"
+        },
+        {
+          "line": 294,
+          "level": 3,
+          "title": "3.1 工艺背景"
+        },
+        {
+          "line": 298,
+          "level": 3,
+          "title": "3.2 设备结构"
+        },
+        {
+          "line": 331,
+          "level": 3,
+          "title": "3.3 核心化学反应"
+        },
+        {
+          "line": 344,
+          "level": 3,
+          "title": "3.4 工艺参数"
+        },
+        {
+          "line": 377,
+          "level": 3,
+          "title": "3.5 绕镀（Wrap-Around）问题"
+        },
+        {
+          "line": 418,
+          "level": 3,
+          "title": "3.6 石英件维护与成本"
+        },
+        {
+          "line": 429,
+          "level": 3,
+          "title": "3.7 安全管理：SiH₄（硅烷）"
+        },
+        {
+          "line": 445,
+          "level": 3,
+          "title": "3.8 poly-Si 微结构演化与相变机制"
+        },
+        {
+          "line": 463,
+          "level": 3,
+          "title": "3.9 氢气泡（Blistering）产生机制与抑制策略"
+        },
+        {
+          "line": 489,
+          "level": 3,
+          "title": "3.10 钝化接触核心特征参数（J₀ 与 ρc）"
+        },
+        {
+          "line": 515,
+          "level": 2,
+          "title": "四、管式 PECVD"
+        },
+        {
+          "line": 517,
+          "level": 3,
+          "title": "4.1 工艺背景"
+        },
+        {
+          "line": 536,
+          "level": 3,
+          "title": "4.2 设备结构"
+        },
+        {
+          "line": 569,
+          "level": 3,
+          "title": "4.3 SiNₓ:H 减反射层沉积工艺"
+        },
+        {
+          "line": 613,
+          "level": 3,
+          "title": "4.4 TOPCon 三合一工艺（管式 PECVD 路线）"
+        },
+        {
+          "line": 646,
+          "level": 3,
+          "title": "4.5 PECVD 在 HJT 中的应用"
+        },
+        {
+          "line": 662,
+          "level": 3,
+          "title": "4.6 等离子体激发机制（RF 容性耦合 CCP）"
+        },
+        {
+          "line": 690,
+          "level": 3,
+          "title": "4.7 SiNₓ:H 双重钝化机制（深层解析）"
+        },
+        {
+          "line": 719,
+          "level": 3,
+          "title": "4.8 烧结（Firing）氢钝化过程"
+        },
+        {
+          "line": 748,
+          "level": 3,
+          "title": "4.9 腔体清洗与设备维护"
+        },
+        {
+          "line": 779,
+          "level": 2,
+          "title": "五、四类设备综合对比"
+        },
+        {
+          "line": 781,
+          "level": 3,
+          "title": "5.1 核心参数汇总"
+        },
+        {
+          "line": 795,
+          "level": 3,
+          "title": "5.2 工艺顺序（TOPCon 完整流程中的位置）"
+        },
+        {
+          "line": 819,
+          "level": 3,
+          "title": "5.3 深层技术知识速查"
+        }
+      ],
+      "evidence": "source_snapshot",
+      "source_status": "present"
+    },
+    {
+      "id": "templates/analysis-report.md",
+      "path": "templates/analysis-report.md",
+      "category": "templates",
+      "title": "数据分析报告模板",
+      "sha256": "5f9874f359f6be5eee14fb271314a491371965765d520469f240d6b4a5b672d3",
+      "bytes": 1404,
+      "line_count": 33,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "数据分析报告模板"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "问题与结论"
+        },
+        {
+          "line": 9,
+          "level": 2,
+          "title": "输入与统计口径"
+        },
+        {
+          "line": 13,
+          "level": 2,
+          "title": "数据检查与处理"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "title": "结果与业务解释"
+        },
+        {
+          "line": 25,
+          "level": 2,
+          "title": "依据、假设与待确认"
+        },
+        {
+          "line": 31,
+          "level": 2,
+          "title": "建议与复现"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "templates/change-checklist.md",
+      "path": "templates/change-checklist.md",
+      "category": "templates",
+      "title": "领域相关程序变更检查模板",
+      "sha256": "4436e5d468553835b862d0769577a45d28c7ba22da85f624a7911522f9b72141",
+      "bytes": 1070,
+      "line_count": 19,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "领域相关程序变更检查模板"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "templates/data-contract.yaml",
+      "path": "templates/data-contract.yaml",
+      "category": "templates",
+      "title": "任务数据契约模板；字段是建议命名，不代表现场数据库字段。",
+      "sha256": "f47495b73ac2c8b3b7faf249e83d6a25eccb327213d7213b6d7d7fb100c641a8",
+      "bytes": 2685,
+      "line_count": 87,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "任务数据契约模板；字段是建议命名，不代表现场数据库字段。"
+        },
+        {
+          "line": 2,
+          "level": 1,
+          "title": "null=未知/未确认；空列表=尚未枚举，不表示数据中确实不存在。"
+        },
+        {
+          "line": 21,
+          "level": 1,
+          "title": "示例结构，仅表示怎样填写："
+        },
+        {
+          "line": 22,
+          "level": 1,
+          "title": "- input_name: 真实字段名"
+        },
+        {
+          "line": 23,
+          "level": 1,
+          "title": "canonical_name: batch_id"
+        },
+        {
+          "line": 24,
+          "level": 1,
+          "title": "meaning: 经确认的字段含义"
+        },
+        {
+          "line": 25,
+          "level": 1,
+          "title": "data_type: string"
+        },
+        {
+          "line": 26,
+          "level": 1,
+          "title": "unit: null"
+        },
+        {
+          "line": 27,
+          "level": 1,
+          "title": "source: 字典路径与版本"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "templates/document-brief.md",
+      "path": "templates/document-brief.md",
+      "category": "templates",
+      "title": "文档任务输入模板",
+      "sha256": "a02429119fab43862a1a3df0c8638e651a0266865325d3e5f23da99b9689310f",
+      "bytes": 940,
+      "line_count": 13,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "文档任务输入模板"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "workflows/data-analysis.md",
+      "path": "workflows/data-analysis.md",
+      "category": "workflows",
+      "title": "数据处理与分析工作流",
+      "sha256": "9e0e487c2b099aa3e4db8f6bdbca42460cbbd28fb2fe6d819bc3cf637ea149f3",
+      "bytes": 6517,
+      "line_count": 70,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "数据处理与分析工作流"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "先确定分析对象"
+        },
+        {
+          "line": 21,
+          "level": 2,
+          "title": "数据清洗的关键约定"
+        },
+        {
+          "line": 43,
+          "level": 2,
+          "title": "批量设备与 OEE"
+        },
+        {
+          "line": 58,
+          "level": 2,
+          "title": "工艺与质量分析"
+        },
+        {
+          "line": 66,
+          "level": 2,
+          "title": "交付与未知字段处理"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "workflows/document-writing.md",
+      "path": "workflows/document-writing.md",
+      "category": "workflows",
+      "title": "文档编写工作流",
+      "sha256": "91413dcd3270aa93a7960a8269dc9e8d1c2013e236fd32deaa7676cb04a560c7",
+      "bytes": 4420,
+      "line_count": 46,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "文档编写工作流"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "按读者与用途选择证据"
+        },
+        {
+          "line": 11,
+          "level": 2,
+          "title": "区分内容性质"
+        },
+        {
+          "line": 24,
+          "level": 2,
+          "title": "光伏文档中的易错点"
+        },
+        {
+          "line": 37,
+          "level": 2,
+          "title": "根据任务形成交付"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "workflows/name-disambiguation.md",
+      "path": "workflows/name-disambiguation.md",
+      "category": "workflows",
+      "title": "名称与缩写消歧工作流",
+      "sha256": "0ca86e6188c33a5db3cb93f79d4e93a78d266fd50bd69c65e7eb11de3cb8d9ff",
+      "bytes": 4104,
+      "line_count": 53,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "名称与缩写消歧工作流"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "查询候选"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "title": "复核当前上下文"
+        },
+        {
+          "line": 34,
+          "level": 2,
+          "title": "判断与说明依据"
+        },
+        {
+          "line": 45,
+          "level": 2,
+          "title": "仍不能判断时必须确认"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    },
+    {
+      "id": "workflows/software-development.md",
+      "path": "workflows/software-development.md",
+      "category": "workflows",
+      "title": "程序开发工作流",
+      "sha256": "90bb6ee79709745f8fd4c23b5ee6d82bb3115f5988faf0700340166341b3688c",
+      "bytes": 4780,
+      "line_count": 53,
+      "sections": [
+        {
+          "line": 1,
+          "level": 1,
+          "title": "程序开发工作流"
+        },
+        {
+          "line": 5,
+          "level": 2,
+          "title": "把业务问题写成契约"
+        },
+        {
+          "line": 20,
+          "level": 2,
+          "title": "将业务知识用于实现决策"
+        },
+        {
+          "line": 32,
+          "level": 2,
+          "title": "验证实际业务边界"
+        },
+        {
+          "line": 49,
+          "level": 2,
+          "title": "输出与交付"
+        }
+      ],
+      "evidence": "curated_guidance",
+      "source_status": null
+    }
+  ]
+}

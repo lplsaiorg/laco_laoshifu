@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "source_type": "user_instruction",
+  "source_date": "2026-10-28",
+  "scope": "KD本次用户明确的工作语境；不自动推广为全部工厂或历史数据定义",
+  "statement": "常用缩写包括英文缩写、中文简称；硼扩散-硼扩、PECVD-PE、硼扩散-BK、磷扩散-PK；一个概念可能存在多个简称。",
+  "records": [
+    {
+      "concept": "硼扩散",
+      "names": [
+        {
+          "name": "硼扩",
+          "kind": "chinese_short",
+          "status": "user_confirmed"
+        },
+        {
+          "name": "BK",
+          "kind": "dataset_code",
+          "status": "user_confirmed"
+        }
+      ]
+    },
+    {
+      "concept": "PECVD",
+      "names": [
+        {
+          "name": "PE",
+          "kind": "english_short",
+          "status": "user_confirmed"
+        }
+      ]
+    },
+    {
+      "concept": "磷扩散",
+      "names": [
+        {
+          "name": "PK",
+          "kind": "dataset_code",
+          "status": "user_confirmed"
+        }
+      ]
+    }
+  ],
+  "note": "本条是名称映射授权，不定义工艺顺序、设备编码、质量阈值或OEE规则。"
+}

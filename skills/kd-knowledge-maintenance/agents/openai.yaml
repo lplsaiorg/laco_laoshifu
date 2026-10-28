@@ -1,0 +1,6 @@
+interface:
+  display_name: "KD 知识库维护"
+  short_description: "按来源更新知识、术语与检索索引，保留现场约定的确认状态和变更范围"
+  default_prompt: "使用 $kd-knowledge-maintenance 将这份新资料纳入 KD 知识库，并检查出处与检索索引。"
+policy:
+  allow_implicit_invocation: true

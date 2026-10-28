@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="660" viewBox="0 0 1280 660" role="img" aria-labelledby="title desc">
+  <title id="title">拉普拉斯文档助手的能力结构</title>
+  <desc id="desc">知识库为Agent提供业务判断依据；文档工作流与Office模板、样式和公司Logo功能提升文档规范性，输出经内容保真检查与实际版面复核后交付。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#53718c"/></marker>
+  </defs>
+  <rect width="1280" height="660" rx="24" fill="#f3f6fb"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+    <text x="56" y="62" font-size="30" font-weight="700" fill="#142b43">拉普拉斯文档助手 · Laplace Docs</text>
+    <text x="56" y="96" font-size="17" fill="#526b81">专业知识支持 → 内容编写与检查 → 模板与品牌统一 → 规范文档交付</text>
+    <rect x="56" y="138" width="286" height="310" rx="18" fill="#fff" stroke="#cfdae7"/>
+    <rect x="56" y="138" width="286" height="7" rx="3" fill="#53718c"/>
+    <text x="80" y="184" font-size="23" font-weight="700" fill="#142b43">文档工作对象</text>
+    <rect x="80" y="212" width="238" height="49" rx="10" fill="#f1f5f9"/>
+    <text x="98" y="244" font-size="18" fill="#334e68">Word · 技术文档与报告</text>
+    <rect x="80" y="278" width="238" height="49" rx="10" fill="#f1f5f9"/>
+    <text x="98" y="310" font-size="18" fill="#334e68">Excel · 表格与分析结果</text>
+    <rect x="80" y="344" width="238" height="49" rx="10" fill="#f1f5f9"/>
+    <text x="98" y="376" font-size="18" fill="#334e68">PPT · 方案与培训材料</text>
+    <path d="M351 293H390" fill="none" stroke="#53718c" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="410" y="138" width="384" height="310" rx="18" fill="#fff" stroke="#bed4f7"/>
+    <rect x="410" y="138" width="384" height="7" rx="3" fill="#2563eb"/>
+    <text x="436" y="184" font-size="23" font-weight="700" fill="#17459b">当前基础 · 知识与工作流</text>
+    <text x="436" y="230" font-size="19" font-weight="600" fill="#142b43">专业知识支持</text>
+    <text x="436" y="258" font-size="16" fill="#526b81">工艺 · 设备 · 术语 · 简称 · 原文依据</text>
+    <line x1="436" y1="278" x2="768" y2="278" stroke="#e1e9f3"/>
+    <text x="436" y="311" font-size="19" font-weight="600" fill="#142b43">文档编写与修订指引</text>
+    <text x="436" y="339" font-size="16" fill="#526b81">技术说明 · 分析报告 · 方案 · 培训</text>
+    <line x1="436" y1="359" x2="768" y2="359" stroke="#e1e9f3"/>
+    <text x="436" y="392" font-size="19" font-weight="600" fill="#142b43">内容检查与证据记录</text>
+    <text x="436" y="420" font-size="16" fill="#526b81">名称 · 单位 · 出处 · 冲突 · 待确认</text>
+    <path d="M803 293H842" fill="none" stroke="#53718c" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="862" y="138" width="362" height="310" rx="18" fill="#f1f8f4" stroke="#bddfd7"/>
+    <rect x="862" y="138" width="362" height="7" rx="3" fill="#0f766e"/>
+    <text x="888" y="184" font-size="23" font-weight="700" fill="#0d655d">首版已实现 · Office 规范化</text>
+    <g font-size="18" fill="#264959">
+      <text x="888" y="233">原生模板与可替换样式配置</text>
+      <text x="888" y="275">Word / Excel / PPT 样式规范</text>
+      <text x="888" y="317">公司 Logo 按比例应用</text>
+      <text x="888" y="359">内容检查与 PDF 辅助复核</text>
+      <text x="888" y="401">批量处理与逐文件报告</text>
+    </g>
+    <path d="M1043 457V487" fill="none" stroke="#53718c" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="56" y="501" width="1168" height="101" rx="18" fill="#142b43"/>
+    <text x="83" y="541" font-size="20" font-weight="700" fill="#fff">目标 · 规范文档交付</text>
+    <text x="83" y="574" font-size="16" fill="#bed0e0">内容质量与呈现一致</text>
+    <line x1="324" y1="521" x2="324" y2="583" stroke="#476077"/>
+    <text x="364" y="559" font-size="21" fill="#dce8ff">专业表述准确</text>
+    <text x="642" y="559" font-size="21" fill="#d4f5ed">文档格式一致</text>
+    <text x="920" y="559" font-size="21" fill="#ffe4b0">公司品牌统一</text>
+    <text x="56" y="634" font-size="15" fill="#526b81">知识库提升 Agent 业务精度  ·  文档规范提升表达、格式与品牌一致性  ·  默认模板为可审阅草案</text>
+  </g>
+</svg>
