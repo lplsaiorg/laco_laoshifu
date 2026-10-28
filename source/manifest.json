@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "source_root": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd",
+  "last_imported_at_utc": "2026-10-28T06:19:27+00:00",
+  "files": [
+    {
+      "path": "references/kd/00_index.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\00_index.md",
+      "sha256": "8ad6929912d5c8fe28269f00e5d7873133e65d41ff89dc0b840c91fddb54b166",
+      "bytes": 4885,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:47:24+00:00"
+    },
+    {
+      "path": "references/kd/01_silicon_purification.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\01_silicon_purification.md",
+      "sha256": "2f8945ade861f039007f61e674406b7ee3306d7a214f82e466004389964744e4",
+      "bytes": 2469,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/02_crystal_growth.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\02_crystal_growth.md",
+      "sha256": "ebf565958a1c26cb9a234569fd2e43231f05dd4c78c16383058ae43d13e61865",
+      "bytes": 2930,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/03_wafer_preparation.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\03_wafer_preparation.md",
+      "sha256": "46440415553390d452f43d43325f8ab95d1a726006c623c29cb198bcb2498314",
+      "bytes": 3133,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/04_cell_processing_basics.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\04_cell_processing_basics.md",
+      "sha256": "7da03ec3afa556df381e33547a51dc50aed3c21b392e046b7ce73c4b23fd46b6",
+      "bytes": 4774,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/05_screen_printed_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\05_screen_printed_cells.md",
+      "sha256": "66c60ba3fcd52905b0b84debac55860579f9d488bcac14354156e633bf2ee8ee",
+      "bytes": 4314,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/06_perc_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\06_perc_cells.md",
+      "sha256": "87bc6d6f083a37f842a9abb046ef8f6c534c0551c20c33c618af4cd0378cc592",
+      "bytes": 3939,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/07_topcon_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\07_topcon_cells.md",
+      "sha256": "df9c0615c9dcd5cb13d0cbed85de76d95d8acc30390ebc52fd3d663c6d82f4c6",
+      "bytes": 17121,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:28:36+00:00"
+    },
+    {
+      "path": "references/kd/08_hjt_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\08_hjt_cells.md",
+      "sha256": "14398334f4d81580da82cf133138490d7f94eb9c514e64a7cb1a7ffffc2ce14c",
+      "bytes": 6173,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/09_high_efficiency_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\09_high_efficiency_cells.md",
+      "sha256": "073b7cb680e6336645c263bb4a962aae597a83aef740f98e34d55f6e758cea15",
+      "bytes": 6273,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/10_technology_comparison.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\10_technology_comparison.md",
+      "sha256": "d354dd84268afbb27974cdca21d166df49af312380ad98fc07bbd35f16735398",
+      "bytes": 5360,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:16:46+00:00"
+    },
+    {
+      "path": "references/kd/11_module_manufacturing.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\11_module_manufacturing.md",
+      "sha256": "31272bff26e50536e5fe5ef3b3be7f31a07b177e0ffd717317d47f714d07c20e",
+      "bytes": 10104,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:39:54+00:00"
+    },
+    {
+      "path": "references/kd/12_perovskite_cells.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\12_perovskite_cells.md",
+      "sha256": "6ab82a5bd97bce9e36da3122483b881b767579843148aa8d004c38c33b1782c8",
+      "bytes": 10177,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:39:54+00:00"
+    },
+    {
+      "path": "references/kd/13_cell_testing_characterization.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\13_cell_testing_characterization.md",
+      "sha256": "8e4691f021d5457bfb3c8cced8bd1171498998d63e9fc2a72ab4794c309bbc8a",
+      "bytes": 9171,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:39:54+00:00"
+    },
+    {
+      "path": "references/kd/14_key_materials.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\14_key_materials.md",
+      "sha256": "d61d03065f22eb6bbe5fd62ed98816941c5cf06326b9825b9fc2958a8f3b5614",
+      "bytes": 10272,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T03:39:54+00:00"
+    },
+    {
+      "path": "references/kd/15_tube_furnace_equipment.md",
+      "origin_path": "C:\\work\\OEE\\git\\OEE_algo\\KD\\OEE_docs\\kd\\15_tube_furnace_equipment.md",
+      "sha256": "dd50b3c9d34205b4a4a3b5ee1943ac85e6493a41774e6ab51c6fa1e33d3e7c10",
+      "bytes": 43502,
+      "source_status": "present",
+      "imported_at_utc": "2026-10-28T06:19:27+00:00",
+      "source_modified_at_utc": "2026-04-02T04:13:12+00:00"
+    }
+  ]
+}

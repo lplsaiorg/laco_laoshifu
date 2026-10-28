@@ -1,0 +1,6 @@
+interface:
+  display_name: "KD 业务知识检索"
+  short_description: "检索光伏工艺知识，查询中文简称、英文缩写及数据集代号的范围和出处"
+  default_prompt: "使用 $kd-context 查询这个概念的常用简称与代号，结合知识库说明含义、适用范围和出处。"
+policy:
+  allow_implicit_invocation: true

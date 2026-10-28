@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="660" viewBox="0 0 1280 660" role="img" aria-labelledby="title desc">
+<title id="title">知识与规范维护：使用与未使用项目 skill 的对比示意</title>
+<desc id="desc">同一任务：输入：当前 PK＝磷扩散，800G 历史文档写 pk＝退火。未使用：两种解释分别保留数据源与版本；不按大小写认定为两个概念；不做全局替换，冲突时确认。使用：在主表记录 status / scope / sources；历史义设置 auto_expand=false；主表 → 对照表 → 索引校验。两边都保留范围；skill 侧给出项目字段和可执行维护步骤。这是工作方式示意，没有量化评测结论。</desc>
+<rect width="1280" height="660" rx="24" fill="#f3f6fb"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+<text x="48" y="54" font-size="28" fill="#142b43" font-weight="700">09  知识与规范维护</text>
+<text x="48" y="88" font-size="17" fill="#526b81" font-weight="400">知识持续可靠性</text>
+<rect x="1062" y="30" width="170" height="35" rx="17" fill="#e5edf7"/>
+<text x="1085" y="53" font-size="17" fill="#526b81" font-weight="400">具体任务示例</text>
+<rect x="48" y="112" width="1184" height="59" rx="12" fill="#fff" stroke="#d6e0eb"/>
+<text x="68" y="148" font-size="18" fill="#526b81" font-weight="700">同一个任务</text>
+<text x="186" y="148" font-size="19" fill="#1f354b" font-weight="400">输入：当前 PK＝磷扩散，800G 历史文档写 pk＝退火</text>
+<rect x="48" y="198" width="568" height="330" rx="18" fill="#fff" stroke="#64748b" stroke-opacity="0.3"/>
+<path d="M66 198H598" stroke="#64748b" stroke-width="5" stroke-linecap="round"/>
+<text x="76" y="241" font-size="23" fill="#64748b" font-weight="700">未使用本项目 skill</text>
+<text x="76" y="272" font-size="16" fill="#64748b" font-weight="400">未读取项目 skill 的实际回答摘要</text>
+<line x1="76" y1="291" x2="588" y2="291" stroke="#e3eaf2"/>
+<rect x="74" y="306" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="329" font-size="17" fill="#64748b" font-weight="700">1</text>
+<text x="124" y="330" font-size="21" fill="#243d54" font-weight="400">两种解释分别保留数据源与版本</text>
+<rect x="74" y="373" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="396" font-size="17" fill="#64748b" font-weight="700">2</text>
+<text x="124" y="397" font-size="21" fill="#243d54" font-weight="400">不按大小写认定为两个概念</text>
+<rect x="74" y="440" width="32" height="32" rx="9" fill="#edf1f6"/>
+<text x="84" y="463" font-size="17" fill="#64748b" font-weight="700">3</text>
+<text x="124" y="464" font-size="21" fill="#243d54" font-weight="400">不做全局替换，冲突时确认</text>
+<rect x="664" y="198" width="568" height="330" rx="18" fill="#fff" stroke="#0f766e" stroke-opacity="0.3"/>
+<path d="M682 198H1214" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+<text x="692" y="241" font-size="23" fill="#0f766e" font-weight="700">使用对应 skill</text>
+<text x="692" y="272" font-size="16" fill="#64748b" font-weight="400">按项目 skill 查证后的实际回答摘要</text>
+<line x1="692" y1="291" x2="1204" y2="291" stroke="#e3eaf2"/>
+<rect x="690" y="306" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="329" font-size="17" fill="#0f766e" font-weight="700">1</text>
+<text x="740" y="330" font-size="21" fill="#243d54" font-weight="400">在主表记录 status / scope / sources</text>
+<rect x="690" y="373" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="396" font-size="17" fill="#0f766e" font-weight="700">2</text>
+<text x="740" y="397" font-size="21" fill="#243d54" font-weight="400">历史义设置 auto_expand=false</text>
+<rect x="690" y="440" width="32" height="32" rx="9" fill="#e5f4ef"/>
+<text x="700" y="463" font-size="17" fill="#0f766e" font-weight="700">3</text>
+<text x="740" y="464" font-size="21" fill="#243d54" font-weight="400">主表 → 对照表 → 索引校验</text>
+<rect x="48" y="552" width="1184" height="61" rx="14" fill="#142b43"/>
+<text x="72" y="589" font-size="18" fill="#c6d7e7" font-weight="700">本例可见</text>
+<text x="184" y="590" font-size="21" fill="#fff" font-weight="600">两边都保留范围；skill 侧给出项目字段和可执行维护步骤</text>
+<text x="48" y="642" font-size="15" fill="#64748b" font-weight="400">同一输入的两次真实回答摘要，完整原文可查；单次示例不代表准确率提升或模型性能评测。</text>
+</g>
+</svg>

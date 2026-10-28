@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="410" viewBox="0 0 1280 410" role="img" aria-labelledby="title desc">
+  <title id="title">拉普拉斯文档助手的目标工作流程</title>
+  <desc id="desc">专业知识支持内容编写与检查，通过首版原生模板和 Logo 处理功能，以及实际版面复核，形成规范文档。</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#8294a8"/></marker></defs>
+  <rect width="1280" height="410" rx="24" fill="#f3f6fb"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif">
+    <text x="56" y="58" font-size="28" font-weight="700" fill="#142b43">从专业知识到公司规范文档</text>
+    <text x="56" y="91" font-size="16" fill="#526b81">内容知识与 Office 规范化协同；正式公司模板可替换默认草案</text>
+    <rect x="56" y="128" width="254" height="138" rx="16" fill="#fff" stroke="#cfdae7"/>
+    <circle cx="88" cy="163" r="16" fill="#e4ebf4"/><text x="83" y="169" font-size="16" font-weight="700" fill="#334e68">1</text>
+    <text x="116" y="171" font-size="21" font-weight="700" fill="#142b43">专业知识支持</text>
+    <text x="80" y="211" font-size="17" fill="#526b81">工艺、设备与术语依据</text>
+    <text x="80" y="240" font-size="16" fill="#526b81">已有 · 本地知识与检索</text>
+    <path d="M321 197H350" fill="none" stroke="#8294a8" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="362" y="128" width="254" height="138" rx="16" fill="#fff" stroke="#bed4f7"/>
+    <circle cx="394" cy="163" r="16" fill="#e5eeff"/><text x="389" y="169" font-size="16" font-weight="700" fill="#2563eb">2</text>
+    <text x="422" y="171" font-size="21" font-weight="700" fill="#17459b">编写与检查</text>
+    <text x="386" y="211" font-size="17" fill="#526b81">统一表述、单位和出处</text>
+    <text x="386" y="240" font-size="16" fill="#526b81">已有 · 工作流指引</text>
+    <path d="M627 197H656" fill="none" stroke="#8294a8" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="668" y="128" width="254" height="138" rx="16" fill="#f1f8f4" stroke="#bddfd7"/>
+    <circle cx="700" cy="163" r="16" fill="#def2ec"/><text x="695" y="169" font-size="16" font-weight="700" fill="#0f766e">3</text>
+    <text x="728" y="171" font-size="21" font-weight="700" fill="#0d655d">模板与品牌</text>
+    <text x="692" y="211" font-size="17" fill="#526b81">格式对齐与公司 Logo</text>
+    <text x="692" y="240" font-size="16" fill="#0d655d">已有 · 原生模板与样式处理</text>
+    <path d="M933 197H962" fill="none" stroke="#8294a8" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="974" y="128" width="250" height="138" rx="16" fill="#fffaf1" stroke="#e4c88e" stroke-dasharray="6 4"/>
+    <circle cx="1006" cy="163" r="16" fill="#fff0d4"/><text x="1001" y="169" font-size="16" font-weight="700" fill="#a56b10">4</text>
+    <text x="1034" y="171" font-size="21" font-weight="700" fill="#875b15">复核后交付</text>
+    <text x="998" y="211" font-size="17" fill="#526b81">复核内容、版式与品牌</text>
+    <text x="998" y="240" font-size="16" fill="#875b15">处理报告与 PDF 辅助复核</text>
+    <rect x="56" y="302" width="1168" height="65" rx="14" fill="#e5edf7"/>
+    <text x="80" y="343" font-size="18" fill="#334e68">建设主线：专业表述准确 → 文档格式一致 → 公司品牌统一；各阶段保留依据与待确认事项</text>
+  </g>
+</svg>

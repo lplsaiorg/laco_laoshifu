@@ -1,0 +1,87 @@
+# 任务数据契约模板；字段是建议命名，不代表现场数据库字段。
+# null=未知/未确认；空列表=尚未枚举，不表示数据中确实不存在。
+schema_version: 1
+confirmation:
+  status: "draft"
+  confirmed_by: null
+  confirmed_at: null
+  source_document: null
+  effective_scope: null
+task:
+  objective: null
+  input_files: []
+  technology_route: null
+  process_step: null
+  equipment_type: null
+grain:
+  entity: null  # 设备/炉管/批次/舟/硅片/测量点，需明确选定
+  primary_key: []
+  relationships: []  # 记录join基数及其有效时间，避免多对多复制产量
+field_mapping: []
+# 示例结构，仅表示怎样填写：
+# - input_name: 真实字段名
+#   canonical_name: batch_id
+#   meaning: 经确认的字段含义
+#   data_type: string
+#   unit: null
+#   source: 字典路径与版本
+time:
+  timestamp_field: null
+  source_timezone: null  # 不因本机Asia/Shanghai而自动填入
+  timestamp_meaning: null  # 采样/设备事件/入库时间
+  interval_semantics: null  # 经确认后可用[start,end)
+  sampling_period: null
+  shift_calendar_source: null
+  late_arrival_policy: null
+  open_interval_policy: null
+  missing_interval_policy: null
+units:
+  pressure_reference: null  # 绝压/表压/未知
+  flow_standard_conditions: null  # sccm/SLM标准状态及气体
+  source_to_target: []  # 字段、源单位、目标单位、换算规则及依据
+batch:
+  batch_key: []
+  recipe_id_field: null
+  recipe_version_field: null
+  boat_id_field: null
+  tube_id_field: null
+  wafer_count_semantics: null  # 投入/产出/合格/返工及去重规则
+  rework_policy: null
+  partial_load_policy: null
+states:
+  mapping_source: null
+  raw_to_business: []
+  overlap_priority: null
+  unknown_state_policy: null
+  alarm_implies_stop: null  # 必须有实际依据，不能默认true
+quality:
+  measurement_level: null  # 电池片/组件
+  test_conditions_source: null
+  area_definition: null
+  fraction_or_percent: null
+  acceptance_spec_source: null
+  retest_policy: null
+metrics:
+  oee:
+    status: "unconfirmed"
+    definition_source: null
+    scope: null
+    planned_production_time: null
+    excluded_time_rules: []
+    operating_time_rule: null
+    ideal_cycle_time_source: null
+    ideal_cycle_time_grain: null
+    total_count_rule: null
+    good_count_rule: null
+    aggregation_rule: null
+    # 尚未确认时不计算或发布正式OEE；探索指标需单独命名并公开假设。
+data_quality:
+  duplicate_rule: null
+  null_policy: null
+  counter_reset_policy: null
+  outlier_policy: null
+  preservation_of_raw_values: true
+  exclusion_log_required: true
+evidence:
+  knowledge_files: []
+  unresolved_items: []

@@ -1,0 +1,76 @@
+{
+  "mode": "with_project_skills",
+  "tasks": [
+    {
+      "id": "knowledge",
+      "input": "在光伏管式工艺中，用两句话区分BK与PE，并说明依据和不确定项。",
+      "skill": "kd-context",
+      "answer": "按本项目已确认的命名，BK指硼扩散，典型用途是通过热扩散形成硼掺杂发射极；PE指PECVD，即利用等离子体增强沉积薄膜，可用于减反射或钝化等不同膜层。依据是用户名称约定和《管式热处理与沉积设备》第1.1、4.1节，实际设备、膜种、工步与配方尚需核对，不能只凭代号确定温度或工艺限值。",
+      "evidence": [
+        "D:/work/KD/skills/kd-context/SKILL.md",
+        "D:/work/KD/source/evidence/user-aliases.json",
+        "D:/work/KD/source/references/kd/15_tube_furnace_equipment.md"
+      ]
+    },
+    {
+      "id": "names",
+      "input": "Longji OD数据包含TubeID、BoatID、ZoneID、P1-P5、Homogen、Quality。这里OD指什么，ZoneID是温区吗？",
+      "skill": "kd-context",
+      "answer": "依据Longji来源及这组字段，本次OD按方阻检测数据理解（上下文判断），原资料已明确采用这一名称；P1–P5是五个测点的方阻值。ZoneID是1–11号硅片检测位置，不是炉管加热温区；Longji建模资料将11个检测位置映射到6个温区，不能把两种编号直接等同。该解释限定于Longji数据，也不据此猜测OD的英文全称。",
+      "evidence": [
+        "D:/work/KD/skills/kd-context/SKILL.md",
+        "D:/work/KD/source/evidence/dataset-other-aliases.json",
+        "D:/work/KD/source/workflows/name-disambiguation.md"
+      ]
+    },
+    {
+      "id": "data",
+      "input": "日志字段tube,batch,time,temp,pressure,state,count，两条记录T1,B01,08:00,610,10,1,0和T1,B01,08:30,615,10,1,500。请计算OEE并判断是否超温。",
+      "skill": "kd-data-analysis",
+      "answer": "现有数据不能确定OEE或是否超温。可先报告：两记录时刻相差30分钟，count原值增加500，温度原值由610升至615；这些不能直接认定为整批周期、良品产量或连续运行时长。OEE还需状态码映射、计划生产时间、理想节拍及合格数量口径；超温判断还需温度单位、测点、工步和适用配方限。state=1及行业典型温度都不能补出这些定义。",
+      "evidence": [
+        "D:/work/KD/skills/kd-data-analysis/SKILL.md",
+        "D:/work/KD/source/workflows/data-analysis.md",
+        "D:/work/KD/source/knowledge/equipment.md",
+        "D:/work/KD/source/knowledge/gaps-and-conflicts.md"
+      ]
+    },
+    {
+      "id": "document",
+      "input": "拟写硼扩异常分析报告开头：批次B01，温度原值1020/1030，未提供单位、工序步骤、配方限。给出可审阅的简短结论。",
+      "skill": "kd-document-writing",
+      "answer": "批次B01记录了1020、1030两个温度原值，数值相差10，单位尚未提供。目前只能确认上述数据观察，不能据此认定硼扩超温，也没有证据建立温度与质量异常的因果关系。待核对温度单位、测点、工序步骤、配方版本及有效上下限后，再按对应工步复核。本结论为待核实的分析草稿，行业典型温度不作为本批次合格线。",
+      "evidence": [
+        "D:/work/KD/skills/kd-document-writing/SKILL.md",
+        "D:/work/KD/source/workflows/document-writing.md",
+        "D:/work/KD/source/knowledge/equipment.md",
+        "D:/work/KD/source/knowledge/gaps-and-conflicts.md"
+      ]
+    },
+    {
+      "id": "software",
+      "input": "设计设备pressure转Pa函数的输入输出规则，支持Pa/mbar/Torr和未知单位。只给规则和一个110 Torr样例。",
+      "skill": "kd-software-development",
+      "answer": "输入为有限数值、明确单位及可选压力基准；保留原值、原单位和绝压/表压/未知标记。Pa直接返回，mbar乘100，Torr乘101325/760；输出value_pa与状态。未知单位返回value_pa=null、status=unknown_unit，不猜单位或填零；无效数值单独报错。样例：110 Torr约为14665.46 Pa，原始110 Torr仍保留；单位换算不改变压力基准。",
+      "evidence": [
+        "D:/work/KD/skills/kd-software-development/SKILL.md",
+        "D:/work/KD/source/workflows/software-development.md",
+        "D:/work/KD/source/workflows/data-analysis.md",
+        "D:/work/KD/source/knowledge/gaps-and-conflicts.md"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "input": "当前工作约定PK=磷扩散；一份800G历史文档写pk=退火。如何维护这两个解释？给精简规则。",
+      "skill": "kd-knowledge-maintenance",
+      "answer": "分别保留两个概念与来源：当前PK=磷扩散标为user_confirmed，范围限定本次工作约定；历史pk=退火标为dataset_explicit，注明800G文档版本，并设auto_expand=false。保留原文与冲突备注，避免全局替换；解释该历史原句时按其标签说明，新来源仍不明确时再确认。名称维护在同一主表，更新后生成对照表并校验索引，不把局部命名升级为全厂工艺定义。",
+      "evidence": [
+        "D:/work/KD/skills/kd-knowledge-maintenance/SKILL.md",
+        "D:/work/KD/source/evidence/user-aliases.json",
+        "D:/work/KD/source/evidence/dataset-800g-aliases.json",
+        "D:/work/KD/source/glossary.json",
+        "D:/work/KD/source/workflows/name-disambiguation.md"
+      ]
+    }
+  ]
+}

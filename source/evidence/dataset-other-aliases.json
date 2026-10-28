@@ -1,0 +1,520 @@
+{
+  "schema_version": 1,
+  "dataset_root": "C:\\work\\OEE\\git\\OEE_algo\\dataset",
+  "scope": "只读研究dataset中810、clean_dataset、raw_dataset及顶层样例表头；排除800G，未连接数据库或执行数据集程序。",
+  "records": [
+    {
+      "concept": "方阻检测数据",
+      "names": [
+        {
+          "name": "OD",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "仅限Longji原始/清洗数据及810相应检测目录；不据此推断英文全称或其他OD含义",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L5",
+              "excerpt": "### 1.1 方阻检测数据 (OD)"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L11",
+              "excerpt": "| OD 方阻检测 | `dataset/raw_dataset/longji/od_merged(1).csv` | 每片/每检测位置的方阻检测结果，包含 `TubeID`、`BoatID`、`ZoneID`、`P1` 到 `P5`、`Quality` 等字段。 | 6306 行 |"
+            }
+          ]
+        },
+        {
+          "name": "方阻检测",
+          "kind": "chinese_short",
+          "confidence": "explicit",
+          "scope": "Longji扩散炉检测数据中的中文称呼",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L5",
+              "excerpt": "### 1.1 方阻检测数据 (OD)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "工艺运行记录",
+      "names": [
+        {
+          "name": "PR",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "仅限Longji工艺时序记录；不擅自补写Process Record等英文展开",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L23",
+              "excerpt": "### 1.2 工艺运行记录 (PR)"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L12",
+              "excerpt": "| PR 工艺运行记录 | `dataset/raw_dataset/longji/pr/pr/{TubeID}/2026-05/*.dat` | SQLite `.dat` 文件，每个文件是一炉/一舟 Run 的时序数据，主要表为 `data` 和 `xiangqing`。 | 777 个文件 |"
+            }
+          ]
+        },
+        {
+          "name": "report_*",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "仅限Shangrao每个Run的工艺时序表名前缀，不是通用PR文件格式",
+          "evidence": [
+            {
+              "path": "clean_dataset/shangrao/README.md",
+              "locator": "L22",
+              "excerpt": "`detect_*` 是方阻检测结果，`report_*` 是该 Run 的工艺时序。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "一次工艺执行",
+      "names": [
+        {
+          "name": "Run",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810工艺执行文件及Longji过程数据中的运行序号/一次执行；不等同舟编号或全局唯一批次号",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L80",
+              "excerpt": "一个文件通常对应一次 Run；文件内每行对应一个采样时间点，列对应多个测点或状态。它能描述该批产品共同经历的设备环境，不能解释为每片电池各自的温度、压力或流量测量。本文未全量测定采样间隔，不假定固定为 1 秒。"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L161",
+              "excerpt": "舟号是可重复使用的载具编号；**舟号不等于批次号，Run 也不必永远只对应一个舟。** 实用的批次身份至少需要工序、设备、管号/舟侧、舟号和实际生产时间。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "炉管编号",
+      "names": [
+        {
+          "name": "TubeID",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji OD原始表的炉管编号1–6；不自动跨MES/物理管号体系转换",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L15",
+              "excerpt": "| TubeID | int | 炉管编号 1-6 |"
+            }
+          ]
+        },
+        {
+          "name": "tube_id",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji文件名解析得到的炉管编号，解析自Tube{tube_id}",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L18",
+              "excerpt": "Tube{tube_id}_{BoatID}_{Recipe}_Run{run_no}_{YYYY-MM-DD HHMM}.dat"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L21",
+              "excerpt": "从文件名解析 `tube_id`、`boat_id`、`recipe`、`run_no`、`end_time`。当前只保留 `recipe = KS2-LCGY` 的工艺 Run，其余烧管、烘舟、舟饱和等不产出有效方阻标签的 Run 不进入模型样本。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "舟编号",
+      "names": [
+        {
+          "name": "BoatID",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji OD表的舟编号；是可复用载具编号，不是批次号",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L16",
+              "excerpt": "| BoatID | str | 舟编号 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L161",
+              "excerpt": "舟号是可重复使用的载具编号；**舟号不等于批次号，Run 也不必永远只对应一个舟。** 实用的批次身份至少需要工序、设备、管号/舟侧、舟号和实际生产时间。"
+            }
+          ]
+        },
+        {
+          "name": "boat_id",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji文件名解析字段，来源为文件名BoatID部分",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L18",
+              "excerpt": "Tube{tube_id}_{BoatID}_{Recipe}_Run{run_no}_{YYYY-MM-DD HHMM}.dat"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L21",
+              "excerpt": "从文件名解析 `tube_id`、`boat_id`、`recipe`、`run_no`、`end_time`。当前只保留 `recipe = KS2-LCGY` 的工艺 Run，其余烧管、烘舟、舟饱和等不产出有效方阻标签的 Run 不进入模型样本。"
+            }
+          ]
+        },
+        {
+          "name": "舟号",
+          "kind": "chinese_short",
+          "confidence": "explicit",
+          "scope": "810过程表的载具编号；不删除业务前缀或前导零",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L67",
+              "excerpt": "| 时间和载具 | 时间、舟号、舟状态 | 建立过程时间轴及舟批次关联 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L161",
+              "excerpt": "舟号是可重复使用的载具编号；**舟号不等于批次号，Run 也不必永远只对应一个舟。** 实用的批次身份至少需要工序、设备、管号/舟侧、舟号和实际生产时间。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "硅片检测位置编号",
+      "names": [
+        {
+          "name": "ZoneID",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji OD中1–11号检测位置；不是炉管6个加热温区编号",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L17",
+              "excerpt": "| ZoneID | int | 硅片检测位置 1-11 |"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L76",
+              "excerpt": "OD 原始标签是 11 个检测位置 `ZoneID`，模型样本需要 6 个炉管温区标签。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "炉管温区编号",
+      "names": [
+        {
+          "name": "wenqu",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji清洗建模结果的6个温区编号；由11个OD检测位置加权映射，不与ZoneID等值",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L79",
+              "excerpt": "- 再使用热影响权重矩阵将 11 个 `ZoneID` 反向映射到 6 个 `wenqu`。"
+            },
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L127",
+              "excerpt": "一行 = 一个 Run × 一个温区 (1-6)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "五个测点的方阻值",
+      "names": [
+        {
+          "name": "P1~P5",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji OD中5个测量点方阻值；不能因810也有P/Vd就把所有同名列物理定义视为已确认",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L18",
+              "excerpt": "| P1~P5 | float | 5 个测量点方阻值 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L144",
+              "excerpt": "每行包含一次检测的多个测点；并非只有整舟均值。PK 虽有 `WaferID`，现有分析将其视为局部标识，没有直接与 800G 全局片号连接。P/Vd 的精确物理定义与单位仍应以设备字典为准。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "检测均匀性",
+      "names": [
+        {
+          "name": "Homogen",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji OD为(Max-Min)/Average；810 PK为原始比例，需保留数据源口径",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L21",
+              "excerpt": "| Homogen | float | 均匀性 = (Max-Min)/Average |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L146",
+              "excerpt": "清洗需区分 BK 百分数字符串与 PK 原始比例；已有程序将 BK `Homogeneity` 百分数除以 100。质量通过码也不同：现有分析采用 BK `Quality=1`、PK `Quality=OK`，未将 BK 其他码擅自解释为具体缺陷类型。"
+            }
+          ]
+        },
+        {
+          "name": "Homogeneity",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810 BK均匀性字段为百分数字符串；当前分析除以100，同概念不同表示不能原值直接合并",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L140",
+              "excerpt": "| 均匀性 | BK 的 `Homogeneity`；PK 的 `Homogen` |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L146",
+              "excerpt": "清洗需区分 BK 百分数字符串与 PK 原始比例；已有程序将 BK `Homogeneity` 百分数除以 100。质量通过码也不同：现有分析采用 BK `Quality=1`、PK `Quality=OK`，未将 BK 其他码擅自解释为具体缺陷类型。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "配方名称",
+      "names": [
+        {
+          "name": "RecipeName",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "仅限810 ZP/BP配方记录表的名称列；名称不等于完整配方版本",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L89",
+              "excerpt": "| `RecipeName` | 配方名称 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L195",
+              "excerpt": "5. 配方名称不是完整配方版本；需要结合参数或内容指纹区分同名配方。文件结束时间不可用来假造配方刷新事件。"
+            }
+          ]
+        },
+        {
+          "name": "Recipe",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji过程文件名中的配方名称部分",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L18",
+              "excerpt": "Tube{tube_id}_{BoatID}_{Recipe}_Run{run_no}_{YYYY-MM-DD HHMM}.dat"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L21",
+              "excerpt": "从文件名解析 `tube_id`、`boat_id`、`recipe`、`run_no`、`end_time`。当前只保留 `recipe = KS2-LCGY` 的工艺 Run，其余烧管、烘舟、舟饱和等不产出有效方阻标签的 Run 不进入模型样本。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "配方执行开始时间",
+      "names": [
+        {
+          "name": "BeginTime",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810 ZP/BP RecipeRecord1–6的执行开始时间；不与文件名结束时间混用",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L90",
+              "excerpt": "| `BeginTime`、`EndTime` | 执行起止时间 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "配方执行结束时间",
+      "names": [
+        {
+          "name": "EndTime",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810 ZP/BP RecipeRecord1–6的执行结束时间",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L90",
+              "excerpt": "| `BeginTime`、`EndTime` | 执行起止时间 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "左舟编号",
+      "names": [
+        {
+          "name": "LBoatId",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810 ZP/BP配方执行记录的左舟，不是另一台独立设备",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L91",
+              "excerpt": "| `LBoatId`、`RBoatId` | 左舟、右舟编号 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L93",
+              "excerpt": "历史多工序数据说明中，ZP 提取了 **12,594 条舟侧记录**，BP 提取了 **16,236 条舟侧记录**。这是解析结果的记录数，不是数据库表数或本次重新统计值。一条配方记录可展开左右两条舟侧记录，不应将两条舟侧记录误计为两个独立的设备工艺实验。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "右舟编号",
+      "names": [
+        {
+          "name": "RBoatId",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "810 ZP/BP配方执行记录的右舟，不是另一台独立设备",
+          "evidence": [
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L91",
+              "excerpt": "| `LBoatId`、`RBoatId` | 左舟、右舟编号 |"
+            },
+            {
+              "path": "810/8.10数据集内容与颗粒度说明.md",
+              "locator": "L93",
+              "excerpt": "历史多工序数据说明中，ZP 提取了 **12,594 条舟侧记录**，BP 提取了 **16,236 条舟侧记录**。这是解析结果的记录数，不是数据库表数或本次重新统计值。一条配方记录可展开左右两条舟侧记录，不应将两条舟侧记录误计为两个独立的设备工艺实验。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "温度设定值",
+      "names": [
+        {
+          "name": "SV",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "Longji特征说明中恒温/氧化/扩散沉积子阶段的温度设定值；不推断所有SV列相同",
+          "evidence": [
+            {
+              "path": "raw_dataset/longji/data_pipeline.md",
+              "locator": "L117",
+              "excerpt": "| SV 子阶段 | 18 | 恒温/氧化/扩散沉积 × 6 温区的设定值均值 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "温度跟踪积分误差特征",
+      "names": [
+        {
+          "name": "IAE",
+          "kind": "english_short",
+          "confidence": "explicit",
+          "scope": "Longji恒温特征中的积分误差；英文全称和时间积分实现需另外看实际公式，不能只按简称赋单位",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L115",
+              "excerpt": "| 恒温温控 | `恒温_Z3_偏差均值`、`恒温_Z3_IAE`、`恒温_Z3_漂移` | 恒温阶段设定值跟踪误差、积分误差、温度漂移。 |"
+            },
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L119",
+              "excerpt": "| 分段误差 | `恒温_Z3_IAE_前/中/后` | 恒温前、中、后三段误差。 |"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "方阻中位数",
+      "names": [
+        {
+          "name": "rs_median",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji每条OD记录P1–P5的中位数，不是原Average字段",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L42",
+              "excerpt": "- 每条 OD 检测记录使用 `P1` 到 `P5` 的中位数作为 `rs_median`，不直接采用原始 `Average`。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "温区级加权方阻",
+      "names": [
+        {
+          "name": "rs_wenqu",
+          "kind": "dataset_code",
+          "confidence": "explicit",
+          "scope": "Longji/Shangrao清洗结果的温区级加权标签，非原始温区传感器测量",
+          "evidence": [
+            {
+              "path": "clean_dataset/longji/README.md",
+              "locator": "L132",
+              "excerpt": "| `rs_wenqu` | 主回归目标，预测该 Run 在该温区对应的加权方阻。 |"
+            },
+            {
+              "path": "clean_dataset/shangrao/README.md",
+              "locator": "L127",
+              "excerpt": "| `rs_wenqu` | 主回归目标，预测该 Run 在该温区的加权方阻。 |"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "BK、PK、PE的明确中文/英文展开未在本次非800G资料中找到，未因BCL3/O2气体共现或文件夹拼写补造映射；可由另行查证的800G映射提供依据。",
+    "Phase将恒温/氧化/扩散沉积归并为恒温，以及将降温/吹扫归并为降温，属于模型分组规则，不能作为工艺概念同义词。",
+    "PR、OD、SV、IAE只记录这里有证据的中文含义；未据字母猜测英文全称。",
+    "810资料本身包含历史分析与条件性设备映射；本证据文件不把工序代号、设备编号、载具号认定为一一等价。",
+    "full_data.csv第2行出现温区功率输出值(℃)等可疑单位，本次未修正或据此提供单位换算。",
+    "未解压归档、未读取SQLite/MDB，不扫描庞大数据体；只读文档、脚本所选映射行及CSV头。"
+  ]
+}
