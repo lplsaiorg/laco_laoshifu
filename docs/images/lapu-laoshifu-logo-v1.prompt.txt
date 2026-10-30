@@ -1,0 +1,8 @@
+Generation method: built-in image_gen; transparent_background=true.
+Reference: user-provided company mascot contact sheet.
+
+Use case: logo-brand.
+Create one polished logo for “拉普老师傅”, a Laplace company business-knowledge and work-automation skills pack for an AI Agent.
+Input image is a CHARACTER IDENTITY REFERENCE: the contact sheet shows the same company mascot in many poses. Use the blue cartoon bird faithfully: slate/cornflower-blue feathers, swept spiky head tuft, large warm golden-yellow curved beak, pale blue chest, dark navy outlines, expressive friendly eyes. Ignore all captions and contact-sheet layout.
+Design a recognizable professional-master version of this same bird, friendly, capable and confident. Compact waist-up mascot, wearing small simple work overalls, with one wing holding a small closed technical handbook and the other giving a confident thumbs-up. Keep the head tuft exposed. Simplify into a clean memorable brand mark, large clear silhouette, bold smooth navy contours, restrained flat blue and yellow colors, minimal shading. Preserve resemblance to the provided bird; not a different animal or human.
+Composition: one centered stacked logo, mascot above the exact Chinese wordmark “拉普老师傅”, bold rounded legible custom Chinese lettering in deep navy. Balanced proportions, generous transparent padding. The mascot should dominate and also function as a plugin avatar. No additional text or tagline. No mockup, no contact sheet, no decorative background, no drop shadow, no 3D, no tiny circuitry or excessive props. Genuine transparent background.
