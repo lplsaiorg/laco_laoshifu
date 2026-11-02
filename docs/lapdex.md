@@ -2,6 +2,8 @@
 
 本分支将“拉普老师傅”的六类工作流、本地知识库、Office 工具和模板打包为一个独立的 `lapu-laoshifu` 技能目录。Lapdex 发现一个入口；业务工作流由入口按需读取。
 
+适配原理、目录映射、加载器依据及维护流程见 [拉普老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
+
 适配依据是 Lapdex 官方 `2026.6993.738.0` 发布包中的 `lapdex-agent-skill-authoring` 和技能加载器：支持用户技能目录 `~/.lapdex/skills/`、YAML frontmatter 和 `SKILL.md`；扫描时跳过 `references/` 支持目录。本包采用用户技能安装方式，不需要修改 Lapdex 安装目录或内置技能。这里的“插件”指可分发的 skill 资源包，不是工具进程或 Connector。
 
 ## 获取与安装
