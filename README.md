@@ -1,16 +1,17 @@
 # 拉普老师傅
 
-**让 Agent 懂行业黑话、做专业工作、处理琐碎事务的拉普拉斯技能包。**
+**为 Agent 注入业务知识与工作技能，让它更懂行、更能干。**
 
-- **懂黑话**：识别硼扩、BK、PE 等简称，结合上下文判断，拿不准就问。
-- **懂专业**：查询业务知识与出处，辅助处理数据、文档和程序。
-- **办杂事**：批量统一 Office 格式、添加 Logo、生成检查报告。
+- **懂黑话**：从工作交流中主动学习网上查不到的内部用语，经确认持续积累，越用越懂你的工作语言。
+- **懂专业**：内置光伏知识库，按需定向检索光伏行业网络资料，让判断与产出更贴近业务。
+- **爱学习**：经你确认，将工作约定与私有知识沉淀为专属记忆，让后续任务更贴近你的需求。
+- **办杂事**：文档调格式、加 Logo 等琐碎工作，无需逐项交代，按既定规范自动处理。
 
 <p align="center">
   <img src="docs/images/lapu-laoshifu-logo-v1.png" alt="拉普老师傅 Logo：蓝色鸟师傅手持技术手册并点赞" width="320">
 </p>
 
-当前覆盖光伏工艺与管式设备，提供 **6 个 skills + 本地知识库 + Office 批量工具**。
+拉普拉斯业务场景下的 Agent 增强技能包，以知识库、skills 和自动化工具支撑日常工作，并随业务积累持续扩展。
 
 ![拉普老师傅：专业知识增强 Agent，工作技能辅助执行，自动化工具处理琐碎工作](docs/images/project-overview.svg)
 
@@ -161,12 +162,13 @@ Excel 也包含在这次处理内：[原稿 PDF](docs/examples/office/before/mea
 
 现有工具已支持这一流程的基础能力。专业内容检查由知识库与 Agent 工作流支撑；Office 工具负责模板、样式、Logo 和程序保真检查，复杂版式仍需实际复核。
 
-## 4. 六个 skills，各自负责什么
+## 4. 七个 skills，各自负责什么
 
 拉普老师傅是这套技能的统一名称。Agent 根据任务读取相应 skill，再按需查询知识或调用工具；当前路由入口见 [AGENTS.md](AGENTS.md)。
 
 | 当前 skill | 职责 | 主要产出 |
 |---|---|---|
+| [laplace-learning](skills/laplace-learning/SKILL.md) | 保守的私有学习与记忆 | 经授权保存的个人偏好和项目约定，支持查看、纠正、忘记与回退 |
 | [kd-context](skills/kd-context/SKILL.md) | 专业知识查询与名称消歧 | 带出处和适用范围的解释、需要确认的问题 |
 | [kd-data-analysis](skills/kd-data-analysis/SKILL.md) | 数据检查与分析 | 字段、单位、粒度和指标口径检查，分析结果与限制 |
 | [kd-document-writing](skills/kd-document-writing/SKILL.md) | 文档编写、修订与内容检查 | 技术说明、报告草稿、修改摘要与待确认事项 |
@@ -301,7 +303,7 @@ python source/tools/kb.py --help
 KD/
 ├─ README.md                    拉普老师傅定位、实际案例与使用说明
 ├─ AGENTS.md                    Agent 的项目工作约定与技能路由
-├─ skills/                      当前六个技能的实体目录
+├─ skills/                      当前七个技能的实体目录
 │  ├─ kd-context/
 │  ├─ kd-data-analysis/
 │  ├─ kd-document-writing/
@@ -380,3 +382,9 @@ python -B -m unittest discover -s source/tests -v
 - **校验结果保留能力范围。** 文件哈希、索引和链接检查证明本地资料完整性，技术事实与生产适用性仍需相应证据。
 
 公司模板、品牌素材和文档规则纳入后，同样记录版本、适用范围及确认状态。专业内容检查与格式检查共同服务于规范文档交付。
+
+### 爱学习：本机私有记忆
+
+[laplace-learning](skills/laplace-learning/SKILL.md) 由 Agent 执行：任务前按范围读取记忆，明确要求“记住”或确认保存后才写入。普通对话、推测和一次性假设不自动持久化。
+
+记忆默认位于用户目录 `~/.lapu-laoshifu/private-memory/`，与项目 Git 分离；不会随提交共享。可以说“记住：本项目报告先写结论”“查看本项目记忆”“忘掉这条约定”。通用技能定义保留在仓库，私有知识保存在独立 Markdown 中。跨会话依赖 Agent 加载任务入口及该技能。
