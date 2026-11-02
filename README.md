@@ -223,6 +223,10 @@ Excel 也包含在这次处理内：[原稿 PDF](docs/examples/office/before/mea
 
 ## 7. 快速使用
 
+### 安装到 Lapdex
+
+本分支提供 `lapu-laoshifu` skill 插件，包含完整知识库、六类工作流及 Office 工具。将 [发行包](dist/lapu-laoshifu-lapdex-0.1.0.zip) 内的 `lapu-laoshifu/` 完整解压到 `~/.lapdex/skills/`，刷新 Lapdex 后在“技能与工具”中查看。安装、升级保留知识及验证范围见 [Lapdex 使用说明](docs/lapdex.md)。当前完成宿主机打包与本地校验，尚未完成 Lapdex 实机验证。
+
 ### 接入 Agent 工作区
 
 在项目根目录打开 Agent 会话，让它先读取 [AGENTS.md](AGENTS.md)。Windows 下可运行以下命令建立本机技能发现入口：
