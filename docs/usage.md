@@ -2,7 +2,7 @@
 
 [返回项目首页](../README.md) · [真实案例](examples/README.md) · [源码维护参考](maintenance.md)
 
-适用版本：**拉可老师傅 Lapdex 技能包 v0.2.1**。安装后，在 Lapdex 对话里点名“拉可老师傅”即可提出任务。日常材料留在自己的工作目录中，助手从安装目录读取知识与工具。
+适用版本：**拉可老师傅 Lapdex 技能包 v0.2.2**。安装后，在 Lapdex 对话里点名“拉可老师傅”即可提出任务。日常材料留在自己的工作目录中，助手从安装目录读取知识与工具。
 
 [安装与启用](#install) · [第一次使用](#first-task) · [提供工作文件](#files) · [常用任务](#tasks) · [检查结果](#results) · [常见问题](#troubleshooting) · [升级与备份](#upgrade) · [版本范围](#version)
 
@@ -22,11 +22,11 @@
 
 ### Windows 一键安装
 
-完整解压 ZIP，双击包内 `laco-laoshifu/install.cmd`。需要先配置可用的 Lapdex CLI，并确保在新终端中能运行 `lapdex`。脚本会把解压目录作为安装路径交给 Lapdex CLI。请查看终端中的实际结果，再到技能列表确认并启用 `laco-laoshifu`。已有同名技能时，按[升级与备份](#upgrade)处理。
+完整解压 ZIP，双击包内 `laco-laoshifu/install.bat`。需要先配置可用的 Lapdex CLI，并确保在新终端中能运行 `lapdex`。脚本会把解压目录作为安装路径交给 Lapdex CLI。请查看终端中的实际结果，再到技能列表确认并启用 `laco-laoshifu`。已有同名技能时，按[升级与备份](#upgrade)处理。
 
 ### 手动安装技能包
 
-1. 下载 [laco-laoshifu-lapdex-0.2.1.zip](../dist/laco-laoshifu-lapdex-0.2.1.zip)，保留包内完整的 `laco-laoshifu` 文件夹。
+1. 下载 [laco-laoshifu-lapdex-0.2.2.zip](../dist/laco-laoshifu-lapdex-0.2.2.zip)，保留包内完整的 `laco-laoshifu` 文件夹。
 2. 在 Windows 文件资源管理器的地址栏输入 `%USERPROFILE%\.lapdex\skills`。默认目录不存在时可以创建；使用自定义技能目录或其他 profile 时，以当前配置的技能目录为准。
 3. 将完整的 `laco-laoshifu` 文件夹解压到该技能目录下。最后应能找到下面两个文件：
 
@@ -213,7 +213,7 @@ python (Join-Path $lapdexResourceRoot 'skills\laplace-office-standardize\scripts
 
 ## 8. 本版能力与验证范围
 
-**v0.2.1 提供一个技能入口和六类工作流：**业务知识与名称消歧、数据分析、技术文档、程序开发、知识维护、Office 规范化。无需分别安装内部六个技能。
+**v0.2.2 提供一个技能入口和六类工作流：**业务知识与名称消歧、数据分析、技术文档、程序开发、知识维护、Office 规范化。无需分别安装内部六个技能。
 
 <a id="memory"></a>
 

@@ -4,7 +4,7 @@
 
 本页面向维护源码工作区的开发者，保留技能分工、Office处理细节及知识维护命令。Lapdex 安装和日常使用请看[用户手册](usage.md)。下列相对路径命令均在含有 `AGENTS.md`、`source/` 和 `skills/` 的开发工作区根目录运行。
 
-源码工作区包含七个技能，其中 `laplace-learning` 负责私有记忆。Lapdex v0.2.1 发行包提供一个入口、六类业务工作流和“爱学习”私有记忆。打包、脚本安装及验证范围见 [Lapdex 发行技术说明](lapdex.md)。
+源码工作区包含七个技能，其中 `laplace-learning` 负责私有记忆。Lapdex v0.2.2 发行包提供一个入口、六类业务工作流和“爱学习”私有记忆。打包、脚本安装及验证范围见 [Lapdex 发行技术说明](lapdex.md)。
 
 [技能分工](#skills) · [Office处理范围](#office) · [知识入口](#knowledge) · [使用命令](#commands) · [目录结构](#structure) · [建设与维护](#roadmap) · [私有记忆](#memory)
 
@@ -250,4 +250,4 @@ python -B -m unittest discover -s source/tests -v
 
 源码工作区中的助手按 [laplace-learning](../skills/laplace-learning/SKILL.md) 读取适用记忆。用户明确要求记住或确认持久保存后，才把约定写入本机用户目录 `~/.laco-laoshifu/private-memory/`。可以说“记住：本项目报告先写结论”“查看本项目记忆”或“忘掉这条约定”。私有记忆与仓库分开保存。
 
-Lapdex v0.2.1 的私有记忆支持状态见 [用户手册](usage.md#memory)。
+Lapdex v0.2.2 的私有记忆支持状态见 [用户手册](usage.md#memory)。

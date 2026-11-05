@@ -2,7 +2,7 @@
 name: laco-laoshifu
 description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，规范化拉普拉斯 Office 文档，并按授权管理本机私有记忆（爱学习）.
 metadata:
-  package_version: "0.2.1"
+  package_version: "0.2.2"
   lapdex:
     tags: [photovoltaics, topcon, kd, laplace, knowledge, office, chinese]
 ---

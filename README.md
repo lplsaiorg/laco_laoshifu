@@ -13,9 +13,9 @@
 - **爱学习**：经你确认，将工作约定、个人偏好与私有知识沉淀为专属记忆，越用越懂你，越用越顺手。
 - **办杂事**：文档调格式、套模板、加 Logo、批量处理等琐碎工作，按既定规范自动处理，让你少做重复活。
 
-**当前发行：Lapdex 技能包 v0.2.1，提供一个入口、六类业务工作流，支持“爱学习”本机私有记忆，并提供 Windows 一键安装脚本。** [查看版本范围](docs/usage.md#version)
+**当前发行：Lapdex 技能包 v0.2.2，提供一个入口、六类业务工作流，支持“爱学习”本机私有记忆，并提供 Windows 一键安装脚本。** [查看版本范围](docs/usage.md#version)
 
-**[下载技能包](dist/laco-laoshifu-lapdex-0.2.1.zip) · [立即试用](#quick-start) · [看真实效果](#results) · [Lapdex 用户手册](docs/usage.md)**
+**[下载技能包](dist/laco-laoshifu-lapdex-0.2.2.zip) · [立即试用](#quick-start) · [看真实效果](#results) · [Lapdex 用户手册](docs/usage.md)**
 
 <a id="quick-start"></a>
 
