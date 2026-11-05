@@ -1,4 +1,4 @@
-# 拉普老师傅适配 Lapdex 的设计与实施
+# 拉可老师傅适配 Lapdex 的设计与实施
 
 本文面向需要维护或复用本次适配的开发者，说明怎样将已有 KD 工作区做成可分发的 Lapdex skill。安装操作见 [Lapdex 使用说明](lapdex.md)。
 
@@ -6,7 +6,7 @@
 
 ## 1. 适配目标与交付物
 
-v0.1.0 适配了六类工作流、带出处的本地知识库和 Office 规范化工具。用户把一个 `lapu-laoshifu/` 目录安装到 Lapdex 的技能目录，模型通过同一个入口按任务读取所需资料，再调用随包脚本。
+v0.1.0 适配了六类工作流、带出处的本地知识库和 Office 规范化工具。用户把一个 `laco-laoshifu/` 目录安装到 Lapdex 的技能目录，模型通过同一个入口按任务读取所需资料，再调用随包脚本。
 
 本次采用 **用户目录中的自包含 skill 包**。它使用 Lapdex 的技能发现机制，无须修改 Lapdex 程序、建立 Connector、启动额外服务或编写原生扩展。
 
@@ -15,8 +15,8 @@ v0.1.0 适配了六类工作流、带出处的本地知识库和 Office 规范�
 | [integrations/lapdex/SKILL.md](../integrations/lapdex/SKILL.md) | Lapdex 入口模板：触发描述、资源定位、工作流选择和执行边界 |
 | [scripts/package_lapdex.py](../scripts/package_lapdex.py) | 构建 ZIP、检查归档、预览安装和安装到指定技能目录 |
 | [tests/test_package_lapdex.py](../tests/test_package_lapdex.py) | 验证搬迁、文件保真、覆盖保护及归档异常处理 |
-| [dist/lapu-laoshifu-lapdex-0.1.0.zip](../dist/lapu-laoshifu-lapdex-0.1.0.zip) | 可直接解压安装的发行包 |
-| [dist/lapu-laoshifu-lapdex-0.1.0.zip.sha256](../dist/lapu-laoshifu-lapdex-0.1.0.zip.sha256) | 整个 ZIP 的 SHA-256 |
+| [dist/laco-laoshifu-lapdex-0.1.0.zip](../dist/laco-laoshifu-lapdex-0.1.0.zip) | 可直接解压安装的发行包 |
+| [dist/laco-laoshifu-lapdex-0.1.0.zip.sha256](../dist/laco-laoshifu-lapdex-0.1.0.zip.sha256) | 整个 ZIP 的 SHA-256 |
 
 `bundle-manifest.json` 是本项目生成的完整性清单；Lapdex 发现这个普通 skill 不依赖该清单。
 
@@ -43,7 +43,7 @@ v0.1.0 适配了六类工作流、带出处的本地知识库和 Office 规范�
 发行包的目录为：
 
 ```text
-lapu-laoshifu/
+laco-laoshifu/
 ├─ SKILL.md
 ├─ bundle-manifest.json
 └─ references/
@@ -112,7 +112,7 @@ flowchart LR
 
 ```yaml
 ---
-name: lapu-laoshifu
+name: laco-laoshifu
 description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，并规范化拉普拉斯 Office 文档.
 metadata:
   package_version: "0.1.0"
@@ -143,7 +143,7 @@ metadata:
 
 ```powershell
 python scripts/package_lapdex.py --output build/lapdex-check
-python scripts/package_lapdex.py --check build/lapdex-check/lapu-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check build/lapdex-check/laco-laoshifu-lapdex-0.1.0.zip
 ```
 
 不带 `--output` 时输出到 `dist/`。默认拒绝覆盖已有 ZIP 和校验文件；确需重建同版本发行文件时使用 `--force`。输出不能位于 `source/` 或 `skills/` 资源树内。
@@ -164,20 +164,20 @@ python scripts/package_lapdex.py --check build/lapdex-check/lapu-laoshifu-lapdex
 ### 6.3 安装到用户技能目录
 
 ```powershell
-python scripts/package_lapdex.py --check dist/lapu-laoshifu-lapdex-0.1.0.zip
-python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip --dry-run
-python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip
 ```
 
-安装器默认目标为运行用户的 `~/.lapdex/skills/lapu-laoshifu/`。它不会自动读取 Lapdex 当前 profile 或外部技能目录配置；使用这些功能时，应显式传入对应的技能目录：
+安装器默认目标为运行用户的 `~/.lapdex/skills/laco-laoshifu/`。它不会自动读取 Lapdex 当前 profile 或外部技能目录配置；使用这些功能时，应显式传入对应的技能目录：
 
 ```powershell
-python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip --skills-dir "<user-selected Lapdex skills directory>"
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip --skills-dir "<user-selected Lapdex skills directory>"
 ```
 
 归档校验会拒绝路径越界、重复项、大小写冲突、链接或特殊文件、未列入清单的载荷等异常。安装先写入同一父目录下的临时目录，再将完整技能目录移到目标位置；目标已存在时拒绝覆盖。
 
-没有 Python 时，可用系统解压工具将 ZIP 内完整的 `lapu-laoshifu/` 目录放入技能根目录。安装后应存在 `skills/lapu-laoshifu/SKILL.md`，避免多套一层 ZIP 文件名目录。
+没有 Python 时，可用系统解压工具将 ZIP 内完整的 `laco-laoshifu/` 目录放入技能根目录。安装后应存在 `skills/laco-laoshifu/SKILL.md`，避免多套一层 ZIP 文件名目录。
 
 ### 6.4 发布与升级
 
@@ -203,7 +203,7 @@ python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip -
 ```powershell
 python -B -m unittest discover -s tests -v
 python -B -m unittest discover -s source/tests -v
-python scripts/package_lapdex.py --check dist/lapu-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
 ```
 
 再将包安装到隔离目录，从其他工作目录用绝对路径运行随包 `kb.py` 的 `verify`、`index --check`、`crosswalk --check`、`abbr "硼扩散" --json`、`abbr OD --json` 和 `search "硼扩散 炉管" --limit 5`。原始快照应保持哈希，`OD` 应保留带来源范围的多个候选。
@@ -214,7 +214,7 @@ python scripts/package_lapdex.py --check dist/lapu-laoshifu-lapdex-0.1.0.zip
 
 | 现象 | 优先检查 |
 |---|---|
-| 列表中找不到 `lapu-laoshifu` | 活动 profile、实际技能目录、解压层级、根 `SKILL.md`、缓存刷新及启用状态 |
+| 列表中找不到 `laco-laoshifu` | 活动 profile、实际技能目录、解压层级、根 `SKILL.md`、缓存刷新及启用状态 |
 | 同时出现外层入口和多个 KD 子技能 | 是否把内部 `skills/` 放在外层可扫描位置；应保持在 `references/kd/skills/` |
 | 查询找不到词典或脚本 | 是否只复制了入口、是否移动了内部目录、调用路径是否以实际安装位置为基准 |
 | 提示 Python 不可用 | 检查解释器和版本；可先直接读取资料，不照搬旧机器的 Codex 缓存路径 |

@@ -1,5 +1,5 @@
 ---
-name: lapu-laoshifu
+name: laco-laoshifu
 description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，并规范化拉普拉斯 Office 文档.
 metadata:
   package_version: "0.1.0"
@@ -7,7 +7,7 @@ metadata:
     tags: [photovoltaics, topcon, kd, laplace, knowledge, office, chinese]
 ---
 
-# 拉普老师傅
+# 拉可老师傅
 
 为 Lapdex 提供 KD 业务知识、工作方法及拉普拉斯 Office 规范化工具。按本次任务只读取需要的资料。
 

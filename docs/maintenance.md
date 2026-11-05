@@ -1,4 +1,4 @@
-# 拉普老师傅：源码维护参考
+# 拉可老师傅：源码维护参考
 
 [返回项目首页](../README.md) · [Lapdex 用户手册](usage.md) · [实际效果与完整案例](examples/README.md)
 
@@ -12,7 +12,7 @@
 
 ## 七个源码技能
 
-拉普老师傅是这套技能的统一名称。Agent 根据任务读取相应 skill，再按需查询知识或调用工具；当前路由入口见 [AGENTS.md](../AGENTS.md)。
+拉可老师傅是这套技能的统一名称。Agent 根据任务读取相应 skill，再按需查询知识或调用工具；当前路由入口见 [AGENTS.md](../AGENTS.md)。
 
 | 当前 skill | 职责 | 主要产出 |
 |---|---|---|
@@ -248,6 +248,6 @@ python -B -m unittest discover -s source/tests -v
 
 ### 爱学习：本机私有记忆
 
-源码工作区中的助手按 [laplace-learning](../skills/laplace-learning/SKILL.md) 读取适用记忆。用户明确要求记住或确认持久保存后，才把约定写入本机用户目录 `~/.lapu-laoshifu/private-memory/`。可以说“记住：本项目报告先写结论”“查看本项目记忆”或“忘掉这条约定”。私有记忆与仓库分开保存。
+源码工作区中的助手按 [laplace-learning](../skills/laplace-learning/SKILL.md) 读取适用记忆。用户明确要求记住或确认持久保存后，才把约定写入本机用户目录 `~/.laco-laoshifu/private-memory/`。可以说“记住：本项目报告先写结论”“查看本项目记忆”或“忘掉这条约定”。私有记忆与仓库分开保存。
 
 Lapdex v0.1.0 的私有记忆支持状态见 [用户手册](usage.md#memory)。
