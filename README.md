@@ -70,7 +70,9 @@ python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip
 1. 点击左侧的 **“技能与工具”**。
 2. 在“技能”列表中找到 **`laco-laoshifu`（拉可老师傅）**，打开该行右侧的开关。**蓝色且圆点在右侧**表示已启用。
 
-![Lapdex 技能启用位置，编号 1 为左侧技能与工具入口，2 为技能所在行及右侧启用开关](docs/images/lapdex-enable-skill.png)
+![Lapdex 技能启用位置，编号 1 为左侧技能与工具入口，2 为技能所在行及右侧启用开关](docs/images/lapdex-enable-skill-hd.png)
+
+[查看原生分辨率截图](docs/images/lapdex-enable-skill-hd.png)
 
 *截图来自虚拟机中的旧版安装，技能名显示为 `lapu-laoshifu`；当前版本请查找 `laco-laoshifu`，点击位置见图中编号。*
 

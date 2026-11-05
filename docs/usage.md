@@ -38,7 +38,9 @@
 4. 等待技能列表刷新；所核对版本约需 30 秒，必要时重新打开 Lapdex。
 5. 点击左侧 **“技能与工具”**，选择顶部 **“技能”** 标签，找到 **`laco-laoshifu`（拉可老师傅）**，打开右侧开关。蓝色且圆点在右侧表示已启用。
 
-![技能启用操作位置，编号 1 为左侧技能与工具入口，2 为技能所在行及右侧启用开关](images/lapdex-enable-skill.png)
+![技能启用操作位置，编号 1 为左侧技能与工具入口，2 为技能所在行及右侧启用开关](images/lapdex-enable-skill-hd.png)
+
+[查看原生分辨率截图](images/lapdex-enable-skill-hd.png)
 
 *截图中的 `lapu-laoshifu` 为旧版技能名；当前版本请查找 `laco-laoshifu`。*
 
