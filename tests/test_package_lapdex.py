@@ -61,7 +61,10 @@ class PackagingTests(unittest.TestCase):
             if name.startswith(f"{package.RESOURCE_ROOT}/skills/") and name.endswith("/SKILL.md")
         }
         self.assertEqual(bundled_workflows, set(package.SKILL_NAMES))
-        self.assertNotIn(b"laplace-learning", payload[f"{package.RESOURCE_ROOT}/AGENTS.md"])
+        memory_workflow = f"{package.RESOURCE_ROOT}/skills/laplace-learning/SKILL.md"
+        self.assertIn(memory_workflow, payload)
+        self.assertIn(memory_workflow.encode("utf-8"), payload["SKILL.md"])
+        self.assertFalse(any("private-memory" in Path(name).parts for name in payload))
         checksum_line = archive.with_name(archive.name + ".sha256").read_text(encoding="ascii")
         self.assertEqual(checksum_line.split()[0], package.sha256(archive.read_bytes()))
         skills_dir = self.temp / "install" / "skills"

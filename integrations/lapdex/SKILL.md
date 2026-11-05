@@ -1,8 +1,8 @@
 ---
 name: laco-laoshifu
-description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，并规范化拉普拉斯 Office 文档.
+description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，规范化拉普拉斯 Office 文档，并按授权管理本机私有记忆（爱学习）.
 metadata:
-  package_version: "0.1.0"
+  package_version: "0.2.0"
   lapdex:
     tags: [photovoltaics, topcon, kd, laplace, knowledge, office, chinese]
 ---
@@ -15,9 +15,13 @@ metadata:
 
 以 **本技能实际安装目录**为插件根；业务资源根为其中的 `references/kd/`，同时包含 `AGENTS.md`、`source/` 和 `skills/`。不依赖用户当前项目、Git 仓库或 `.agents/skills` 目录联接。
 
-用 `read_file` 先读取随包 [工作约定](references/kd/AGENTS.md) 和 [知识库入口](references/kd/source/README.md)，再按下表读取对应工作流。它们是本插件内部资源，**不需要 Lapdex 单独发现或安装六个子技能**。所有相对路径均从它们各自文件所在位置解析。
+用 `read_file` 先读取随包 [工作约定](references/kd/AGENTS.md) 和 [知识库入口](references/kd/source/README.md)，再按下表读取对应工作流。它们是本插件内部资源，**不需要 Lapdex 单独发现或安装子技能**。所有相对路径均从它们各自文件所在位置解析。
 
 业务资源根的 `source/manifest.json` 中的原始 Windows 路径和资料中的本机命令示例只用于记录出处或历史环境；实际读取本包里的文件。不要寻找原作者的磁盘、Codex 缓存或照搬历史解释器路径。
+
+## 爱学习
+
+开始相关任务前，先读取[私有记忆工作流](references/kd/skills/laplace-learning/SKILL.md)，按本机用户目录和本次任务范围检查已有记忆。用户要求记住、查看、更正、忘掉或回退时，也走这条路径。可通过 `terminal` 在当前运行环境定位操作系统用户目录和执行文件操作。只有获得明确授权且实际写入并复核后，才确认已保存。用户目录不可访问时，说明记忆暂不可用。
 
 ## 按任务选择工作流
 

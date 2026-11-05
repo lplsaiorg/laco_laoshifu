@@ -17,14 +17,14 @@ import zipfile
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SKILL_NAME = "laco-laoshifu"
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 ARCHIVE_NAME = f"{SKILL_NAME}-lapdex-{VERSION}.zip"
 MANIFEST_NAME = "bundle-manifest.json"
 RESOURCE_ROOT = "references/kd"
 SKILL_NAMES = (
     "kd-context", "kd-data-analysis", "kd-document-writing",
     "kd-knowledge-maintenance", "kd-software-development",
-    "laplace-office-standardize",
+    "laplace-office-standardize", "laplace-learning",
 )
 REQUIRED_FILES = {
     "SKILL.md", f"{RESOURCE_ROOT}/AGENTS.md", f"{RESOURCE_ROOT}/source/README.md",

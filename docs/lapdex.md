@@ -2,7 +2,7 @@
 
 日常安装、启用、文件任务与排障请看 [Lapdex 用户手册](usage.md)。本页面向需要使用源码安装器、重新打包或核对适配依据的维护者。
 
-v0.1.0 将“拉可老师傅”的六类工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
+v0.2.0 将“拉可老师傅”的六类业务工作流、私有记忆工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
 
 适配原理、目录映射、加载器依据及维护流程见 [拉可老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
 
@@ -10,7 +10,7 @@ v0.1.0 将“拉可老师傅”的六类工作流、本地知识库、Office 工
 
 ## 获取与安装
 
-本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.1.0.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
+本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.2.0.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
 
 ```text
 ~/.lapdex/skills/laco-laoshifu/
@@ -19,7 +19,7 @@ v0.1.0 将“拉可老师傅”的六类工作流、本地知识库、Office 工
 └─ references/kd/
    ├─ AGENTS.md
    ├─ source/                    知识库、原文快照、词典、检索脚本及校验
-   └─ skills/                    六类工作流及 Office 工具、Logo、模板
+   └─ skills/                    业务及私有记忆工作流、Office 工具、Logo、模板
 ```
 
 用系统解压工具将完整的顶层目录解压到 `~/.lapdex/skills/`，不要只复制 `SKILL.md`。Windows 默认路径为 `%USERPROFILE%\.lapdex\skills\laco-laoshifu\`；如果设置了自定义技能目录，使用该目录。
@@ -27,9 +27,9 @@ v0.1.0 将“拉可老师傅”的六类工作流、本地知识库、Office 工
 也可以在仓库根目录用 Python 3.10+ 安装：
 
 ```powershell
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip --dry-run
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.0.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.0.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.0.zip
 ```
 
 自定义技能目录时添加 `--skills-dir "目标技能目录"`。安装器校验归档完整性和路径后安装；目标目录存在时拒绝覆盖。用户可能已经在技能内维护了知识库，升级前应备份旧目录并审阅知识差异，再将旧目录另行保存后安装新包。
@@ -60,14 +60,14 @@ python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip
 
 ```powershell
 python scripts/package_lapdex.py
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.0.zip
 python -B -m unittest discover -s tests -v
 python -B -m unittest discover -s source/tests -v
 ```
 
 `--output "发布目录"` 可指定输出位置。默认不覆盖已有发行文件；明确需要重新生成同版本发行包时使用 `--force`。`--force` 只用于发行文件，不允许覆盖已安装的用户知识库。
 
-构建器将 `integrations/lapdex/SKILL.md` 放到插件根，并将 `integrations/lapdex/AGENTS.md`、`source/` 和入口对应的六个技能复制到 `references/kd/`，保留文件字节与相对目录。源码中的私有记忆工作流由源码入口单独加载。`bundle-manifest.json` 记录随包文件大小和 SHA-256，供检查内容损坏或打包遗漏。
+构建器将 `integrations/lapdex/SKILL.md` 放到插件根，并将 `integrations/lapdex/AGENTS.md`、`source/` 和入口对应的七个技能复制到 `references/kd/`，保留文件字节与相对目录。发行包包含私有记忆工作流。用户的记忆数据保存在系统用户目录。`bundle-manifest.json` 记录随包文件大小和 SHA-256，供检查内容损坏或打包遗漏。
 
 发布格式参考：[官方 AppInstaller](https://llm.laplace-tech.com:8087/lapdex-releases/releases/win32/stable/stable.appinstaller)。本次静态核对的发布包版本为 `2026.6993.738.0`，对应包内 `tools/skill_manager_tool.py`、`agent/skill_utils.py`、`tools/skills_tool.py`。上游发布地址会更新，不能据此宣称所有后续版本均已兼容。
 

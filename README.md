@@ -13,9 +13,9 @@
 - **爱学习**：经你确认，将工作约定、个人偏好与私有知识沉淀为专属记忆，越用越懂你，越用越顺手。
 - **办杂事**：文档调格式、套模板、加 Logo、批量处理等琐碎工作，按既定规范自动处理，让你少做重复活。
 
-**当前发行：Lapdex 技能包 v0.1.0，提供一个入口、六类业务工作流；“爱学习”私有记忆尚未随本版发布。** [查看版本范围](docs/usage.md#version)
+**当前发行：Lapdex 技能包 v0.2.0，提供一个入口、六类业务工作流，并新增“爱学习”本机私有记忆。** [查看版本范围](docs/usage.md#version)
 
-**[下载技能包](dist/laco-laoshifu-lapdex-0.1.0.zip) · [立即试用](#quick-start) · [看真实效果](#results) · [Lapdex 用户手册](docs/usage.md)**
+**[下载技能包](dist/laco-laoshifu-lapdex-0.2.0.zip) · [立即试用](#quick-start) · [看真实效果](#results) · [Lapdex 用户手册](docs/usage.md)**
 
 <a id="quick-start"></a>
 
@@ -101,7 +101,7 @@
 | **看数据、核口径** | 检查字段、单位、粒度和缺失项，辅助分析与说明计算边界 | [数据分析工作流](skills/kd-data-analysis/SKILL.md) |
 | **写程序、查规则** | 将已确认的业务规则转为数据契约、实现和验证条件 | [程序工作流](skills/kd-software-development/SKILL.md) |
 | **批量处理 Office** | 单文件或文件夹处理、模板样式与 Logo、另存副本、逐文件检查 | [格式与保真约定](skills/laplace-office-standardize/references/format-contract.md) |
-| **复用工作约定** | 开发工作区支持经授权保存和复用私有记忆。Lapdex v0.1.0 的能力见版本说明 | [源码用法](docs/maintenance.md#memory) · [版本范围](docs/usage.md#memory) |
+| **复用工作约定** | 经授权保存和复用本机私有记忆，按项目或数据源范围读取 | [源码用法](docs/maintenance.md#memory) · [版本范围](docs/usage.md#memory) |
 | **积累团队知识** | 用户要求维护时，整理来源、版本和适用范围，更新术语与知识索引 | [知识维护工作流](skills/kd-knowledge-maintenance/SKILL.md) |
 
 Lapdex 通过一个 `laco-laoshifu` 入口，按任务调用六类业务工作流和随包工具。数据、文档与程序任务由助手按工作流执行；Office 已有独立批量脚本。知识以光伏工艺和管式设备为起点，包含 16 份原始工艺参考快照，以及术语、数据集说明和冲突记录。
@@ -110,7 +110,7 @@ Lapdex 通过一个 `laco-laoshifu` 入口，按任务调用六类业务工作�
 
 - 当前公司样式及 Word、Excel、PPT 模板是可审阅草案，正式模板可按版本替换。
 - Office 工具保留原有结构；任意 Excel 布局转换、PPT 自由布局重排需要另外处理，复杂版式需复核。
-- 私有记忆尚未随 v0.1.0 发布，跨会话保存与复用待后续版本接入、验证。
+- 私有记忆保存在本机用户目录，跨会话复用需要助手加载技能并能访问该目录。
 - 当前已有工具与示例；真实岗位的持续使用效果、净节省工时及质量改善仍需试点验证。
 - 当前已完成打包、隔离安装和知识库检查；Lapdex 中的实际发现、启用及完整任务调用尚待实机验证。
 
