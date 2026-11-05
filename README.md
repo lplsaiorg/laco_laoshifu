@@ -63,7 +63,17 @@ python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip
 
 ### 安装后启用
 
-等待技能列表刷新，必要时重新打开 Lapdex，在“技能与工具”中找到并启用 **`laco-laoshifu`（拉可老师傅）**。已有同名安装时，先按[升级与备份](docs/usage.md#upgrade)处理。
+等待技能列表刷新，必要时重新打开 Lapdex，再按图中编号操作。
+
+1. 点击左侧的 **“技能与工具”**。
+2. 选择顶部的 **“技能”** 标签，查找 **`laco-laoshifu`（拉可老师傅）**。
+3. 检查该技能右侧的开关。灰色时点击启用，**蓝色且圆点在右侧**表示已启用。
+
+![Lapdex 技能启用位置，编号 1 为左侧技能与工具入口，2 为技能标签，3 为技能右侧的启用开关](docs/images/lapdex-enable-skill.png)
+
+*截图来自虚拟机中的旧版安装，技能名显示为 `lapu-laoshifu`；当前版本请查找 `laco-laoshifu`，点击位置见图中编号。*
+
+已有同名安装时，先按[升级与备份](docs/usage.md#upgrade)处理。
 
 在 Lapdex 对话中先试一句：“用拉可老师傅查询硼扩散有哪些简称，说明出处和适用范围。”
 
