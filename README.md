@@ -23,7 +23,7 @@
 
 选择下面任一种方式安装。
 
-### 1. 在 Lapdex 对话中从 GitHub 安装
+### 1. 在 Lapdex 对话中从 GitHub 安装 ⭐ 最推荐
 
 直接在 Lapdex 对话里输入：
 
