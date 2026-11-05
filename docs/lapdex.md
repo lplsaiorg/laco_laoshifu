@@ -2,7 +2,7 @@
 
 日常安装、启用、文件任务与排障请看 [Lapdex 用户手册](usage.md)。本页面向需要使用源码安装器、重新打包或核对适配依据的维护者。
 
-v0.2.0 将“拉可老师傅”的六类业务工作流、私有记忆工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
+v0.2.1 将“拉可老师傅”的六类业务工作流、私有记忆工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
 
 适配原理、目录映射、加载器依据及维护流程见 [拉可老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
 
@@ -10,10 +10,11 @@ v0.2.0 将“拉可老师傅”的六类业务工作流、私有记忆工作流�
 
 ## 获取与安装
 
-本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.2.0.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
+本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.2.1.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
 
 ```text
 ~/.lapdex/skills/laco-laoshifu/
+├─ install.cmd / install.ps1   Windows 一键安装入口
 ├─ SKILL.md
 ├─ bundle-manifest.json
 └─ references/kd/
@@ -27,9 +28,9 @@ v0.2.0 将“拉可老师傅”的六类业务工作流、私有记忆工作流�
 也可以在仓库根目录用 Python 3.10+ 安装：
 
 ```powershell
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.0.zip
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.0.zip --dry-run
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.1.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.1.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.1.zip
 ```
 
 自定义技能目录时添加 `--skills-dir "目标技能目录"`。安装器校验归档完整性和路径后安装；目标目录存在时拒绝覆盖。用户可能已经在技能内维护了知识库，升级前应备份旧目录并审阅知识差异，再将旧目录另行保存后安装新包。
@@ -60,7 +61,7 @@ python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.0.zip
 
 ```powershell
 python scripts/package_lapdex.py
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.1.zip
 python -B -m unittest discover -s tests -v
 python -B -m unittest discover -s source/tests -v
 ```

@@ -17,7 +17,7 @@ import zipfile
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SKILL_NAME = "laco-laoshifu"
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 ARCHIVE_NAME = f"{SKILL_NAME}-lapdex-{VERSION}.zip"
 MANIFEST_NAME = "bundle-manifest.json"
 RESOURCE_ROOT = "references/kd"
@@ -27,7 +27,7 @@ SKILL_NAMES = (
     "laplace-office-standardize", "laplace-learning",
 )
 REQUIRED_FILES = {
-    "SKILL.md", f"{RESOURCE_ROOT}/AGENTS.md", f"{RESOURCE_ROOT}/source/README.md",
+    "SKILL.md", "install.cmd", "install.ps1", f"{RESOURCE_ROOT}/AGENTS.md", f"{RESOURCE_ROOT}/source/README.md",
     f"{RESOURCE_ROOT}/source/catalog.json", f"{RESOURCE_ROOT}/source/glossary.json",
     f"{RESOURCE_ROOT}/source/manifest.json", f"{RESOURCE_ROOT}/source/tools/kb.py",
     *(f"{RESOURCE_ROOT}/skills/{name}/SKILL.md" for name in SKILL_NAMES),
@@ -80,12 +80,14 @@ def source_files(directory: Path):
 
 def collect_payload(repo_root: Path) -> dict[str, bytes]:
     repo_root = Path(repo_root).resolve()
-    entry = repo_root / "integrations" / "lapdex" / "SKILL.md"
-    agents = entry.with_name("AGENTS.md")
-    for path in (entry, agents):
+    integration = repo_root / "integrations" / "lapdex"
+    payload = {}
+    for name in ("SKILL.md", "install.cmd", "install.ps1", "AGENTS.md"):
+        path = integration / name
         if not path.is_file() or is_link(path):
             raise ValueError(f"Required source file missing or linked: {path}")
-    payload = {"SKILL.md": entry.read_bytes(), f"{RESOURCE_ROOT}/AGENTS.md": agents.read_bytes()}
+        relative = f"{RESOURCE_ROOT}/{name}" if name == "AGENTS.md" else name
+        payload[relative] = path.read_bytes()
     directories = [repo_root / "source"]
     directories.extend(repo_root / "skills" / name for name in SKILL_NAMES)
     for directory in directories:
