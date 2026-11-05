@@ -50,7 +50,7 @@ class PackagingTests(unittest.TestCase):
         self.assertIn("Built:", result.stdout)
         archive = self.temp / "dist" / package.ARCHIVE_NAME
         manifest, payload = package.read_archive(archive)
-        self.assertEqual(manifest["name"], "lapu-laoshifu")
+        self.assertEqual(manifest["name"], "laco-laoshifu")
         self.assertNotIn("docs", {Path(name).parts[0] for name in payload})
         self.assertFalse(any("__pycache__" in name or name.endswith(".pyc") for name in payload))
         # Lapdex prunes references/ while scanning: only this entry is discovered.
@@ -112,22 +112,22 @@ class PackagingTests(unittest.TestCase):
     def test_corrupt_payload_and_unlisted_file_are_rejected(self):
         archive = self.build()
         changed = self.rewrite(archive, {
-            f"lapu-laoshifu/{package.RESOURCE_ROOT}/source/README.md": b"changed"})
+            f"laco-laoshifu/{package.RESOURCE_ROOT}/source/README.md": b"changed"})
         with self.assertRaisesRegex(ValueError, "checksum"):
             package.read_archive(changed)
-        changed = self.rewrite(archive, extra=[("lapu-laoshifu/unlisted.txt", b"extra")])
+        changed = self.rewrite(archive, extra=[("laco-laoshifu/unlisted.txt", b"extra")])
         with self.assertRaisesRegex(ValueError, "every payload"):
             package.read_archive(changed)
 
     def test_path_traversal_duplicates_case_collisions_and_links_are_rejected(self):
         archive = self.build()
-        for name in ("lapu-laoshifu/../escape", "/absolute", "lapu-laoshifu/C:/escape",
-                     "lapu-laoshifu\\escape", "lapu-laoshifu/SKILL.md", "lapu-laoshifu/skill.md"):
+        for name in ("laco-laoshifu/../escape", "/absolute", "laco-laoshifu/C:/escape",
+                     "laco-laoshifu\\escape", "laco-laoshifu/SKILL.md", "laco-laoshifu/skill.md"):
             with self.subTest(name=name):
                 changed = self.rewrite(archive, extra=[(name, b"extra")])
                 with self.assertRaises(ValueError):
                     package.read_archive(changed)
-        linked = zipfile.ZipInfo("lapu-laoshifu/link")
+        linked = zipfile.ZipInfo("laco-laoshifu/link")
         linked.create_system = 3
         linked.external_attr = (stat.S_IFLNK | 0o777) << 16
         changed = self.rewrite(archive, extra=[(linked, b"../outside")])
@@ -145,8 +145,8 @@ class PackagingTests(unittest.TestCase):
                 record["bytes"] = len(modified)
                 record["sha256"] = package.sha256(modified)
         changed = self.rewrite(archive, {
-            "lapu-laoshifu/" + name: modified,
-            "lapu-laoshifu/bundle-manifest.json": json.dumps(manifest).encode("utf-8"),
+            "laco-laoshifu/" + name: modified,
+            "laco-laoshifu/bundle-manifest.json": json.dumps(manifest).encode("utf-8"),
         })
         with self.assertRaisesRegex(ValueError, "Original snapshot"):
             package.read_archive(changed)

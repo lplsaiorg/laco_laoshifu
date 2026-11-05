@@ -2,18 +2,18 @@
 
 日常安装、启用、文件任务与排障请看 [Lapdex 用户手册](usage.md)。本页面向需要使用源码安装器、重新打包或核对适配依据的维护者。
 
-本分支将“拉普老师傅”的六类工作流、本地知识库、Office 工具和模板打包为一个独立的 `lapu-laoshifu` 技能目录。Lapdex 发现一个入口；业务工作流由入口按需读取。
+本分支将“拉可老师傅”的六类工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 发现一个入口；业务工作流由入口按需读取。
 
-适配原理、目录映射、加载器依据及维护流程见 [拉普老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
+适配原理、目录映射、加载器依据及维护流程见 [拉可老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
 
 适配依据是 Lapdex 官方 `2026.6993.738.0` 发布包中的 `lapdex-agent-skill-authoring` 和技能加载器：支持用户技能目录 `~/.lapdex/skills/`、YAML frontmatter 和 `SKILL.md`；扫描时跳过 `references/` 支持目录。本包采用用户技能安装方式，不需要修改 Lapdex 安装目录或内置技能。这里的“插件”指可分发的 skill 资源包，不是工具进程或 Connector。
 
 ## 获取与安装
 
-本仓库 `dist/` 提供 `lapu-laoshifu-lapdex-0.1.0.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `lapu-laoshifu/`：
+本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.1.0.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
 
 ```text
-~/.lapdex/skills/lapu-laoshifu/
+~/.lapdex/skills/laco-laoshifu/
 ├─ SKILL.md
 ├─ bundle-manifest.json
 └─ references/kd/
@@ -22,28 +22,28 @@
    └─ skills/                    六类工作流及 Office 工具、Logo、模板
 ```
 
-用系统解压工具将完整的顶层目录解压到 `~/.lapdex/skills/`，不要只复制 `SKILL.md`。Windows 默认路径为 `%USERPROFILE%\.lapdex\skills\lapu-laoshifu\`；如果设置了自定义技能目录，使用该目录。
+用系统解压工具将完整的顶层目录解压到 `~/.lapdex/skills/`，不要只复制 `SKILL.md`。Windows 默认路径为 `%USERPROFILE%\.lapdex\skills\laco-laoshifu\`；如果设置了自定义技能目录，使用该目录。
 
 也可以在仓库根目录用 Python 3.10+ 安装：
 
 ```powershell
-python scripts/package_lapdex.py --check dist/lapu-laoshifu-lapdex-0.1.0.zip
-python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip --dry-run
-python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.1.0.zip
 ```
 
 自定义技能目录时添加 `--skills-dir "目标技能目录"`。安装器校验归档完整性和路径后安装；目标目录存在时拒绝覆盖。用户可能已经在技能内维护了知识库，升级前应备份旧目录并审阅知识差异，再将旧目录另行保存后安装新包。
 
-安装后等待技能缓存刷新（所核对版本约 30 秒），必要时重新打开 Lapdex，查看“技能与工具”中是否出现 `lapu-laoshifu` 并启用。若没有出现，先核对活动 profile、自定义技能目录、文件层级及 `SKILL.md` 是否完整，不要改写应用内置技能。
+安装后等待技能缓存刷新（所核对版本约 30 秒），必要时重新打开 Lapdex，查看“技能与工具”中是否出现 `laco-laoshifu` 并启用。若没有出现，先核对活动 profile、自定义技能目录、文件层级及 `SKILL.md` 是否完整，不要改写应用内置技能。
 
 ## 使用示例与运行条件
 
-可以直接提出任务，也可以在提问中点名“拉普老师傅”或 `lapu-laoshifu`：
+可以直接提出任务，也可以在提问中点名“拉可老师傅”或 `laco-laoshifu`：
 
 ```text
-用拉普老师傅查询硼扩散有哪些简称，说明出处和适用范围。
+用拉可老师傅查询硼扩散有哪些简称，说明出处和适用范围。
 解释 Longji OD 数据的 ZoneID，先核对本地资料，拿不准的地方说明依据。
-用拉普老师傅处理这份工艺说明，统一术语并保留待确认项。
+用拉可老师傅处理这份工艺说明，统一术语并保留待确认项。
 按拉普拉斯模板规范化这个文件夹中的 Word、Excel、PPT，另存副本。
 ```
 
@@ -60,7 +60,7 @@ python scripts/package_lapdex.py --install dist/lapu-laoshifu-lapdex-0.1.0.zip
 
 ```powershell
 python scripts/package_lapdex.py
-python scripts/package_lapdex.py --check dist/lapu-laoshifu-lapdex-0.1.0.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.1.0.zip
 python -B -m unittest discover -s tests -v
 python -B -m unittest discover -s source/tests -v
 ```

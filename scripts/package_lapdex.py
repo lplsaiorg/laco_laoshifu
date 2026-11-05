@@ -16,7 +16,7 @@ import zipfile
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SKILL_NAME = "lapu-laoshifu"
+SKILL_NAME = "laco-laoshifu"
 VERSION = "0.1.0"
 ARCHIVE_NAME = f"{SKILL_NAME}-lapdex-{VERSION}.zip"
 MANIFEST_NAME = "bundle-manifest.json"
@@ -105,8 +105,8 @@ def validate_payload(payload: dict[str, bytes]) -> int:
             raise ValueError(f"Case-insensitive path collision: {name}")
         case_names.add(name.casefold())
     entry = payload["SKILL.md"].decode("utf-8-sig")
-    if not re.search(r"(?m)^name:\s*lapu-laoshifu\s*$", entry):
-        raise ValueError("The Lapdex entry must declare name: lapu-laoshifu")
+    if not re.search(r"(?m)^name:\s*laco-laoshifu\s*$", entry):
+        raise ValueError("The Lapdex entry must declare name: laco-laoshifu")
     original_manifest = json.loads(payload[f"{RESOURCE_ROOT}/source/manifest.json"].decode("utf-8-sig"))
     snapshots = original_manifest.get("files")
     if not isinstance(snapshots, list) or not snapshots:
