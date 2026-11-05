@@ -21,9 +21,51 @@
 
 ## 在 Lapdex 中开始
 
-1. 下载技能包，将包内完整的 `laco-laoshifu` 文件夹解压到 `%USERPROFILE%\.lapdex\skills\`。使用自定义技能目录时，以当前 Lapdex 配置为准。
-2. 等待技能列表刷新，必要时重新打开 Lapdex，在“技能与工具”中找到并启用 **`laco-laoshifu`（拉可老师傅）**。
-3. 在 Lapdex 对话中先试一句：“用拉可老师傅查询硼扩散有哪些简称，说明出处和适用范围。”
+选择下面任一种方式安装。
+
+### 1. 在 Lapdex 对话中从 GitHub 安装
+
+直接在 Lapdex 对话里输入：
+
+```text
+从 https://github.com/lplsaiorg/laco_laoshifu 拉取最新的release进行安装
+```
+
+需要当前会话可访问 GitHub、下载文件并执行安装操作。若没有可用的 Release，继续让 Lapdex 按仓库 README 下载 `dist/` 中的当前发行 ZIP 安装。
+
+### 2. Windows 一键安装
+
+下载并完整解压[当前技能包](dist/laco-laoshifu-lapdex-0.2.3.zip)，双击解压目录中的 `laco-laoshifu/install.bat`。需要已配置可用的 Lapdex CLI，且在终端中能运行 `lapdex`。脚本会把解压目录作为安装路径交给 CLI，查看终端中的实际安装结果。
+
+### 3. 在 Lapdex 对话中安装本地技能包
+
+下载并完整解压[当前技能包](dist/laco-laoshifu-lapdex-0.2.3.zip)，将下面占位内容替换为解压后 `laco-laoshifu` 文件夹的实际绝对路径，再在 Lapdex 对话里输入：
+
+```text
+安装路径“<解压后的 laco-laoshifu 文件夹绝对路径>”下的 skill
+```
+
+### 4. 手动复制安装
+
+下载[当前技能包](dist/laco-laoshifu-lapdex-0.2.3.zip)，将包内完整的 `laco-laoshifu` 文件夹解压到 `%USERPROFILE%\.lapdex\skills\`。使用自定义技能目录或其他 profile 时，以当前 Lapdex 配置为准。确保安装目录内同时包含 `SKILL.md` 和 `references/`。
+
+### 5. 使用源码中的 Python 安装器
+
+获取本仓库源码，在仓库根目录用 Python 3.10+ 执行：
+
+```powershell
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.3.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip
+```
+
+自定义技能目录时，在安装命令后添加 `--skills-dir "<当前 Lapdex 技能目录的绝对路径>"`。安装器会校验归档，目标目录已存在时拒绝覆盖。
+
+### 安装后启用
+
+等待技能列表刷新，必要时重新打开 Lapdex，在“技能与工具”中找到并启用 **`laco-laoshifu`（拉可老师傅）**。已有同名安装时，先按[升级与备份](docs/usage.md#upgrade)处理。
+
+在 Lapdex 对话中先试一句：“用拉可老师傅查询硼扩散有哪些简称，说明出处和适用范围。”
 
 接着给出工作文件的绝对路径。下面是示例，请替换为自己电脑上的实际路径：
 
