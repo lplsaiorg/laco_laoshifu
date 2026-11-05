@@ -2,7 +2,7 @@
 name: laco-laoshifu
 description: 检索光伏工艺与行业简称，辅助数据、技术文档和程序工作，规范化拉普拉斯 Office 文档，并按授权管理本机私有记忆（爱学习）.
 metadata:
-  package_version: "0.2.2"
+  package_version: "0.2.3"
   lapdex:
     tags: [photovoltaics, topcon, kd, laplace, knowledge, office, chinese]
 ---
@@ -17,7 +17,7 @@ metadata:
 
 用 `read_file` 先读取随包 [工作约定](references/kd/AGENTS.md) 和 [知识库入口](references/kd/source/README.md)，再按下表读取对应工作流。它们是本插件内部资源，**不需要 Lapdex 单独发现或安装子技能**。所有相对路径均从它们各自文件所在位置解析。
 
-业务资源根的 `source/manifest.json` 中的原始 Windows 路径和资料中的本机命令示例只用于记录出处或历史环境；实际读取本包里的文件。不要寻找原作者的磁盘、Codex 缓存或照搬历史解释器路径。
+业务资源根的 `source/manifest.json` 以文件名和哈希记录来源。证据中的 `source_id` 是外部原文标识，不能作为文件路径执行或读取。包内相对路径从对应文件所在位置解析，须保持在本技能安装目录内。输入、输出和原始资料位于包外时，使用用户明确提供或运行时解析的绝对路径。
 
 ## 爱学习
 

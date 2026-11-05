@@ -1,6 +1,6 @@
 # KD 工作知识库
 
-本知识库服务于光伏制造相关的数据处理、技术文档和程序开发，重点是 TOPCon 与管式硼扩散、氧化、LPCVD、PECVD。以 `KD reference collection` 的 16 份 Markdown 为初始资料，原文保存为独立快照；原目录不改动。
+本知识库服务于光伏制造相关的数据处理、技术文档和程序开发，重点是 TOPCon 与管式硼扩散、氧化、LPCVD、PECVD。以 16 份工艺参考 Markdown 为初始资料，原文保存为独立快照。来源清单以文件名和 SHA-256 标识资料。
 
 建立日期：2026-10-28（Asia/Shanghai）。这是参考资料整理与工作方法，不是已核准的工厂规范，也未对原文外部引用逐条重新核验。
 
@@ -38,7 +38,7 @@
 
 ## 检索与校验
 
-从 `<transfer directory>KD` 运行，Python 3.10 以上即可，无需安装包：
+从本技能内的业务资源根目录 `references/kd/` 运行，Python 3.10 以上即可，无需安装包：
 
 ```powershell
 python source/tools/kb.py search "硼扩散 炉管" --limit 5
@@ -48,12 +48,12 @@ python source/tools/kb.py index --check
 python source/tools/kb.py verify
 ```
 
-本机的 `python` 命令可能指向 Windows 应用执行别名；本次使用的解释器可这样调用：
+先确认当前环境有可用的 Python 3.10+，例如：
 
 ```powershell
-$kdPython = '<Python executable selected by user>'
-& $kdPython source/tools/kb.py search "LPCVD 压力"
-& $kdPython -m unittest discover -s source/tests -v
+python --version
+python source/tools/kb.py search "LPCVD 压力"
+python -m unittest discover -s source/tests -v
 ```
 
 检索按标题、关键词、中文双字片段和术语别名评分，已确认简称可展开检索，未确认候选只展示、不自动扩为同义词。结果返回文件、章节、起止行号、证据类型、来源状态和摘录；历史快照会明确标记。支持 `--category references|knowledge|workflows|templates|evidence` 和 `--limit 1..50`。这是轻量字面检索，不能保证语义召回；无命中、索引缺失/过期或工具不可运行时，换简称、设备名或用 `rg -n "关键词" source` 搜索。普通分析不必为此修改原文或刷新快照。
@@ -113,7 +113,7 @@ python source/tools/kb.py crosswalk --check
 普通资料整理优先编辑派生知识及工作流，并保留原文。只有任务要求导入/更新原文快照时，执行：
 
 ```powershell
-python source/tools/kb.py snapshot --source 'KD reference collection'
+python source/tools/kb.py snapshot --source '<用户明确指定的原始资料绝对路径>'
 # 已有原文变化时，先审阅差异，再显式加 --update。
 python source/tools/kb.py crosswalk
 python source/tools/kb.py index

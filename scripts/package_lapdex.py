@@ -17,7 +17,7 @@ import zipfile
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SKILL_NAME = "laco-laoshifu"
-VERSION = "0.2.2"
+VERSION = "0.2.3"
 ARCHIVE_NAME = f"{SKILL_NAME}-lapdex-{VERSION}.zip"
 MANIFEST_NAME = "bundle-manifest.json"
 RESOURCE_ROOT = "references/kd"

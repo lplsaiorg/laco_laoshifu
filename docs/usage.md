@@ -2,7 +2,7 @@
 
 [返回项目首页](../README.md) · [真实案例](examples/README.md) · [源码维护参考](maintenance.md)
 
-适用版本：**拉可老师傅 Lapdex 技能包 v0.2.2**。安装后，在 Lapdex 对话里点名“拉可老师傅”即可提出任务。日常材料留在自己的工作目录中，助手从安装目录读取知识与工具。
+适用版本：**拉可老师傅 Lapdex 技能包 v0.2.3**。安装后，在 Lapdex 对话里点名“拉可老师傅”即可提出任务。日常材料留在自己的工作目录中，助手从安装目录读取知识与工具。
 
 [安装与启用](#install) · [第一次使用](#first-task) · [提供工作文件](#files) · [常用任务](#tasks) · [检查结果](#results) · [常见问题](#troubleshooting) · [升级与备份](#upgrade) · [版本范围](#version)
 
@@ -26,7 +26,7 @@
 
 ### 手动安装技能包
 
-1. 下载 [laco-laoshifu-lapdex-0.2.2.zip](../dist/laco-laoshifu-lapdex-0.2.2.zip)，保留包内完整的 `laco-laoshifu` 文件夹。
+1. 下载 [laco-laoshifu-lapdex-0.2.3.zip](../dist/laco-laoshifu-lapdex-0.2.3.zip)，保留包内完整的 `laco-laoshifu` 文件夹。
 2. 在 Windows 文件资源管理器的地址栏输入 `%USERPROFILE%\.lapdex\skills`。默认目录不存在时可以创建；使用自定义技能目录或其他 profile 时，以当前配置的技能目录为准。
 3. 将完整的 `laco-laoshifu` 文件夹解压到该技能目录下。最后应能找到下面两个文件：
 
@@ -213,7 +213,7 @@ python (Join-Path $lapdexResourceRoot 'skills\laplace-office-standardize\scripts
 
 ## 8. 本版能力与验证范围
 
-**v0.2.2 提供一个技能入口和六类工作流：**业务知识与名称消歧、数据分析、技术文档、程序开发、知识维护、Office 规范化。无需分别安装内部六个技能。
+**v0.2.3 提供一个技能入口和六类工作流：**业务知识与名称消歧、数据分析、技术文档、程序开发、知识维护、Office 规范化。无需分别安装内部六个技能。
 
 <a id="memory"></a>
 
@@ -230,3 +230,7 @@ python (Join-Path $lapdexResourceRoot 'skills\laplace-office-standardize\scripts
 <a id="skills"></a>
 
 六类工作流的职责、知识入口及开发维护命令见[源码维护参考](maintenance.md)。本手册中的安装步骤以完整目录解压为准，ZIP 内未附用户手册、案例和源码安装脚本；这些资料在项目文档中查看。
+
+## 发行隐私检查
+
+v0.2.3 清除了本机路径、文档作者字段和外部模板链接。发布历史已重写，旧发行标签已撤下。已有克隆应重新克隆，避免将旧记录推回。包内相对路径只用于技能目录中的资源。用户材料、输出目录和私有记忆由运行环境或用户明确指定。

@@ -2,7 +2,7 @@
 
 日常安装、启用、文件任务与排障请看 [Lapdex 用户手册](usage.md)。本页面向需要使用源码安装器、重新打包或核对适配依据的维护者。
 
-v0.2.2 将“拉可老师傅”的六类业务工作流、私有记忆工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
+v0.2.3 将“拉可老师傅”的六类业务工作流、私有记忆工作流、本地知识库、Office 工具和模板打包为一个独立的 `laco-laoshifu` 技能目录。Lapdex 通过一个入口按需读取业务工作流。
 
 适配原理、目录映射、加载器依据及维护流程见 [拉可老师傅适配 Lapdex 的设计与实施](lapdex-adaptation.md)。
 
@@ -10,7 +10,7 @@ v0.2.2 将“拉可老师傅”的六类业务工作流、私有记忆工作流�
 
 ## 获取与安装
 
-本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.2.2.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
+本仓库 `dist/` 提供 `laco-laoshifu-lapdex-0.2.3.zip` 及同名 `.zip.sha256`。ZIP 内保留顶层 `laco-laoshifu/`：
 
 ```text
 ~/.lapdex/skills/laco-laoshifu/
@@ -28,9 +28,9 @@ v0.2.2 将“拉可老师傅”的六类业务工作流、私有记忆工作流�
 也可以在仓库根目录用 Python 3.10+ 安装：
 
 ```powershell
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.2.zip
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.2.zip --dry-run
-python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.2.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.3.zip
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip --dry-run
+python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.3.zip
 ```
 
 自定义技能目录时添加 `--skills-dir "目标技能目录"`。安装器校验归档完整性和路径后安装；目标目录存在时拒绝覆盖。用户可能已经在技能内维护了知识库，升级前应备份旧目录并审阅知识差异，再将旧目录另行保存后安装新包。
@@ -61,7 +61,7 @@ python scripts/package_lapdex.py --install dist/laco-laoshifu-lapdex-0.2.2.zip
 
 ```powershell
 python scripts/package_lapdex.py
-python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.2.zip
+python scripts/package_lapdex.py --check dist/laco-laoshifu-lapdex-0.2.3.zip
 python -B -m unittest discover -s tests -v
 python -B -m unittest discover -s source/tests -v
 ```
@@ -83,3 +83,7 @@ python -B -m unittest discover -s source/tests -v
 - ZIP 安装到含中文和空格的新目录后，从无关工作目录运行 `verify`、`index --check`、`crosswalk --check`、简称查询及工艺检索通过。16 份原始快照保持 SHA-256；34 份索引文档及 75 个简称概念校验通过。
 - `OD` 仍返回带范围的多个候选，没有因适配自动合并；独立工作流试读能按 Longji 来源区分检测位置与温区。
 - Office `doctor` 读到草案配置及三类完整模板；未启动 Office，未将依赖检查计作版式验证。
+
+## 发布前隐私检查
+
+构建后执行 `python scripts/check_privacy.py` 和 `python scripts/check_privacy.py dist/laco-laoshifu-lapdex-0.2.3.zip`。检查涵盖跟踪资源、ZIP 内部资源、本机路径、文档作者和外部模板关系。来源清单只记录来源标识和文件名，快照导入不会把原始目录写入仓库。外部输入输出使用用户指定或运行时解析的绝对路径。
