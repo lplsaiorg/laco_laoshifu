@@ -31,6 +31,8 @@
 从 https://github.com/lplsaiorg/laco_laoshifu 拉取最新的release进行安装
 ```
 
+![在 Lapdex 对话输入框中输入从 GitHub 拉取最新 release 进行安装的提示词](docs/images/lapdex-install-from-github.png)
+
 需要当前会话可访问 GitHub、下载文件并执行安装操作。若没有可用的 Release，继续让 Lapdex 按仓库 README 下载 `dist/` 中的当前发行 ZIP 安装。
 
 ### 2. Windows 一键安装
